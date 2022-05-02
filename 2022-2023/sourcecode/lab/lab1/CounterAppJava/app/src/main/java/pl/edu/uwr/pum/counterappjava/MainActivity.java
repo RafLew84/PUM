@@ -1,5 +1,6 @@
 package pl.edu.uwr.pum.counterappjava;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -21,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         showCount = findViewById(R.id.show_count);
 
+        if (savedInstanceState != null)
+            count = savedInstanceState.getInt("counter_state");
+
         if (showCount != null)
             showCount.setText(String.format(Locale.GERMAN, "%,d", count));
     }
@@ -29,5 +33,12 @@ public class MainActivity extends AppCompatActivity {
         count++;
         if (showCount != null)
             showCount.setText(String.format(Locale.GERMAN, "%,d", count));
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putInt("counter_state", count);
     }
 }
