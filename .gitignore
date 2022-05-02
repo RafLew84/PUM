@@ -44,3 +44,6 @@ captures
 .externalNativeBuild
 .cxx
 local.properties
+
+# ipynb checkpoints
+**/*.ipynb_checkpoints/
