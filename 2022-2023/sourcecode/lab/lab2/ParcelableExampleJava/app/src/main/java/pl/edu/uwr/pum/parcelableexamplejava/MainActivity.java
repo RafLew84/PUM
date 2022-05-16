@@ -10,8 +10,10 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     public static String EXTRA_KEY = "parcel_example";
+    public static String EXTRA_SERIALIZABLE = "serializable_example";
 
     private Properties prop;
+    private SerializableProperties serProp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +23,12 @@ public class MainActivity extends AppCompatActivity {
         Button button = findViewById(R.id.sendButton);
 
         prop = new Properties(1, 2, "String");
+        serProp = new SerializableProperties(11, 12, "Serializable");
 
         button.setOnClickListener(view -> {
             Intent intent = new Intent(this, SecondActivity.class);
             intent.putExtra(EXTRA_KEY, prop);
+            intent.putExtra(EXTRA_SERIALIZABLE, serProp);
             startActivity(intent);
         });
     }
