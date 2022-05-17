@@ -1,5 +1,5 @@
 # PUM
- Programowanie urządzeń Mobilnych
+ Programowanie Urządzeń Mobilnych
  
 |Moduł|Lista|
 |:-------|:--------|
