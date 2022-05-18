@@ -13,7 +13,7 @@ import java.util.LinkedList;
 
 public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordListViewHolder> {
 
-    private LinkedList<String> wordList;
+    private final LinkedList<String> wordList;
     private final LayoutInflater inflater;
 
     public WordListAdapter(Context context, LinkedList<String> wordList) {
