@@ -1,6 +1,7 @@
 package pl.edu.uwr.pum.recyclerviewwordlistjava;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,6 +55,7 @@ public class WordListAdapter extends RecyclerView.Adapter<WordListAdapter.WordLi
                 String element = wordList.get(position);
                 wordList.set(position, "Clicked!" + element);
                 adapter.notifyItemChanged(position);
+                wordText.setBackgroundColor(Color.CYAN);
             });
         }
     }
