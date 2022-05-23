@@ -1,7 +1,5 @@
 package pl.edu.uwr.pum.recyclerviewselectorjava;
 
-import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,15 +16,10 @@ public class NumberListAdapter extends RecyclerView.Adapter<NumberListAdapter.Nu
 
     private final LinkedList<Integer> numberList;
 
-    public SelectionTracker<Long> getSelectionTracker() {
-        return selectionTracker;
-    }
-
+    private SelectionTracker<Long> selectionTracker;
     public void setSelectionTracker(SelectionTracker<Long> selectionTracker) {
         this.selectionTracker = selectionTracker;
     }
-
-    private SelectionTracker<Long> selectionTracker;
 
     public NumberListAdapter(LinkedList<Integer> numberList){
         this.numberList = numberList;
