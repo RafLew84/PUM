@@ -37,10 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
     private LinkedList<Integer> createList(){
         LinkedList<Integer> numbers = new LinkedList<>();
-
         for(int i = 0; i < 50; i++)
             numbers.add(i);
-
         return  numbers;
     }
 }
