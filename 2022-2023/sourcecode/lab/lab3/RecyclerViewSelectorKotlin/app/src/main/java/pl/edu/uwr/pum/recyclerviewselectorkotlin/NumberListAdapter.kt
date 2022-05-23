@@ -38,12 +38,10 @@ class NumberListAdapter(
 
     override fun getItemCount() = numberList.size
 
-    override fun getItemId(position: Int): Long {
-        return position.toLong()
-    }
+    override fun getItemId(position: Int): Long = position.toLong()
 
     class NumberListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val number: TextView = itemView.findViewById((R.id.numberText))
+        private val number: TextView = itemView.findViewById((R.id.numberText))
 
         fun bind(value: Int, isActivated: Boolean = false) {
             number.text = value.toString()
