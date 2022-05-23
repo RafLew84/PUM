@@ -1,7 +1,6 @@
 package pl.edu.uwr.pum.recyclerviewselectorkotlin
 
 import android.view.LayoutInflater
-import androidx.recyclerview.selection.DefaultSelectionTracker
 import androidx.recyclerview.selection.SelectionTracker
 
 import android.view.View
