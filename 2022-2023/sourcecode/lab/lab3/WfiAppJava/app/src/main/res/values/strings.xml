@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">WfiAppJava</string>
+    <string name="fab_desc">refresh</string>
+    <string name="iv_desc">image of the institute</string>
+    <string name="title_placeholder">University of Wroclaw</string>
+    <string name="institute_placeholder">institute</string>
+    <string name="subtitle_detail_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices congue rutrum. Phasellus elementum ipsum ac convallis aliquam. Suspendisse eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor diam fringilla tellus, eu euismod mauris neque at neque.</string>
+
 </resources>
