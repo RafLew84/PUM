@@ -6,4 +6,26 @@
     <string name="institute_placeholder">institute</string>
     <string name="subtitle_detail_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices congue rutrum. Phasellus elementum ipsum ac convallis aliquam. Suspendisse eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor diam fringilla tellus, eu euismod mauris neque at neque.</string>
 
+    <string-array name="institute_titles">
+        <item>Institute of Astronomy</item>
+        <item>Institute of Experimental Physics</item>
+        <item>Institute of Theoretical Physics</item>
+        <item>Library</item>
+    </string-array>
+
+    <string-array name="institute_info">
+        <item>Welcome to Institute of Astronomy!</item>
+        <item>Welcome to Institute of Experimental Physics!</item>
+        <item>Welcome to Institute of Theoretical Physics!</item>
+        <item>Welcome to Library!</item>
+    </string-array>
+
+
+    <array name="institute_images">
+        <item>@drawable/img_ia</item>
+        <item>@drawable/img_ifd</item>
+        <item>@drawable/img_ift</item>
+        <item>@drawable/img_bib</item>
+    </array>
+
 </resources>
