@@ -56,4 +56,49 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/text_view_answer_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/default_answer_shape"
+        android:gravity="center"
+        android:padding="13dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="ANSWER 1"/>
+
+    <TextView
+        android:id="@+id/text_view_answer_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/default_answer_shape"
+        android:gravity="center"
+        android:padding="13dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="ANSWER 2"/>
+
+    <TextView
+        android:id="@+id/text_view_answer_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/default_answer_shape"
+        android:gravity="center"
+        android:padding="13dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="ANSWER 3"/>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 </LinearLayout>

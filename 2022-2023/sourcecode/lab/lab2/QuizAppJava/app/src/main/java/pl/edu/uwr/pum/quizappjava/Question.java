@@ -1,12 +1,12 @@
 package pl.edu.uwr.pum.quizappjava;
 
 public class Question {
-    private String question;
-    private int imageSource;
-    private String answerOne;
-    private String answerTwo;
-    private String answerThree;
-    private int correctAnswer;
+    private final String question;
+    private final int imageSource;
+    private final String answerOne;
+    private final String answerTwo;
+    private final String answerThree;
+    private final int correctAnswer;
 
     public Question(String question,
                     int imageSource,
