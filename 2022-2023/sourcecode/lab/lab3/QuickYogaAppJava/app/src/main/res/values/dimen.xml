@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_screen_padding">6dp</dimen>
+    <dimen name="start_button_x">300dp</dimen>
+    <dimen name="start_button_y">150dp</dimen>
+    <dimen name="progress_bar_size">300dp</dimen>
+</resources>
