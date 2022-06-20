@@ -23,7 +23,16 @@
         android:gravity="center"
         android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/yoga_image"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:contentDescription="@string/image"/>
+
         <TextView
+            android:id="@+id/text_view_exercise_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="START EXERCISE"
