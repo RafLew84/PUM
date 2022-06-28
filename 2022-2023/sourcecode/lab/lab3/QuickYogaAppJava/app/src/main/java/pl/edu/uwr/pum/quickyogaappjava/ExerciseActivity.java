@@ -2,9 +2,13 @@ package pl.edu.uwr.pum.quickyogaappjava;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -12,9 +16,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Objects;
 
-public class ExerciseActivity extends AppCompatActivity {
+public class ExerciseActivity extends AppCompatActivity implements TextToSpeech.OnInitListener {
 
     private ArrayList<YogaPose> yogaPosesList;
     private int exercisePosition = 0;
@@ -33,6 +38,11 @@ public class ExerciseActivity extends AppCompatActivity {
     private ImageView imageView;
     private TextView textViewExerciseName;
 
+    private TextToSpeech textToSpeech;
+    private MediaPlayer player;
+
+    private YogaAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,9 +58,18 @@ public class ExerciseActivity extends AppCompatActivity {
 
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         toolbar.setNavigationOnClickListener(view -> onBackPressed());
-
-        setupProgressBar();
+        textToSpeech = new TextToSpeech(this, this);
         yogaPosesList = YogaPoses.getYogaPoses();
+        setupProgressBar();
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(
+                new LinearLayoutManager(
+                        this,
+                        LinearLayoutManager.HORIZONTAL,
+                        false));
+        adapter = new YogaAdapter(this, yogaPosesList);
+        recyclerView.setAdapter(adapter);
+
     }
 
     @Override
@@ -60,7 +79,15 @@ public class ExerciseActivity extends AppCompatActivity {
             progressBarValue = 0;
         }
 
+        if (player != null)
+            player.stop();
+
         exercisePosition = 0;
+
+        if (textToSpeech != null) {
+            textToSpeech.stop();
+            textToSpeech.shutdown();
+        }
 
         super.onDestroy();
     }
@@ -71,14 +98,25 @@ public class ExerciseActivity extends AppCompatActivity {
         if (isYoga){
             timerDuration = yogaTimerDuration;
             progressInterval = yogaProgressInterval;
+            speakPoseName(yogaPosesList.get(exercisePosition).getName());
             progressBar.setMax(yogaProgressInterval);
-            //exercisePosition++;
             textViewExerciseName.setText(yogaPosesList.get(exercisePosition).getName());
             imageView.setVisibility(View.VISIBLE);
+            yogaPosesList.get(exercisePosition).setSelected(true);
+            adapter.notifyItemChanged(exercisePosition);
             imageView.setImageResource(yogaPosesList.get(exercisePosition).getImage());
         }else{
             timerDuration = waitTimerDuration;
             progressInterval = waitProgressInterval;
+            if (exercisePosition > 0) {
+                try {
+                    player = MediaPlayer.create(this, R.raw.dingding);
+                    player.setLooping(false);
+                    player.start();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
             progressBar.setMax(progressInterval);
             imageView.setVisibility(View.INVISIBLE);
             textViewExerciseName.setText(getString(R.string.wait_text));
@@ -101,6 +139,9 @@ public class ExerciseActivity extends AppCompatActivity {
                 }
 
                 if (isYoga){
+                    yogaPosesList.get(exercisePosition).setSelected(false);
+                    yogaPosesList.get(exercisePosition).setCompleted(true);
+                    adapter.notifyItemChanged(exercisePosition);
                     exercisePosition++;
                 }
 
@@ -112,5 +153,15 @@ public class ExerciseActivity extends AppCompatActivity {
                     Toast.makeText(ExerciseActivity.this, "COMPLETE", Toast.LENGTH_SHORT).show();
             }
         }.start();
+    }
+
+    @Override
+    public void onInit(int i) {
+        if (i == TextToSpeech.SUCCESS)
+            textToSpeech.setLanguage(Locale.ENGLISH);
+    }
+
+    private void speakPoseName(String text){
+        textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "");
     }
 }
