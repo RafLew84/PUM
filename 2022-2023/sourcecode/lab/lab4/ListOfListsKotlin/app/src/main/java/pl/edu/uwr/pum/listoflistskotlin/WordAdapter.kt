@@ -9,17 +9,17 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 
-class WordAdapter(private val letterId: String, context: Context) :
+class WordAdapter(private val letter: String, val context: Context) :
     RecyclerView.Adapter<WordAdapter.WordViewHolder>() {
 
     private val words: List<String>
 
     init {
         words = context.resources.getStringArray(R.array.words).toList()
-            .filter { it.startsWith(letterId, ignoreCase = true) }
+            .filter { it.startsWith(letter, ignoreCase = true) }
     }
 
-    class WordViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+    class WordViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val button: Button = view.findViewById(R.id.button_item)
     }
 
@@ -34,5 +34,11 @@ class WordAdapter(private val letterId: String, context: Context) :
     override fun onBindViewHolder(holder: WordViewHolder, position: Int) {
         val item = words[position]
         holder.button.text = item
+
+        holder.button.setOnClickListener {
+            val queryUrl: Uri = Uri.parse("https://www.google.com/search?q=${item}")
+            val intent = Intent(Intent.ACTION_VIEW, queryUrl)
+            context.startActivity(intent)
+        }
     }
 }
