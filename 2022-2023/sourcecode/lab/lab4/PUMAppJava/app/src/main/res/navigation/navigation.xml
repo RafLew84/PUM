@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="pl.edu.uwr.pum.pumappjava.fragments.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/appListFragment"
+        android:name="pl.edu.uwr.pum.pumappjava.fragments.AppListFragment"
+        android:label="fragment_app_list"
+        tools:layout="@layout/fragment_app_list" />
+    <fragment
+        android:id="@+id/labListFragment"
+        android:name="pl.edu.uwr.pum.pumappjava.fragments.LabListFragment"
+        android:label="fragment_lab_list"
+        tools:layout="@layout/fragment_lab_list" />
+    <fragment
+        android:id="@+id/lectureFragment"
+        android:name="pl.edu.uwr.pum.pumappjava.fragments.LectureFragment"
+        android:label="fragment_lecture"
+        tools:layout="@layout/fragment_lecture" />
+    <fragment
+        android:id="@+id/moduleFragment"
+        android:name="pl.edu.uwr.pum.pumappjava.fragments.ModuleFragment"
+        android:label="fragment_module"
+        tools:layout="@layout/fragment_module" >
+        <action
+            android:id="@+id/action_moduleFragment_to_lectureFragment"
+            app:destination="@id/lectureFragment" />
+        <action
+            android:id="@+id/action_moduleFragment_to_labListFragment"
+            app:destination="@id/labListFragment" />
+        <action
+            android:id="@+id/action_moduleFragment_to_appListFragment"
+            app:destination="@id/appListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moduleListFragment"
+        android:name="pl.edu.uwr.pum.pumappjava.fragments.ModuleListFragment"
+        android:label="fragment_module_list"
+        tools:layout="@layout/fragment_module_list" >
+        <action
+            android:id="@+id/action_moduleListFragment_to_moduleFragment"
+            app:destination="@id/moduleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="pl.edu.uwr.pum.pumappjava.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="pl.edu.uwr.pum.pumappjava.fragments.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_moduleListFragment"
+            app:destination="@id/moduleListFragment" />
+    </fragment>
+</navigation>
