@@ -10,12 +10,34 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textViewTheme"
+            android:id="@+id/textViewSettings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:gravity="center_horizontal"
             android:text="@string/default_value"
+            android:textAlignment="center"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textViewThemeSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewSettings"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="@string/theme_settings"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/textViewCurrentTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewThemeSetting"
+            android:layout_marginTop="6dp"
+            android:gravity="center_horizontal"
+            android:text="@string/current_theme"
             android:textAlignment="center"
             android:textSize="20sp" />
 
@@ -23,29 +45,41 @@
             android:id="@+id/radioButtonTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textViewTheme"
+            android:layout_below="@id/textViewCurrentTheme"
             android:layout_marginTop="30dp"
             android:orientation="vertical"
+            android:layout_marginStart="100dp"
+            android:layout_centerHorizontal="true"
             android:padding="4dp">
 
             <RadioButton
                 android:id="@+id/radioButtonLight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:layout_margin="5dp"
                 android:padding="5dp"
-                android:text="@string/light" />
+                android:text="@string/light"
+                android:textSize="24sp"/>
 
             <RadioButton
                 android:id="@+id/radioButtonDark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:text="@string/dark" />
+                android:text="@string/dark"
+                android:textSize="24sp"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="@string/system_default"
+                android:textSize="20sp"/>
 
         </RadioGroup>
     </RelativeLayout>

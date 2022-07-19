@@ -36,15 +36,18 @@ public class SettingsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        TextView textView = view.findViewById(R.id.textViewTheme);
+        TextView textView = view.findViewById(R.id.textViewCurrentTheme);
         RadioGroup radioGroup = view.findViewById(R.id.radioButtonTheme);
         radioGroup.setOnCheckedChangeListener((r, checkedId) -> {
             if (checkedId == R.id.radioButtonLight){
-                textView.setText(getString(R.string.motywJ));
+                textView.setText(getString(R.string.light_theme));
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
             } else if (checkedId == R.id.radioButtonDark){
-                textView.setText(getString(R.string.motywD));
+                textView.setText(getString(R.string.dark_theme));
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            } else {
+                textView.setText(getString(R.string.current_theme));
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
             }
         });
     }

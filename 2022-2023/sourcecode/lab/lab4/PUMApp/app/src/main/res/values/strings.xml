@@ -2,10 +2,14 @@
     <string name="app_name">PUMApp</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="settings">Ustawienia</string>
-    <string name="default_value">Motyw domyślny</string>
+    <string name="settings">Settings</string>
+    <string name="default_value">Settings</string>
     <string name="light">Light</string>
     <string name="dark">Dark</string>
-    <string name="motywJ">Motyw jasny</string>
-    <string name="motywD">Motyw ciemny</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="system_default">Android Compatible Theme</string>
+    <string name="selected_language">English</string>
+    <string name="theme_settings">Theme Settings</string>
+    <string name="current_theme">Default</string>
 </resources>
