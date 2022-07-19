@@ -19,7 +19,6 @@
             android:textAlignment="center"
             android:textSize="20sp" />
 
-        <!--radio group for switching theme-->
         <RadioGroup
             android:id="@+id/radioButtonTheme"
             android:layout_width="match_parent"
@@ -38,7 +37,6 @@
                 android:padding="5dp"
                 android:text="@string/light" />
 
-            <!--radio button for dark theme-->
             <RadioButton
                 android:id="@+id/radioButtonDark"
                 android:layout_width="wrap_content"

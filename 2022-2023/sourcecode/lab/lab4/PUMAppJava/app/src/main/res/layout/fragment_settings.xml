@@ -5,10 +5,49 @@
     android:layout_height="match_parent"
     tools:context=".fragments.SettingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="@string/default_value"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radioButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTheme"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="@string/light" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="@string/dark" />
+
+        </RadioGroup>
+    </RelativeLayout>
 
 </FrameLayout>
