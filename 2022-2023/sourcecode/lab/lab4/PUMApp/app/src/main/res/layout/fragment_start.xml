@@ -5,10 +5,31 @@
     android:layout_height="match_parent"
     tools:context=".fragments.StartFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pum"
+        android:textSize="124sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/start_button_layout"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/start_button_ripple"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:textColor="?colorOnSecondary"
+            android:textStyle="bold"
+            android:textSize="45sp"/>
+
+    </LinearLayout>
 
 </FrameLayout>
