@@ -12,4 +12,7 @@
     <string name="selected_language">English</string>
     <string name="theme_settings">Theme Settings</string>
     <string name="current_theme">Default</string>
+    <string name="about">About</string>
+    <string name="pum">PUM</string>
+    <string name="android">Android</string>
 </resources>
