@@ -29,7 +29,7 @@ public final class DataProvider {
 
         ArrayList<Module> modules = new ArrayList<>(3);
         for (int i = 0; i < capacity; i++){
-            modules.add(new Module(0, "Module" + i, lectures.get(i), labs.get(i), apps.get(i)));
+            modules.add(new Module(i, "Module" + i, lectures.get(i), labs.get(i), apps.get(i)));
         }
         return modules;
     }
