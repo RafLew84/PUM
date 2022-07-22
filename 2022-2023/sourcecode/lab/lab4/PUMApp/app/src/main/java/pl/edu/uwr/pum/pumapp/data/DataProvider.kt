@@ -23,7 +23,7 @@ object DataProvider {
     )
 
     val modules: List<Module>
-        get() = (0 until 3).map { Module(
+        get() = (0 until 4).map { Module(
             it,
             "Moduł $it",
             lectures[it],
