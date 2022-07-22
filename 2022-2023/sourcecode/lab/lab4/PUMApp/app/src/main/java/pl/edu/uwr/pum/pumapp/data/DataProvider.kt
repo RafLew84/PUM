@@ -2,9 +2,9 @@ package pl.edu.uwr.pum.pumapp.data
 
 object DataProvider {
     private val lectures = listOf(
-        Lecture(0, "Wykład 1", listOf("podstawowe informacje", "treści programowe", "warunki zaliczenia")),
-        Lecture(1, "Wykład 2", listOf("Struktura projektu", "Activity", "Cykl życia aktywności", "Stan instancji", "Bundle", "Intent")),
-        Lecture(2, "Wykład 3", listOf("RecyclerView", "Adapter", "ViewHolder", "Selector"))
+        Lecture(0, "Podstawowe Informacje", listOf("podstawowe informacje", "treści programowe", "warunki zaliczenia")),
+        Lecture(1, "Cykl życia aktywności", listOf("Struktura projektu", "Activity", "Cykl życia aktywności", "Stan instancji", "Bundle", "Intent")),
+        Lecture(2, "RecyclerView", listOf("RecyclerView", "Adapter", "ViewHolder", "Selector"))
     )
 
     private val labs = listOf(

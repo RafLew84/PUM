@@ -17,4 +17,7 @@
     <string name="android">Android</string>
     <string name="opis">Aplikacja stworzona na potrzeby Programowania Urządzeń Mobilnych</string>
     <string name="start">START</string>
+    <string name="module">Module</string>
+    <string name="lecture_long_name">Lecture long name</string>
+    <string name="module_list">Lista modułów</string>
 </resources>
