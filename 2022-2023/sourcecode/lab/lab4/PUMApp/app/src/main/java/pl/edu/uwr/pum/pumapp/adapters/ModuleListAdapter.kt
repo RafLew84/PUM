@@ -14,8 +14,8 @@ class ModuleListAdapter : RecyclerView.Adapter<ModuleListAdapter.ViewHolder>() {
     private val moduleList = DataProvider.modules
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val moduleTitleTextView: TextView = view.findViewById(R.id.moduleNameModuleRVItemTextView)
-        val lectureTitleTextView: TextView = view.findViewById(R.id.lectureNameModuleRVItemTextView)
+        private val moduleTitleTextView: TextView = view.findViewById(R.id.moduleNameModuleRVItemTextView)
+        private val lectureTitleTextView: TextView = view.findViewById(R.id.lectureNameModuleRVItemTextView)
 
         fun bind(item: Module){
             moduleTitleTextView.text = item.name
