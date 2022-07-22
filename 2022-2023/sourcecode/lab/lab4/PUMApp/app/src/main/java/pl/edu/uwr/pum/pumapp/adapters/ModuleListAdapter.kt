@@ -7,14 +7,20 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import pl.edu.uwr.pum.pumapp.R
 import pl.edu.uwr.pum.pumapp.data.DataProvider
+import pl.edu.uwr.pum.pumapp.data.Module
 
 class ModuleListAdapter : RecyclerView.Adapter<ModuleListAdapter.ViewHolder>() {
 
-    val moduleList = DataProvider.modules
+    private val moduleList = DataProvider.modules
 
-    inner class ViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
-        val moduleTitleTextView = view.findViewById<TextView>(R.id.moduleNameModuleRVItemTextView)
-        val lectureTitleTextView = view.findViewById<TextView>(R.id.lectureNameModuleRVItemTextView)
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val moduleTitleTextView: TextView = view.findViewById(R.id.moduleNameModuleRVItemTextView)
+        val lectureTitleTextView: TextView = view.findViewById(R.id.lectureNameModuleRVItemTextView)
+
+        fun bind(item: Module){
+            moduleTitleTextView.text = item.name
+            lectureTitleTextView.text = item.lecture.name
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -25,8 +31,7 @@ class ModuleListAdapter : RecyclerView.Adapter<ModuleListAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = moduleList[position]
-        holder.moduleTitleTextView.text = item.name
-        holder.lectureTitleTextView.text = item.lecture.name
+        holder.bind(item)
     }
 
     override fun getItemCount(): Int = moduleList.size

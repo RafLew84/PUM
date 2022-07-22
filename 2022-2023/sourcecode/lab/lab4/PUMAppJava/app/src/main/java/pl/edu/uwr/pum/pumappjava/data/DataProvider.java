@@ -10,9 +10,9 @@ public final class DataProvider {
     public static ArrayList<Module> getModules(){
         int capacity = 3;
         ArrayList<Lecture> lectures = new ArrayList<>(capacity);
-        lectures.add(new Lecture(0, "Wykład 1", new ArrayList<>(Arrays.asList("podstawowe informacje", "treści programowe", "warunki zaliczenia"))));
-        lectures.add(new Lecture(1, "Wykład 2", new ArrayList<>(Arrays.asList("Struktura projektu", "Activity", "Cykl życia aktywności", "Stan instancji", "Bundle", "Intent"))));
-        lectures.add(new Lecture(2, "Wykład 3", new ArrayList<>(Arrays.asList("RecyclerView", "Adapter", "ViewHolder", "Selector"))));
+        lectures.add(new Lecture(0, "Podstawowe Informacje", new ArrayList<>(Arrays.asList("podstawowe informacje", "treści programowe", "warunki zaliczenia"))));
+        lectures.add(new Lecture(1, "Cykl życia aktywności", new ArrayList<>(Arrays.asList("Struktura projektu", "Activity", "Cykl życia aktywności", "Stan instancji", "Bundle", "Intent"))));
+        lectures.add(new Lecture(2, "RecyclerView", new ArrayList<>(Arrays.asList("RecyclerView", "Adapter", "ViewHolder", "Selector"))));
 
         ArrayList<Lab> labs = new ArrayList<>(capacity);
         labs.add(new Lab(0, "Lab 1", new ArrayList<>(Arrays.asList("LinearLayout", "ConstraintLayout", "Obsługa onClick"))));
