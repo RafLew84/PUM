@@ -11,48 +11,46 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import pl.edu.uwr.pum.pumappjava.R;
-import pl.edu.uwr.pum.pumappjava.data.DataProvider;
-import pl.edu.uwr.pum.pumappjava.data.Module;
 
-public class LectureContentAdapter extends RecyclerView.Adapter<LectureContentAdapter.ViewHolder> {
+public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ViewHolder> {
 
-    private final ArrayList<String> lectureContent;
+    private final ArrayList<String> content;
 
-    public LectureContentAdapter(int moduleId){
-        lectureContent = DataProvider.getModules().get(moduleId).getLecture().getContent();
+    public ContentAdapter(ArrayList<String> content){
+        this.content = content;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new LectureContentAdapter.ViewHolder(LayoutInflater
+        return new ContentAdapter.ViewHolder(LayoutInflater
                 .from(parent.getContext())
-                .inflate(R.layout.lecture_content_item_view, parent, false));
+                .inflate(R.layout.content_item_view, parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        String item = lectureContent.get(position);
+        String item = content.get(position);
         holder.bind(item);
     }
 
     @Override
     public int getItemCount() {
-        return lectureContent.size();
+        return content.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        private final TextView lectureContentTextView;
+        private final TextView contentTextView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            lectureContentTextView = itemView.findViewById(R.id.lectureTextViewItem);
+            contentTextView = itemView.findViewById(R.id.contentTextViewItem);
         }
 
         public void bind(String item){
-            lectureContentTextView.setText(String.format("- %s", item));
+            contentTextView.setText(String.format("- %s", item));
         }
     }
 }

@@ -13,11 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import pl.edu.uwr.pum.pumappjava.R;
-import pl.edu.uwr.pum.pumappjava.adapters.LectureContentAdapter;
-import pl.edu.uwr.pum.pumappjava.adapters.ModuleListAdapter;
+import pl.edu.uwr.pum.pumappjava.adapters.ContentAdapter;
 import pl.edu.uwr.pum.pumappjava.data.DataProvider;
 
 public class LectureFragment extends Fragment {
@@ -48,14 +46,14 @@ public class LectureFragment extends Fragment {
         if (actionBar != null) {
             actionBar.setTitle(lectureName);
         }
-        return inflater.inflate(R.layout.fragment_lecture, container, false);
+        return inflater.inflate(R.layout.fragment_content, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        RecyclerView recyclerView = view.findViewById(R.id.lectureRecyclerView);
+        RecyclerView recyclerView = view.findViewById(R.id.contentRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
-        recyclerView.setAdapter(new LectureContentAdapter(moduleId));
+        recyclerView.setAdapter(new ContentAdapter(DataProvider.getModules().get(moduleId).getLecture().getContent()));
     }
 }
