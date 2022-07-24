@@ -6,6 +6,7 @@
 |[Moduł 1](#moduł-1)| Lista 1 |
 |[Moduł 2](#moduł-2)| Lista 2 |
 |[Moduł 3](#moduł-3)|  |
+|[Moduł 4](#moduł-4)|  |
 
 ---
 
@@ -32,3 +33,12 @@
 |Aplikacje|  |
 |<ul><li>WFiApp - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.3.1%20-%20Java%20-%20WFiApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.3.2%20-%20Kotlin%20-%20WFiApp.ipynb)<ul><li>`RecyclerView`</li><li>`CardView`</li><li>`GridLayout`</li><li>`ItemTouchHelper`</li><li>`ImageView`</li></ul></ul>| <table><tr><td><img src="https://media2.giphy.com/media/gooBI30gtU5fMkmCZu/giphy.gif?cid=790b7611df027999cb2a17ec28a3095ad5693e6e76c37990&rid=giphy.gif&ct=g" width="200" /></td><td><img src="https://media2.giphy.com/media/h5Xh7V5IA5E3BV4ytL/giphy.gif?cid=790b7611412fedb227b91c2cb44067aa88f517a18214afde&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media2.giphy.com/media/uwDAUUAjLZnyKqLg3J/giphy.gif?cid=790b76110bdb83e20fb638b9fb5150422cf100e384687bcf&rid=giphy.gif&ct=g" width="150" /></td></tr></table>|
 |<ul><li>QuickYoga - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.4.1%20-%20Java%20-%20QuickYoga.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.3.2%20-%20Kotlin%20-%20WFiApp.ipynb)<ul><li>`RecyclerView`</li><li>`MediaPlayer`</li><li>`TextToSpeech`</li><li>customowy `ProgressBar`</li><li>`ImageView`</li><li>`RippleEffect`</li></ul></ul>| <img src="https://media3.giphy.com/media/vmZ6b9CGnFihvmYrGT/giphy.gif?cid=790b7611ec174e1283189e1ed95201abaf1700ead6582144&rid=giphy.gif&ct=g" width="200" />|
+
+
+## Moduł 4
+|Wykład 4|Lab 4|
+|:-------|:-------|
+|<ul><li>`Fragmenty`</li><li> `Jetpack Navigation` </li></ul>| <ul><li>`Static Fragment` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.1.1%20-%20Java%20-%20Static%20Fragment.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.1.2%20-%20Kotlin%20-%20Static%20Fragment.ipynb)  </li><li>`Dynamic Fragment` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.2.1%20-%20Java%20-%20Dynamic%20Fragment.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.2.2%20-%20Kotlin%20-%20Dynamic%20Fragment.ipynb) </li><li>`Jetpack Navigation` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.3.1%20-%20Java%20-%20Jetpack%20Navigation.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.3.2%20-%20Kotlin%20-%20Jetpack%20Navigation.ipynb) </li></ul></ul>|
+|Aplikacje|  |
+|<ul><li>ListOfLists - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.4.1%20-%20Java%20-%20ListOfLists.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.4.2%20-%20Kotlin%20-%20ListOfLists.ipynb)<ul><li>`RecyclerView`</li><li>`Jetpack Navigation`</li><li>`Implicit Intent`</li><li>`Adapter`</li></ul></ul>| <table><tr><td><img src="https://media4.giphy.com/media/12aNUkEltsj9IJX3DK/giphy.gif?cid=790b761153d67ec7afbe0798454db3f988f74125c2830ad8&rid=giphy.gif&ct=g" width="150" /></td></tr></table>|
+|<ul><li>PUMApp - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.5.1%20-%20Java%20-%20PUMApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.5.2%20-%20Kotlin%20-%20PUMApp.ipynb)<ul><li>`RecyclerView`</li><li>`Jetpack Navigation`</li><li>`Drawer Navigation`</li><li>`Dark Theme`</li></ul></ul>| <table><tr><td><img src="https://media4.giphy.com/media/vxFCJk2ezJecGe0q51/giphy.gif?cid=790b7611375b0d8e309f01295b707e9b33cd918c6b2cec75&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media0.giphy.com/media/rsqB9pEWGHKi5L6TbN/giphy.gif?cid=790b76115b96ca067a07916491cdb73faee0b317424c8e4a&rid=giphy.gif&ct=g" width="150" /></td></tr></table>|
