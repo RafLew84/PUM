@@ -1,19 +1,11 @@
 package pl.edu.uwr.pum.myfinanceappjava;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 import androidx.viewpager2.widget.ViewPager2;
 
-import android.graphics.Color;
-import android.os.Bundle;
-import android.view.View;
-import android.view.ViewGroup;
-
 import com.google.android.material.tabs.TabLayout;
-import com.google.android.material.tabs.TabLayoutMediator;
-
-import java.util.Objects;
 
 import pl.edu.uwr.pum.myfinanceappjava.adapters.FinanceAdapter;
 import pl.edu.uwr.pum.myfinanceappjava.util.UiSetup;

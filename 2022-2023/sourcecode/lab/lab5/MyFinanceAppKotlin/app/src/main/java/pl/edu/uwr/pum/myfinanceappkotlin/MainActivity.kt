@@ -1,15 +1,9 @@
 package pl.edu.uwr.pum.myfinanceappkotlin
 
-import android.graphics.Color
 import android.os.Bundle
-import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
-import com.google.android.material.tabs.TabLayoutMediator
 import pl.edu.uwr.pum.myfinanceappkotlin.adapters.FinanceAdapter
 import pl.edu.uwr.pum.myfinanceappkotlin.util.tabLayoutSetup
 
