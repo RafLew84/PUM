@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyFinanceAppJava</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="accounts">Accounts</string>
+    <string name="bills">Bills</string>
+    <string name="overview">Overview</string>
+</resources>
