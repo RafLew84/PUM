@@ -39,26 +39,15 @@ public final class UiSetup {
             public void onTabSelected(TabLayout.Tab tab) {
                 tab.setText(context.getString(tabTitles[tab.getPosition()]));
                 Objects.requireNonNull(tab.getIcon()).setTint(Color.WHITE);
-
-                View a = vg.getChildAt(tab.getPosition());
-                a.animate()
-                        .scaleX(tabScaleHigh)
-                        .scaleY(tabScaleHigh)
-                        .setInterpolator(new FastOutSlowInInterpolator())
-                        .setDuration((long) context.getResources().getInteger(android.R.integer.config_mediumAnimTime))
-                        .start();
+                
+                setupAnimation(vg.getChildAt(tab.getPosition()), tabScaleHigh,
+                        (long) context.getResources().getInteger(android.R.integer.config_mediumAnimTime));
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
                 tab.setText("");
-                View a = vg.getChildAt(tab.getPosition());
-                a.animate()
-                        .scaleX(tabScaleLow)
-                        .scaleY(tabScaleLow)
-                        .setInterpolator(new FastOutSlowInInterpolator())
-                        .setDuration(1L)
-                        .start();
+                setupAnimation(vg.getChildAt(tab.getPosition()), tabScaleLow, 1L);
             }
 
             @Override
@@ -66,6 +55,15 @@ public final class UiSetup {
 
             }
         });
+    }
+
+    private static void setupAnimation(View view, float scale, long duration) {
+        view.animate()
+                .scaleX(scale)
+                .scaleY(scale)
+                .setInterpolator(new FastOutSlowInInterpolator())
+                .setDuration(duration)
+                .start();
     }
 
     private static void initialTabsSetup(TabLayout tabLayout, ViewGroup vg) {
