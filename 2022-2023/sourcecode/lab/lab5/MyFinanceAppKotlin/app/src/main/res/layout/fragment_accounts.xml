@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark_blue_900"
     tools:context=".fragments.AccountsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Accounts" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/accountsRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
 </FrameLayout>

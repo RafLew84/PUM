@@ -39,7 +39,7 @@ public final class UiSetup {
             public void onTabSelected(TabLayout.Tab tab) {
                 tab.setText(context.getString(tabTitles[tab.getPosition()]));
                 Objects.requireNonNull(tab.getIcon()).setTint(Color.WHITE);
-                
+
                 setupAnimation(vg.getChildAt(tab.getPosition()), tabScaleHigh,
                         (long) context.getResources().getInteger(android.R.integer.config_mediumAnimTime));
             }
