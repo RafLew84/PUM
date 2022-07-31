@@ -1,9 +1,13 @@
 package pl.edu.uwr.pum.myfinanceappkotlin.data
 
 import android.graphics.Color
+import pl.edu.uwr.pum.myfinanceappkotlin.fragments.AccountsFragment
+import pl.edu.uwr.pum.myfinanceappkotlin.fragments.BillsFragment
+import pl.edu.uwr.pum.myfinanceappkotlin.fragments.OverviewFragment
 import java.time.LocalDate
 
 object DataProvider {
+
     val accounts = listOf(
         Account("Home savings", "1111111111", 23456.34, Color.BLUE),
         Account("Car savings", "2222222222", 126578.99, Color.LTGRAY),
@@ -18,7 +22,7 @@ object DataProvider {
         Bill("Tuition", LocalDate.of(2023, 2,10), 1200.0, Color.BLUE),
         Bill("Rent", LocalDate.of(2022, 8,3), 1023.87, Color.YELLOW),
         Bill("Loan", LocalDate.of(2022, 12,22), 334.0, Color.GRAY),
-        Bill("Car Repair", LocalDate.of(2023, 1,9), 982.33, Color.WHITE),
+        Bill("Car Repair", LocalDate.of(2023, 1,9), 982.38, Color.WHITE),
         Bill("Dress Loan", LocalDate.of(2023, 5,18), 243.0, Color.MAGENTA)
     )
 

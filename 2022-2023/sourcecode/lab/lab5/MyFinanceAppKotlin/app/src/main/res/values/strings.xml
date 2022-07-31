@@ -7,4 +7,11 @@
     <string name="bills_name">Bills</string>
     <string name="continueButton">continue</string>
     <string name="total">Total</string>
+    <string name="accounts">Accounts</string>
+    <string name="bills">Bills</string>
+    <string name="alerts">Alerts</string>
+    <string name="go_to_accounts">Go to Accounts</string>
+    <string name="go_to_bills">Go to bills</string>
+    <string name="no_alerts">No alerts!!!</string>
+    <string name="see_more">See More</string>
 </resources>
