@@ -19,7 +19,7 @@ import app.futured.donut.DonutProgressView;
 import app.futured.donut.DonutSection;
 import pl.edu.uwr.pum.myfinanceappjava.R;
 import pl.edu.uwr.pum.myfinanceappjava.adapters.AccountAdapter;
-import pl.edu.uwr.pum.myfinanceappjava.data.Accounts;
+import pl.edu.uwr.pum.myfinanceappjava.data.Account;
 import pl.edu.uwr.pum.myfinanceappjava.data.DataProvider;
 import pl.edu.uwr.pum.myfinanceappjava.util.FormatterUtil;
 
@@ -43,17 +43,17 @@ public class AccountsFragment extends Fragment {
 
         DonutProgressView donut = view.findViewById(R.id.donut_viewAccount);
         List<DonutSection> values = new ArrayList<>();
-        for (Accounts item : DataProvider.accounts){
+        for (Account item : DataProvider.accounts){
             values.add(
                     new DonutSection(
                             item.getName(),
                             item.getColor(),
-                            ((float) item.getAmount() / (float) DataProvider.totalAmount))
+                            ((float) item.getAmount() / (float) DataProvider.totalAccountsAmount))
             );
         }
         donut.submitData(values);
 
         TextView totalAmountTextView = view.findViewById(R.id.totalAmountTextView);
-        totalAmountTextView.setText(String.format("%s zł", FormatterUtil.formatter.format(DataProvider.totalAmount)));
+        totalAmountTextView.setText(String.format("%s zł", FormatterUtil.formatter.format(DataProvider.totalAccountsAmount)));
     }
 }

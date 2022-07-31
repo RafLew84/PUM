@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import pl.edu.uwr.pum.myfinanceappjava.R;
-import pl.edu.uwr.pum.myfinanceappjava.data.Account;
+import pl.edu.uwr.pum.myfinanceappjava.data.Bill;
 import pl.edu.uwr.pum.myfinanceappjava.data.DataProvider;
 import pl.edu.uwr.pum.myfinanceappjava.util.FormatterUtil;
 
-public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.ViewHolder> {
+public class BillAdapter extends RecyclerView.Adapter<BillAdapter.ViewHolder> {
 
     @NonNull
     @Override
@@ -25,7 +25,7 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Account item = DataProvider.accounts[position];
+        Bill item = DataProvider.bills[position];
         holder.bind(item);
     }
 
@@ -37,22 +37,22 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.ViewHold
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         private final TextView nameTextView;
-        private final TextView accountNumberTextView;
+        private final TextView endDateTextView;
         private final View colorBar;
         private final TextView amountTextView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             nameTextView = itemView.findViewById(R.id.RVaccountNameTextView);
-            accountNumberTextView = itemView.findViewById(R.id.RVaccountsNumberTextView);
+            endDateTextView = itemView.findViewById(R.id.RVaccountsNumberTextView);
             colorBar = itemView.findViewById(R.id.RVcolorBarView);
             amountTextView = itemView.findViewById(R.id.RVaccountValueTextView);
         }
 
-        public void bind(Account item){
+        public void bind(Bill item){
             nameTextView.setText(item.getName());
-            accountNumberTextView.setText(new StringBuilder(item.getNumber()).replace(0, 6, "******").toString());
-            amountTextView.setText(String.format("%s zł", FormatterUtil.formatter.format(item.getAmount())));
+            endDateTextView.setText(item.getDate().format(FormatterUtil.dateFormatter));
+            amountTextView.setText(String.format("- %s zł", FormatterUtil.formatter.format(item.getAmount())));
             colorBar.setBackgroundColor(item.getColor());
         }
     }

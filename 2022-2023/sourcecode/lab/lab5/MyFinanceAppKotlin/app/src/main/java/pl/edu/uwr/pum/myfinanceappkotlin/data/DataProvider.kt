@@ -19,7 +19,7 @@ object DataProvider {
         Bill("Rent", LocalDate.of(2022, 8,3), 1023.87, Color.YELLOW),
         Bill("Loan", LocalDate.of(2022, 12,22), 334.0, Color.GRAY),
         Bill("Car Repair", LocalDate.of(2023, 1,9), 982.33, Color.WHITE),
-        Bill("Dress Loan", LocalDate.of(2023, 5,18), 243.0, Color.MAGENTA),
+        Bill("Dress Loan", LocalDate.of(2023, 5,18), 243.0, Color.MAGENTA)
     )
 
     val totalAccountsAmount = (accounts.indices).sumOf { accounts[it].amount }

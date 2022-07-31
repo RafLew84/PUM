@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import app.futured.donut.DonutProgressView
 import app.futured.donut.DonutSection
 import pl.edu.uwr.pum.myfinanceappkotlin.R
-import pl.edu.uwr.pum.myfinanceappkotlin.adapters.AccountsAdapter
+import pl.edu.uwr.pum.myfinanceappkotlin.adapters.AccountAdapter
 import pl.edu.uwr.pum.myfinanceappkotlin.data.DataProvider
 import pl.edu.uwr.pum.myfinanceappkotlin.util.formatter
 
@@ -29,7 +29,7 @@ class AccountsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<RecyclerView>(R.id.recyclerView).apply {
-            adapter = AccountsAdapter()
+            adapter = AccountAdapter()
             layoutManager = LinearLayoutManager(this.context)
         }
 
