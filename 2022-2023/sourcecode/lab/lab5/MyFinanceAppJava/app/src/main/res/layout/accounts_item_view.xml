@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/RVNumberTextView"
+        android:id="@+id/RVaccountsNumberTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -30,10 +30,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/RVcolorBarView"
-        app:layout_constraintTop_toBottomOf="@+id/RVNameTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/RVaccountNameTextView" />
 
     <TextView
-        android:id="@+id/RVNameTextView"
+        android:id="@+id/RVaccountNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/RVValueTextView"
+        android:id="@+id/RVaccountValueTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"

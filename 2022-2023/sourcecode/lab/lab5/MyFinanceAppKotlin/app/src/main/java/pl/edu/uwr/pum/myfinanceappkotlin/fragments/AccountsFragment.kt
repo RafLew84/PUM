@@ -12,7 +12,6 @@ import app.futured.donut.DonutProgressView
 import app.futured.donut.DonutSection
 import pl.edu.uwr.pum.myfinanceappkotlin.R
 import pl.edu.uwr.pum.myfinanceappkotlin.adapters.AccountsAdapter
-import pl.edu.uwr.pum.myfinanceappkotlin.data.Accounts
 import pl.edu.uwr.pum.myfinanceappkotlin.data.DataProvider
 import pl.edu.uwr.pum.myfinanceappkotlin.util.formatter
 
@@ -24,7 +23,7 @@ class AccountsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_accounts, container, false)
+        return inflater.inflate(R.layout.fragment_detail_info, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

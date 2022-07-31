@@ -12,10 +12,10 @@ import pl.edu.uwr.pum.myfinanceappkotlin.util.formatter
 
 class AccountsAdapter : RecyclerView.Adapter<AccountsAdapter.ViewHolder>(){
     inner class ViewHolder (view: View) : RecyclerView.ViewHolder(view) {
-        private val nameTextView: TextView = view.findViewById(R.id.ARVaccountNameTextView)
-        private val accountNumberTextView: TextView = view.findViewById(R.id.ARVaccountsNumberTextView)
-        private val colorBar: View = view.findViewById(R.id.ARVcolorBarView)
-        private val amountTextView: TextView = view.findViewById(R.id.ARVaccountValueTextView)
+        private val nameTextView: TextView = view.findViewById(R.id.RVNameTextView)
+        private val accountNumberTextView: TextView = view.findViewById(R.id.RVNumberTextView)
+        private val colorBar: View = view.findViewById(R.id.RVcolorBarView)
+        private val amountTextView: TextView = view.findViewById(R.id.RVValueTextView)
 
         fun bind(item: Accounts){
             nameTextView.text = item.name
