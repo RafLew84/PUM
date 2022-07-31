@@ -6,4 +6,5 @@
     <string name="accounts_name">Accounts</string>
     <string name="bills_name">Bills</string>
     <string name="continueButton">continue</string>
+    <string name="total">Total</string>
 </resources>
