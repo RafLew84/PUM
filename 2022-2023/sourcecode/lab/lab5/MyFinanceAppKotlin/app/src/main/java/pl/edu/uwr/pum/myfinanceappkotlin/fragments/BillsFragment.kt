@@ -14,6 +14,6 @@ class BillsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bills, container, false)
+        return inflater.inflate(R.layout.fragment_accounts, container, false)
     }
 }
