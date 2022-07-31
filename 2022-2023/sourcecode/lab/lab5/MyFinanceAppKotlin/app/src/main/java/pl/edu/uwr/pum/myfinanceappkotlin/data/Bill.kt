@@ -1,8 +1,11 @@
 package pl.edu.uwr.pum.myfinanceappkotlin.data
 
-data class Accounts(
+import java.time.LocalDate
+import java.util.*
+
+data class Bill (
     val name: String,
-    val number: String,
+    val endDate: LocalDate,
     val amount: Double,
     val color: Int
-)
+        )

@@ -28,7 +28,7 @@ class AccountsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<RecyclerView>(R.id.accountsRV).apply {
+        view.findViewById<RecyclerView>(R.id.recyclerView).apply {
             adapter = AccountsAdapter()
             layoutManager = LinearLayoutManager(this.context)
         }
@@ -37,13 +37,13 @@ class AccountsFragment : Fragment() {
             val values = (0 until DataProvider.accounts.size).map { DonutSection(
                 DataProvider.accounts[it].name,
                 DataProvider.accounts[it].color,
-                DataProvider.accounts[it].amount.toFloat() / DataProvider.totalAmount.toFloat()
+                DataProvider.accounts[it].amount.toFloat() / DataProvider.totalAccountsAmount.toFloat()
             ) }
             submitData(values)
         }
 
         view.findViewById<TextView>(R.id.totalAmountTextView).apply {
-            ("${formatter.format(DataProvider.totalAmount)} zł").also { text = it }
+            ("${formatter.format(DataProvider.totalAccountsAmount)} zł").also { text = it }
         }
     }
 }
