@@ -1,16 +1,13 @@
 package pl.edu.uwr.pum.myfinanceappkotlin.fragments
 
-import android.content.Context
-import android.content.DialogInterface
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -20,6 +17,7 @@ import pl.edu.uwr.pum.myfinanceappkotlin.adapters.AccountAdapter
 import pl.edu.uwr.pum.myfinanceappkotlin.adapters.BillAdapter
 import pl.edu.uwr.pum.myfinanceappkotlin.data.DataProvider
 import pl.edu.uwr.pum.myfinanceappkotlin.util.formatter
+
 
 class OverviewFragment : Fragment() {
 
@@ -61,6 +59,14 @@ class OverviewFragment : Fragment() {
 
         view.findViewById<Button>(R.id.seeMoreButton).apply {
             setOnClickListener {
+                val builder = AlertDialog.Builder(context, R.style.MyDialogTheme)
+                builder.setTitle("Name")
+                val customLayout: View = layoutInflater
+                    .inflate(R.layout.alert_dialog, null)
+                builder.setView(customLayout)
+                builder.setPositiveButton("OK") { _, _ -> }
+                val dialog = builder.create()
+                dialog.show()
             }
         }
     }
