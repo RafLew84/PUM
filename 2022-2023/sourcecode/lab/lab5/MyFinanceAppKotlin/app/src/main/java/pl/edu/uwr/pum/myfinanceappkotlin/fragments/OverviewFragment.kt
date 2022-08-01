@@ -1,5 +1,6 @@
 package pl.edu.uwr.pum.myfinanceappkotlin.fragments
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,6 +30,7 @@ class OverviewFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_overview, container, false)
     }
 
+    @SuppressLint("InflateParams")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<RecyclerView>(R.id.accountsRecyclerView).apply {
@@ -59,14 +61,12 @@ class OverviewFragment : Fragment() {
 
         view.findViewById<Button>(R.id.seeMoreButton).apply {
             setOnClickListener {
-                val builder = AlertDialog.Builder(context, R.style.MyDialogTheme)
-                builder.setTitle("Name")
-                val customLayout: View = layoutInflater
-                    .inflate(R.layout.alert_dialog, null)
-                builder.setView(customLayout)
-                builder.setPositiveButton("OK") { _, _ -> }
-                val dialog = builder.create()
-                dialog.show()
+                AlertDialog.Builder(context, R.style.MyDialogTheme)
+                    .setTitle(getString(R.string.alerts))
+                    .setView(layoutInflater.inflate(R.layout.alert_dialog, null))
+                    .setPositiveButton("OK") { _, _ -> }
+                    .create()
+                    .show()
             }
         }
     }

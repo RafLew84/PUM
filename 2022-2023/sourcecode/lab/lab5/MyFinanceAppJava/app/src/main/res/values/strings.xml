@@ -6,4 +6,9 @@
     <string name="bills">Bills</string>
     <string name="overview">Overview</string>
     <string name="total">Total</string>
+    <string name="alerts">Alerts</string>
+    <string name="no_alerts">No alerts !!!</string>
+    <string name="see_more">See more</string>
+    <string name="go_to_accounts">go to accounts</string>
+    <string name="go_to_bills">go to bills</string>
 </resources>
