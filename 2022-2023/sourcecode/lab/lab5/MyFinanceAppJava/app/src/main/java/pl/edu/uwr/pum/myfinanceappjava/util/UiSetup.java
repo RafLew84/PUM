@@ -70,9 +70,9 @@ public final class UiSetup {
         for (int i = 0; i < vg.getChildCount(); i++) {
             if (i == tabLayout.getSelectedTabPosition())
                 continue;
-            View a = vg.getChildAt(i);
-            a.setScaleX(tabScaleLow);
-            a.setScaleY(tabScaleLow);
+            View tab = vg.getChildAt(i);
+            tab.setScaleX(tabScaleLow);
+            tab.setScaleY(tabScaleLow);
         }
     }
 
