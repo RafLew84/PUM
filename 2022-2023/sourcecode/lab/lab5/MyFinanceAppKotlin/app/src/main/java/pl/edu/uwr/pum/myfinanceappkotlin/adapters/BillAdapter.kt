@@ -29,7 +29,7 @@ class BillAdapter : RecyclerView.Adapter<BillAdapter.ViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             LayoutInflater.from(parent.context).inflate(
-                R.layout.rtecyclerview_item_view, parent, false
+                R.layout.recyclerview_item_view, parent, false
             ))
     }
 
