@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/overviewFragment"
+        android:title="@string/overview" />
+    <item
+        android:id="@id/timeLineFragment"
+        android:title="@string/time_line" />
+
+    <item
+        android:id="@id/calculatorsFragment"
+        android:title="@string/calculators" />
+</menu>
