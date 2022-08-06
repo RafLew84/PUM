@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/overviewFragment">
+
+    <fragment
+        android:id="@+id/calculatorsFragment"
+        android:name="pl.udu.uwr.pum.carsyappjava.fragments.CalculatorsFragment"
+        android:label="fragment_calculators"
+        tools:layout="@layout/fragment_calculators" />
+    <fragment
+        android:id="@+id/overviewFragment"
+        android:name="pl.udu.uwr.pum.carsyappjava.fragments.OverviewFragment"
+        android:label="fragment_overview"
+        tools:layout="@layout/fragment_overview" />
+    <fragment
+        android:id="@+id/timeLineFragment"
+        android:name="pl.udu.uwr.pum.carsyappjava.fragments.TimeLineFragment"
+        android:label="fragment_time_line"
+        tools:layout="@layout/fragment_time_line" />
+</navigation>
