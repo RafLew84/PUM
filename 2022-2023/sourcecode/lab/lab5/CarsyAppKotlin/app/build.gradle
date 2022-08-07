@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "pl.udu.uwr.pum.carsyappkotlin"
-        minSdk 26
+        minSdk 28
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -34,7 +34,7 @@ android {
 
 dependencies {
 
-    def nav_version = "2.5.0"
+    def nav_version = "2.5.1"
     implementation "androidx.navigation:navigation-fragment:$nav_version"
     implementation "androidx.navigation:navigation-ui:$nav_version"
 

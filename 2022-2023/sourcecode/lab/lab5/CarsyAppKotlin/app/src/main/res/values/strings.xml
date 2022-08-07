@@ -5,4 +5,7 @@
     <string name="calculators">Calculators</string>
     <string name="overview">Overview</string>
     <string name="time_line">Time line</string>
+    <string name="bullet">bullet</string>
+    <string name="date">date</string>
+    <string name="costtype_name">CostType Name</string>
 </resources>
