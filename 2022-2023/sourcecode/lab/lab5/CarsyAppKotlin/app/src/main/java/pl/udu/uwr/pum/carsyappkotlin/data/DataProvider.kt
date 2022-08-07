@@ -2,23 +2,18 @@ package pl.udu.uwr.pum.carsyappkotlin.data
 
 import java.time.LocalDate
 import java.util.*
+import kotlin.random.Random
 
 object DataProvider {
-    private val generalCosts = listOf(
-        Cost(CostType.REFUELING, LocalDate.of(2022, 2, 11), 120),
-        Cost(CostType.REFUELING, LocalDate.of(2022, 3, 11), 871),
-        Cost(CostType.SERVICE, LocalDate.of(2022, 4, 23), 1300),
-        Cost(CostType.PARKING, LocalDate.of(2022, 3, 3), 40),
-        Cost(CostType.INSURANCE, LocalDate.of(2022, 3, 9), 700),
-        Cost(CostType.TICKET, LocalDate.of(2022, 3, 12), 100),
-        Cost(CostType.REFUELING, LocalDate.of(2022, 3, 1), 600),
-        Cost(CostType.SERVICE, LocalDate.of(2022, 3, 1), 200),
-        Cost(CostType.REFUELING, LocalDate.of(2022, 4, 24), 400),
-        Cost(CostType.TICKET, LocalDate.of(2022, 4, 3), 300),
-        Cost(CostType.REFUELING, LocalDate.of(2022, 2, 20), 300)
-    )
+    private val generalCosts = List(100) {
+        Cost(
+            CostType.values()[Random.nextInt(CostType.values().size)],
+            LocalDate.of(2022, Random.nextInt(1,13), Random.nextInt(1,28)),
+            Random.nextInt(5000)
+        )
+    }
 
-    private val groupedCostMap: Map<String, List<Cost>> = generalCosts.groupBy { it.date.month.toString() }
+    private val groupedCostMap: Map<String, List<Cost>> = generalCosts.sortedBy { it.date.month }.groupBy { it.date.month.toString() }
 
     fun getTimeLineList(): List<CostListItem>{
         val list = mutableListOf<CostListItem>()

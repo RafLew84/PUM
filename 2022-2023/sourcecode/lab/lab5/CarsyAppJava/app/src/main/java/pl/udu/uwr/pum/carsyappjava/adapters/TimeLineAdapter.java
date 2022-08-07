@@ -24,7 +24,7 @@ import pl.udu.uwr.pum.carsyappjava.util.FormatterUtil;
 public class TimeLineAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private final Context context;
-    private ArrayList<CostListItem> itemList = DataProvider.getTimeLineList();
+    private final ArrayList<CostListItem> itemList = DataProvider.getTimeLineList();
 
     public TimeLineAdapter(Context context){
         this.context = context;
