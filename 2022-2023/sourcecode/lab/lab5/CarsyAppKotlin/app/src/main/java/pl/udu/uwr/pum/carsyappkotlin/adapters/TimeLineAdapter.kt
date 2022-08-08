@@ -67,7 +67,5 @@ class TimeLineAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.
 
     override fun getItemCount(): Int = itemList.size
 
-    override fun getItemViewType(position: Int): Int {
-        return itemList[position].type
-    }
+    override fun getItemViewType(position: Int): Int = itemList[position].type
 }
