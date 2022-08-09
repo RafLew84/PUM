@@ -13,9 +13,17 @@ public final class DataProvider {
     private DataProvider() {
     }
 
-    public static ArrayList<Cost> getGeneralCosts() {
+    public static ArrayList<Car> getCars(){
+        ArrayList<Car> cars = new ArrayList<>();
+        cars.add(new Car("Home Car", "Skoda", "Fabia", 2002, getGeneralCosts(100)));
+        cars.add(new Car("Work Car", "BMW", "Coupe", 2015, getGeneralCosts(50)));
+        cars.add(new Car("Fun Car", "Fiat", "125p", 1985, getGeneralCosts(10)));
+        return cars;
+    }
+
+    private static ArrayList<Cost> getGeneralCosts(int size) {
         ArrayList<Cost> items = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < size; i++) {
             items.add(new Cost(
                     CostType.values()[new Random().nextInt(CostType.values().length)],
                     LocalDate.of(2022, new Random().nextInt(12) + 1, new Random().nextInt(28) + 1),
@@ -24,8 +32,10 @@ public final class DataProvider {
         return items;
     }
 
-    public static ArrayList<CostListItem> getTimeLineList() {
+    public static ArrayList<CostListItem> getTimeLineList(ArrayList<Cost> costs) {
         ArrayList<CostListItem> items = new ArrayList<>();
+
+        final SortedMap<Month, ArrayList<Cost>> groupedHashMap = groupDataIntoHashMap(costs);
 
         for (Month date : groupedHashMap.keySet()) {
             ArrayList<Cost> groupingItems = groupedHashMap.get(date);
@@ -38,8 +48,6 @@ public final class DataProvider {
         }
         return items;
     }
-
-    private static final SortedMap<Month, ArrayList<Cost>> groupedHashMap = groupDataIntoHashMap(getGeneralCosts());
 
     private static SortedMap<Month, ArrayList<Cost>> groupDataIntoHashMap(ArrayList<Cost> itemList) {
 

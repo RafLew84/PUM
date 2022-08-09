@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import pl.udu.uwr.pum.carsyappjava.R;
+import pl.udu.uwr.pum.carsyappjava.data.Cost;
 import pl.udu.uwr.pum.carsyappjava.data.CostDateItem;
 import pl.udu.uwr.pum.carsyappjava.data.CostGeneralItem;
 import pl.udu.uwr.pum.carsyappjava.data.CostListItem;
@@ -24,10 +25,11 @@ import pl.udu.uwr.pum.carsyappjava.util.FormatterUtil;
 public class TimeLineAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private final Context context;
-    private final ArrayList<CostListItem> itemList = DataProvider.getTimeLineList();
+    private final ArrayList<CostListItem> itemList;
 
-    public TimeLineAdapter(Context context){
+    public TimeLineAdapter(Context context, ArrayList<Cost> costs){
         this.context = context;
+        this.itemList = DataProvider.getTimeLineList(costs);
         Collections.reverse(itemList);
     }
 

@@ -1,14 +1,21 @@
 package pl.udu.uwr.pum.carsyappkotlin.fragments
 
 import android.os.Bundle
+import android.provider.ContactsContract
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Spinner
+import android.widget.SpinnerAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import pl.udu.uwr.pum.carsyappkotlin.R
 import pl.udu.uwr.pum.carsyappkotlin.adapters.TimeLineAdapter
+import pl.udu.uwr.pum.carsyappkotlin.data.Cost
+import pl.udu.uwr.pum.carsyappkotlin.data.DataProvider
 
 class TimeLineFragment : Fragment() {
 
@@ -22,9 +29,21 @@ class TimeLineFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<RecyclerView>(R.id.timeLineRecyclerView).apply {
+        val recycler = view.findViewById<RecyclerView>(R.id.timeLineRecyclerView).apply {
             layoutManager = LinearLayoutManager(context)
-            adapter = TimeLineAdapter(context)
+            adapter = TimeLineAdapter(context, DataProvider.cars[0].costs)
+        }
+        view.findViewById<Spinner>(R.id.cars_spinner).apply {
+            adapter = ArrayAdapter(context, R.layout.spinner_layout, DataProvider.cars.map { it.name })
+            onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+                override fun onItemSelected(parent: AdapterView<*>?,
+                                            view: View, position: Int,
+                                            id: Long) {
+                    recycler.swapAdapter(TimeLineAdapter(context, DataProvider.cars[position].costs), true)
+                }
+
+                override fun onNothingSelected(parent: AdapterView<*>?) {}
+            }
         }
     }
 }

@@ -12,9 +12,9 @@ import pl.udu.uwr.pum.carsyappkotlin.R
 import pl.udu.uwr.pum.carsyappkotlin.data.*
 import pl.udu.uwr.pum.carsyappkotlin.util.dateFormatter
 
-class TimeLineAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class TimeLineAdapter(private val context: Context, costList: List<Cost>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    private val itemList = DataProvider.getTimeLineList().reversed()
+    private val itemList = DataProvider.getTimeLineList(costList).reversed()
 
     inner class DateViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
