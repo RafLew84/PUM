@@ -15,9 +15,9 @@ public final class DataProvider {
 
     public static ArrayList<Car> getCars(){
         ArrayList<Car> cars = new ArrayList<>();
-        cars.add(new Car("Home Car", "Skoda", "Fabia", 2002, getGeneralCosts(100)));
-        cars.add(new Car("Work Car", "BMW", "Coupe", 2015, getGeneralCosts(50)));
-        cars.add(new Car("Fun Car", "Fiat", "125p", 1985, getGeneralCosts(10)));
+        cars.add(new Car("Domowy", "Skoda", "Fabia", 2002, getGeneralCosts(100)));
+        cars.add(new Car("Służbowy", "BMW", "Coupe", 2015, getGeneralCosts(50)));
+        cars.add(new Car("Kolekcjonerski", "Fiat", "125p", 1985, getGeneralCosts(10)));
         return cars;
     }
 

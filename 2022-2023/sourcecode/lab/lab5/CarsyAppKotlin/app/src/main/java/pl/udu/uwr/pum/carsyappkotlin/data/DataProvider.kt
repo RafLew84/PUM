@@ -7,9 +7,9 @@ import kotlin.random.Random
 object DataProvider {
 
     val cars = listOf(
-        Car("Home Car", "Skoda", "Fabia", 2002, generalCosts(100)),
-        Car("Work Car", "BMW", "Coupe", 2015, generalCosts(50)),
-        Car("Fun Car", "Fiat", "125p", 1985, generalCosts(10))
+        Car("Domowy", "Skoda", "Fabia", 2002, generalCosts(100)),
+        Car("Służbowy", "BMW", "Coupe", 2015, generalCosts(50)),
+        Car("Kolekcjonerski", "Fiat", "125p", 1985, generalCosts(10))
     )
 
     fun getTimeLineList(costs: List<Cost>): List<CostListItem>{

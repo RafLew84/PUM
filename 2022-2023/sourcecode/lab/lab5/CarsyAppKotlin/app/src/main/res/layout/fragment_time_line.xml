@@ -9,6 +9,9 @@
     <Spinner
         android:id="@+id/cars_spinner"
         android:layout_width="match_parent"
+        android:drawSelectorOnTop="true"
+        android:background="@drawable/spinner_bg"
+        style="@style/Widget.AppCompat.Spinner"
         android:layout_height="wrap_content" />
 
     <androidx.recyclerview.widget.RecyclerView
