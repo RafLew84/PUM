@@ -8,4 +8,7 @@
     <string name="bullet">bullet</string>
     <string name="date">date</string>
     <string name="costtype_name">CostType Name</string>
+    <string name="odleg_o">Odległość [km]</string>
+    <string name="cena_za_litr">Cena za litr [PLN]</string>
+    <string name="spalanie">Spalanie [l/100km]</string>
 </resources>

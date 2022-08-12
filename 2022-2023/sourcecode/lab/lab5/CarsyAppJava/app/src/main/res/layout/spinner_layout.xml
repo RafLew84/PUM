@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/spinner_layout"
-    style="?attr/spinnerDropDownItemStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:backgroundTint="?attr/colorAccent"
     android:ellipsize="marquee"
     android:fontFamily="sans-serif"
     android:gravity="center"
-    android:outlineProvider="background"
+    android:textColor="?attr/colorOnPrimary"
+    android:background="@drawable/spinner_bg"
     android:singleLine="true"
     android:text="CAR"
-    android:textSize="45sp" />
+    android:padding="10dp"
+    android:textSize="35sp" />
