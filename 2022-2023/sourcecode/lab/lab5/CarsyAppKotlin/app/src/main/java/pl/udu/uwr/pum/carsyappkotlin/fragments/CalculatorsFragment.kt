@@ -31,6 +31,7 @@ class CalculatorsFragment : Fragment() {
 
             val titles = listOf("Koszt podróży", "Odległość", "Wymagane paliwo")
             adapter = ArrayAdapter(context, R.layout.spinner_layout, titles)
+                .apply { setDropDownViewResource(R.layout.spinner_dropdown_layout) }
 
             onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(

@@ -35,6 +35,7 @@ class TimeLineFragment : Fragment() {
         }
         view.findViewById<Spinner>(R.id.cars_spinner).apply {
             adapter = ArrayAdapter(context, R.layout.spinner_layout, DataProvider.cars.map { it.name })
+                .apply { setDropDownViewResource(R.layout.spinner_dropdown_layout) }
             onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
                 override fun onItemSelected(parent: AdapterView<*>?,
                                             view: View?, position: Int,

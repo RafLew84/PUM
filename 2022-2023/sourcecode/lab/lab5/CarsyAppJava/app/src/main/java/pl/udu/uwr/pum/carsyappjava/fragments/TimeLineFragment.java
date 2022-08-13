@@ -40,8 +40,10 @@ public class TimeLineFragment extends Fragment {
         recyclerView.setAdapter(new TimeLineAdapter(requireContext(), DataProvider.getCars().get(0).getCosts()));
 
         Spinner spinner = view.findViewById(R.id.cars_spinner);
-        spinner.setAdapter(new ArrayAdapter<>(getContext(), R.layout.spinner_layout,
-                DataProvider.getCars().stream().map(Car::getName).collect(Collectors.toList())));
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), R.layout.spinner_layout,
+                DataProvider.getCars().stream().map(Car::getName).collect(Collectors.toList()));
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_layout);
+        spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

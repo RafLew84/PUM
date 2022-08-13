@@ -38,7 +38,10 @@ public class CalculatorsFragment extends Fragment {
 
         String[] titles = {"Koszt podróży", "Odległość", "Wymagane paliwo"};
         Spinner spinner = view.findViewById(R.id.calculators_spinner);
-        spinner.setAdapter(new ArrayAdapter<>(getContext(), R.layout.spinner_layout, titles));
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), R.layout.spinner_layout, titles);
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_layout);
+        spinner.setAdapter(adapter);
+
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
