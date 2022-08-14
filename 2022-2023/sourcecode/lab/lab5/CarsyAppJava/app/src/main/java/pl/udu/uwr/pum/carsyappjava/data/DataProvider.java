@@ -18,6 +18,9 @@ public final class DataProvider {
         cars.add(new Car("Domowy", "Skoda", "Fabia", 2002, getGeneralCosts(100)));
         cars.add(new Car("Służbowy", "BMW", "Coupe", 2015, getGeneralCosts(50)));
         cars.add(new Car("Kolekcjonerski", "Fiat", "125p", 1985, getGeneralCosts(10)));
+        cars.add(new Car("Sportowy", "Lamborghini", "Murcielago", 2012, getGeneralCosts(46)));
+        cars.add(new Car("Zapasowy", "Skoda", "Superb", 2010, getGeneralCosts(34)));
+        cars.add(new Car("SUV", "Skoda", "Kodiaq", 2020, getGeneralCosts(19)));
         return cars;
     }
 

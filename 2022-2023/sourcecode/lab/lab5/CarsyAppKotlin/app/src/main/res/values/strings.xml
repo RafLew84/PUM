@@ -11,4 +11,21 @@
     <string name="odleg_o">Odległość [km]</string>
     <string name="cena_za_litr">Cena za litr [PLN]</string>
     <string name="spalanie">Spalanie [l/100km]</string>
+    <string name="car_name">Skoda</string>
+    <string name="tankowanie">Tankowanie:</string>
+    <string name="serwis">Serwis:</string>
+    <string name="parkowanie">Parkowanie:</string>
+    <string name="ubezpieczenie">Ubezpieczenie:</string>
+    <string name="mandat">Mandat:</string>
+    <string name="podsumowanie">Podsumowanie kosztów</string>
+    <string name="gara">Garaż</string>
+    <string name="domowy">Domowy</string>
+    <string name="marka">Marka:</string>
+    <string name="model">Model:</string>
+    <string name="skoda">Skoda</string>
+    <string name="fabia">Fabia</string>
+    <string name="rok">Rok:</string>
+    <string name="_1999">1999</string>
+    <string name="suma_koszt_w">Suma:</string>
+    <string name="koszty_ca_kowite">Koszty całkowite</string>
 </resources>

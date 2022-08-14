@@ -9,7 +9,10 @@ object DataProvider {
     val cars = listOf(
         Car("Domowy", "Skoda", "Fabia", 2002, generalCosts(100)),
         Car("Służbowy", "BMW", "Coupe", 2015, generalCosts(50)),
-        Car("Kolekcjonerski", "Fiat", "125p", 1985, generalCosts(10))
+        Car("Kolekcjonerski", "Fiat", "125p", 1985, generalCosts(10)),
+        Car("Sportowy", "Lamborghini", "Murcielago", 2012, generalCosts(46)),
+        Car("Zapasowy", "Skoda", "Superb", 2010, generalCosts(34)),
+        Car("SUV", "Skoda", "Kodiaq", 2020, generalCosts(19))
     )
 
     fun getTimeLineList(costs: List<Cost>): List<CostListItem>{
