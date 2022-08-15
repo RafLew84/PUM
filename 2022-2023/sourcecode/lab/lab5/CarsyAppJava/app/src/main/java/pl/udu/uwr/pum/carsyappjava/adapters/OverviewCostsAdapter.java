@@ -44,21 +44,20 @@ public class OverviewCostsAdapter extends RecyclerView.Adapter<OverviewCostsAdap
 
         public void bind (Car item){
             carNameTextView.setText(item.getName());
-            refuelingTextView.setText(FormatterUtil.decimalFormat.format(
-                    item.getCosts().stream().filter(i-> i.getType() == CostType.REFUELING).map(Cost::getAmount).reduce(0, Integer::sum)
-            ));
-            serviceTextView.setText(FormatterUtil.decimalFormat.format(
-                    item.getCosts().stream().filter(i-> i.getType() == CostType.SERVICE).map(Cost::getAmount).reduce(0, Integer::sum)
-            ));
-            parkingTextView.setText(FormatterUtil.decimalFormat.format(
-                    item.getCosts().stream().filter(i-> i.getType() == CostType.PARKING).map(Cost::getAmount).reduce(0, Integer::sum)
-            ));
-            insuranceTextView.setText(FormatterUtil.decimalFormat.format(
-                    item.getCosts().stream().filter(i-> i.getType() == CostType.INSURANCE).map(Cost::getAmount).reduce(0, Integer::sum)
-            ));
-            ticketTextView.setText(FormatterUtil.decimalFormat.format(
-                    item.getCosts().stream().filter(i-> i.getType() == CostType.TICKET).map(Cost::getAmount).reduce(0, Integer::sum)
-            ));
+            refuelingTextView.setText(costValue(item, CostType.REFUELING));
+            serviceTextView.setText(costValue(item, CostType.SERVICE));
+            parkingTextView.setText(costValue(item, CostType.PARKING));
+            insuranceTextView.setText(costValue(item, CostType.INSURANCE));
+            ticketTextView.setText(costValue(item, CostType.TICKET));
+        }
+
+        private String costValue(Car item, CostType costType){
+            return FormatterUtil.decimalFormat.format(
+                    item.getCosts().stream()
+                            .filter(i-> i.getType() == costType)
+                            .map(Cost::getAmount)
+                            .reduce(0, Integer::sum)
+            );
         }
     }
 
