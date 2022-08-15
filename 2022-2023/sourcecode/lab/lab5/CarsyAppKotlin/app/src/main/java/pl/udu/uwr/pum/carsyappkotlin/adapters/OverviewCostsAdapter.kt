@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import pl.udu.uwr.pum.carsyappkotlin.R
 import pl.udu.uwr.pum.carsyappkotlin.data.Car
+import pl.udu.uwr.pum.carsyappkotlin.data.Cost
 import pl.udu.uwr.pum.carsyappkotlin.data.CostType
 import pl.udu.uwr.pum.carsyappkotlin.data.DataProvider
 import pl.udu.uwr.pum.carsyappkotlin.util.decimalFormat
@@ -25,20 +26,16 @@ class OverviewCostsAdapter : RecyclerView.Adapter<OverviewCostsAdapter.ViewHolde
 
         fun bind (item: Car){
             carNameTextView.text = item.name
-            refuelingTextView.text = decimalFormat.format(item.costs
-                .filter { it.type == CostType.REFUELING }
-                .sumOf { it.amount }).toString()
-            serviceTextView.text = decimalFormat.format(item.costs
-                .filter { it.type == CostType.SERVICE }
-                .sumOf { it.amount }).toString()
-            parkingTextView.text = decimalFormat.format(item.costs
-                .filter { it.type == CostType.PARKING }
-                .sumOf { it.amount }).toString()
-            insuranceTextView.text = decimalFormat.format(item.costs
-                .filter { it.type == CostType.INSURANCE }
-                .sumOf { it.amount }).toString()
-            ticketTextView.text = decimalFormat.format(item.costs
-                .filter { it.type == CostType.TICKET }
+            refuelingTextView.text = costValue(item, CostType.REFUELING)
+            serviceTextView.text = costValue(item, CostType.SERVICE)
+            parkingTextView.text = costValue(item, CostType.PARKING)
+            insuranceTextView.text = costValue(item, CostType.INSURANCE)
+            ticketTextView.text = costValue(item, CostType.TICKET)
+        }
+
+        private fun costValue(item: Car, costType: CostType): String{
+            return decimalFormat.format(item.costs
+                .filter { it.type == costType }
                 .sumOf { it.amount }).toString()
         }
     }
