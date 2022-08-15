@@ -49,27 +49,27 @@ public class OverviewFragment extends Fragment {
         carsRecyclerView.setAdapter(new OverviewCarsAdapter());
 
         TextView refuelingTextView = view.findViewById(R.id.overviewFueling);
-        refuelingTextView.setText(FormatterUtil.decimalFormat.format(totalValue(CostType.REFUELING)));
+        refuelingTextView.setText(totalValue(CostType.REFUELING));
 
         TextView serviceTextView = view.findViewById(R.id.overviewService);
-        serviceTextView.setText(FormatterUtil.decimalFormat.format(totalValue(CostType.SERVICE)));
+        serviceTextView.setText(totalValue(CostType.SERVICE));
 
         TextView parkingTextView = view.findViewById(R.id.overviewParking);
-        parkingTextView.setText(FormatterUtil.decimalFormat.format(totalValue(CostType.PARKING)));
+        parkingTextView.setText(totalValue(CostType.PARKING));
 
         TextView insuranceTextView = view.findViewById(R.id.overviewInsurance);
-        insuranceTextView.setText(FormatterUtil.decimalFormat.format(totalValue(CostType.INSURANCE)));
+        insuranceTextView.setText(totalValue(CostType.INSURANCE));
 
         TextView ticketTextView = view.findViewById(R.id.overviewTicket);
-        ticketTextView.setText(FormatterUtil.decimalFormat.format(totalValue(CostType.TICKET)));
+        ticketTextView.setText(totalValue(CostType.TICKET));
 
     }
 
-    private int totalValue(CostType costType){
-        return  DataProvider.getCars().stream()
+    private String totalValue(CostType costType){
+        return  FormatterUtil.decimalFormat.format(DataProvider.getCars().stream()
                 .flatMap(list -> list.getCosts().stream())
                 .filter(i-> i.getType() == costType)
                 .map(Cost::getAmount)
-                .reduce(0, Integer::sum);
+                .reduce(0, Integer::sum)) + " zł";
     }
 }

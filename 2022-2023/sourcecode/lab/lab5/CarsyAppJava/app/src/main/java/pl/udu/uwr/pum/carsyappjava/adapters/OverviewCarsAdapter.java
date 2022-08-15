@@ -43,7 +43,11 @@ public class OverviewCarsAdapter extends RecyclerView.Adapter<OverviewCarsAdapte
             brandTextView.setText(item.getBrand());
             modelTextView.setText(item.getModel());
             yearTextView.setText(item.getYearOfProduction());
-            totalCostsTextView.setText(FormatterUtil.decimalFormat.format(item.getCosts().stream().map(Cost::getAmount).reduce(0, Integer::sum)));
+            totalCostsTextView.setText(String.format("%s zł",
+                    FormatterUtil.decimalFormat.format(
+                            item.getCosts().stream()
+                                    .map(Cost::getAmount)
+                                    .reduce(0, Integer::sum))));
         }
     }
 

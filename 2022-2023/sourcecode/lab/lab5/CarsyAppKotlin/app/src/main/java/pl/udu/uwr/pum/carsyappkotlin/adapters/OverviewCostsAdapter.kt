@@ -36,7 +36,7 @@ class OverviewCostsAdapter : RecyclerView.Adapter<OverviewCostsAdapter.ViewHolde
         private fun costValue(item: Car, costType: CostType): String{
             return decimalFormat.format(item.costs
                 .filter { it.type == costType }
-                .sumOf { it.amount }).toString()
+                .sumOf { it.amount }).toString() + " zł"
         }
     }
 

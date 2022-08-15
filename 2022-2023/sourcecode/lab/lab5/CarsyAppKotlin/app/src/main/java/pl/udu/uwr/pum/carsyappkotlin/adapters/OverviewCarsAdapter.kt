@@ -26,7 +26,7 @@ class OverviewCarsAdapter : RecyclerView.Adapter<OverviewCarsAdapter.ViewHolder>
             brandTextView.text = item.brand
             modelTextView.text = item.model
             yearTextView.text = item.yearOfProduction.toString()
-            totalCostsTextView.text = decimalFormat.format(item.costs.sumOf { it.amount }).toString()
+            (decimalFormat.format(item.costs.sumOf { it.amount }).toString() + " zł").also { totalCostsTextView.text = it }
         }
     }
 

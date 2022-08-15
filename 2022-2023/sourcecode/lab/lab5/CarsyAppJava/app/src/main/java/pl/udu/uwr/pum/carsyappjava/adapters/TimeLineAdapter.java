@@ -67,7 +67,7 @@ public class TimeLineAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         public void bind(CostGeneralItem item){
             costTypeTextView.setText(item.getCost().getType().getCostType());
             fullDateTextView.setText(item.getCost().getDate().format(FormatterUtil.dateFormatter));
-            amountTextView.setText(item.getCost().getAmount());
+            amountTextView.setText(String.format("%s zł", FormatterUtil.decimalFormat.format(item.getCost().getAmount())));
             iconImageView.setBackground(ContextCompat.getDrawable(context, item.getCost().getType().getIcon()));
         }
     }

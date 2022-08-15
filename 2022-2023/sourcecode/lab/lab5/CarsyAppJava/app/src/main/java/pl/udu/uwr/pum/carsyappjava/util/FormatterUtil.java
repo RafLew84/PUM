@@ -8,5 +8,5 @@ public final class FormatterUtil {
 
     public static DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy MMM dd");
 
-    public static DecimalFormat decimalFormat = new DecimalFormat("###,###.## zł");
+    public static DecimalFormat decimalFormat = new DecimalFormat("###,###.##");
 }

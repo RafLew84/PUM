@@ -57,7 +57,7 @@ public class OverviewCostsAdapter extends RecyclerView.Adapter<OverviewCostsAdap
                             .filter(i-> i.getType() == costType)
                             .map(Cost::getAmount)
                             .reduce(0, Integer::sum)
-            );
+            ) + " zł";
         }
     }
 

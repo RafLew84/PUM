@@ -50,6 +50,6 @@ class OverviewFragment : Fragment() {
         return decimalFormat.format(DataProvider.cars
             .flatMap { it.costs }
             .filter { it.type == costType }
-            .sumOf { it.amount }).toString()
+            .sumOf { it.amount }).toString() + " zł"
     }
 }
