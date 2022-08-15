@@ -28,4 +28,6 @@
     <string name="_1999">1999</string>
     <string name="suma_koszt_w">Suma:</string>
     <string name="koszty_ca_kowite">Koszty całkowite</string>
+    <string name="garage">Garaż</string>
+    <string name="carsy">CARSY</string>
 </resources>

@@ -20,4 +20,9 @@
         android:name="pl.udu.uwr.pum.carsyappjava.fragments.TimeLineFragment"
         android:label="fragment_time_line"
         tools:layout="@layout/fragment_time_line" />
+    <fragment
+        android:id="@+id/garageFragment"
+        android:name="pl.udu.uwr.pum.carsyappjava.fragments.GarageFragment"
+        android:label="fragment_garage2"
+        tools:layout="@layout/fragment_garage" />
 </navigation>
