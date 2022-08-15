@@ -1,17 +1,16 @@
 package pl.udu.uwr.pum.carsyappkotlin.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.widget.ViewPager2
 import pl.udu.uwr.pum.carsyappkotlin.R
-import pl.udu.uwr.pum.carsyappkotlin.adapters.OverviewCostsAdapter
 import pl.udu.uwr.pum.carsyappkotlin.adapters.OverviewCarsAdapter
+import pl.udu.uwr.pum.carsyappkotlin.adapters.OverviewCostsAdapter
 import pl.udu.uwr.pum.carsyappkotlin.data.CostType
 import pl.udu.uwr.pum.carsyappkotlin.data.DataProvider
 import pl.udu.uwr.pum.carsyappkotlin.util.decimalFormat
