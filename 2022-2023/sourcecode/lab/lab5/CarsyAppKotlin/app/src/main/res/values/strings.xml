@@ -2,9 +2,9 @@
     <string name="app_name">CarsyAppKotlin</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="calculators">Kalkulator</string>
-    <string name="overview">Przegląd</string>
-    <string name="time_line">Linia czasu</string>
+    <string name="calculators">Calculators</string>
+    <string name="overview">Overview</string>
+    <string name="time_line">Time line</string>
     <string name="bullet">bullet</string>
     <string name="date">date</string>
     <string name="costtype_name">CostType Name</string>
@@ -28,6 +28,4 @@
     <string name="_1999">1999</string>
     <string name="suma_koszt_w">Suma:</string>
     <string name="koszty_ca_kowite">Koszty całkowite</string>
-    <string name="garage">Garaż</string>
-    <string name="carsy">CARSY</string>
 </resources>
