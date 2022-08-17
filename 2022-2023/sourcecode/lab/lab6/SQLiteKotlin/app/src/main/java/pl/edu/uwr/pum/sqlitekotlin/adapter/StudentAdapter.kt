@@ -22,7 +22,7 @@ class StudentAdapter(private val dbHandler: DBHandler, private val context: Cont
 
             itemBinding.imageViewDelete.setOnClickListener {
                 dbHandler.deleteStudent(item)
-                notifyItemRemoved(item.id - 1)
+                notifyItemRemoved(adapterPosition)
             }
 
             itemBinding.imageViewEdit.setOnClickListener {setupDialog(item) }
@@ -58,7 +58,7 @@ class StudentAdapter(private val dbHandler: DBHandler, private val context: Cont
 
             if (updateName.isNotEmpty() && updateIndex.isNotEmpty()) {
                 dbHandler.updateStudent(item.id, updateName, updateIndex.toInt())
-                notifyItemChanged(item.id - 1)
+                notifyItemChanged(adapterPosition)
                 dialog.dismiss()
             }
         }

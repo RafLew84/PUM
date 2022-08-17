@@ -15,7 +15,7 @@ import pl.edu.uwr.pum.sqlitejava.model.Student;
 public class DBHelper extends SQLiteOpenHelper {
 
     private static int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "studentsDBJava.db";
+    private static final String DATABASE_NAME = "studentsDBJava2.db";
     private static final String TABLE_STUDENTS = "StudentTable";
 
     private static final String COLUMN_ID = "_id";

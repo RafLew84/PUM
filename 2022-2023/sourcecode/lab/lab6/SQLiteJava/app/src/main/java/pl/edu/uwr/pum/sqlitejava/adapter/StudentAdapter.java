@@ -58,7 +58,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.ViewHold
 
             itemBinding.imageViewDelete.setOnClickListener(v -> {
                 dbHelper.deleteStudent(item);
-                notifyItemRemoved(item.getId() - 1);
+                notifyItemRemoved(getAdapterPosition());
             });
 
             itemBinding.imageViewEdit.setOnClickListener(v -> {
@@ -96,7 +96,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.ViewHold
 
             if (!updateName.isEmpty() && !updateIndex.isEmpty()){
                 dbHelper.updateStudent(item.getId(), updateName, Integer.parseInt(updateIndex));
-                notifyItemChanged(item.getId() - 1);
+                notifyItemChanged(getAdapterPosition());
                 dialog.dismiss();
             }
         }
