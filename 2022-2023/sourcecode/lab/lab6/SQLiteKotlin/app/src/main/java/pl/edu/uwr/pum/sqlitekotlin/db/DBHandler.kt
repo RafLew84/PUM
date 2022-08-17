@@ -47,12 +47,9 @@ class DBHandler(context: Context) : SQLiteOpenHelper(
     fun deleteStudent(student: Student){
         val db = this.writableDatabase
 
-        val contentValues = ContentValues()
-        contentValues.put(COLUMN_ID, student.id)
-
         db.delete(
             TABLE_STUDENTS,
-            COLUMN_ID + "=" + student.id,
+            "$COLUMN_ID=${student.id}",
             null)
         db.close()
     }
