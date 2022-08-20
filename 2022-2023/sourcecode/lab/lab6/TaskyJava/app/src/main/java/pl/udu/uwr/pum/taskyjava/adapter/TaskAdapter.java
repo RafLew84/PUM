@@ -23,8 +23,8 @@ import pl.udu.uwr.pum.taskyjava.util.SharedPrefUtil;
 
 public class TaskAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    private ArrayList<Task> taskList;
-    private ArrayList<TaskRow> rows;
+    private final ArrayList<Task> taskList;
+    private final ArrayList<TaskRow> rows;
 
     public TaskAdapter(ArrayList<Task> taskList){
         this.taskList = taskList;
@@ -42,11 +42,9 @@ public class TaskAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             rows.add(new TaskRow.Task(task.getName()));
             notifyItemInserted(rows.size());
         } else {
-            if (header.isExpanded()){
-                int i = rows.indexOf(new TaskRow.Header(task.getType().getName()));
-                rows.add(i + subList(task.getType().getName()).size(), new TaskRow.Task(task.getName()));
-                notifyItemInserted(i + subList(task.getType().getName()).size());
-            }
+            int i = rows.indexOf(new TaskRow.Header(task.getType().getName()));
+            rows.add(i + subList(task.getType().getName()).size(), new TaskRow.Task(task.getName()));
+            notifyItemInserted(i + subList(task.getType().getName()).size());
         }
     }
 
@@ -143,6 +141,9 @@ public class TaskAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     private List<TaskRow> subList(String groupName){
-        return taskList.stream().filter(i -> i.getType().getName().equals(groupName)).map(i -> new TaskRow.Task(i.getName())).collect(Collectors.toList());
+        return taskList.stream()
+                .filter(i -> i.getType().getName().equals(groupName))
+                .map(i -> new TaskRow.Task(i.getName()))
+                .collect(Collectors.toList());
     }
 }

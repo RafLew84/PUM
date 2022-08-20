@@ -1,7 +1,5 @@
 package pl.udu.uwr.pum.taskyjava.model;
 
-import androidx.annotation.Nullable;
-
 import java.util.Objects;
 
 public class TaskRow {
@@ -46,16 +44,10 @@ public class TaskRow {
 
     public static class Header extends TaskRow{
         private final String name;
-        private boolean isExpanded = true;
 
         public Header(String name){
             super(TaskRow.TYPE_HEADER);
             this.name = name;
-        }
-
-        public Header(String name, boolean isExpanded){
-            this(name);
-            this.isExpanded = isExpanded;
         }
 
         @Override
@@ -73,14 +65,6 @@ public class TaskRow {
 
         public String getName() {
             return name;
-        }
-
-        public boolean isExpanded() {
-            return isExpanded;
-        }
-
-        public void setExpanded(boolean expanded) {
-            isExpanded = expanded;
         }
     }
 }
