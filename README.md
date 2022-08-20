@@ -8,6 +8,7 @@
 |[Moduł 3](#moduł-3)|  |
 |[Moduł 4](#moduł-4)|  |
 |[Moduł 5](#moduł-5)|  |
+|[Moduł 6](#moduł-6)|  |
 
 ---
 
@@ -52,3 +53,11 @@
 |Aplikacje|  |
 |<ul><li>MyFinance - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.5.1%20-%20Java%20-%20MyFinanceApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.5.2%20-%20Kotlin%20-%20MyFinanceApp.ipynb)<ul><li>`TabLayout`</li><li>`ViewPager2`</li><li>`RecyclerView`</li></ul></ul>| <table><tr><td><img src="https://media1.giphy.com/media/49RzyXBmRBa59Wi47n/giphy.gif?cid=790b76111b9b9991bd4197bf8d7295e517603d04f8ba2992&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media1.giphy.com/media/zbqykvBYncTRQLCAja/giphy.gif?cid=790b7611d47e3d6d46e7b736ac29fe3cc9bc281aed07c1c0&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media3.giphy.com/media/BbcDIUyV6IodX2yGVx/giphy.gif?cid=790b7611d1bf2abf7deacc8ad5a71a6a13adfbc9f4344954&rid=giphy.gif&ct=g" width="150" /></td></tr></table>
 |<ul><li>Carsy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.6.1%20-%20Java%20-%20CarsyApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.6.2%20-%20Kotlin%20-%20CarsyApp.ipynb)<ul><li>`BottomNavigation`</li><li>`Jetpack Navigation`</li><li>`RecyclerView`</li></ul></ul>| <table><tr><td><img src="https://media2.giphy.com/media/0lpf97nejk58XmgAP1/giphy.gif?cid=790b7611c2da1160570c8dd99550ec3cec763c3d4c38b025&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media2.giphy.com/media/hv5Ewg1qBwSj99Ju82/giphy.gif?cid=790b7611ccbb9fccb551bafa99c524b39c01a03d957a334b&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media4.giphy.com/media/FkSzT1Y6TNOtg89XKr/giphy.gif?cid=790b76119c5e65885f7be2c85549b516585eebeb4a8d4baa&rid=giphy.gif&ct=g" width="150" /></td></tr></table>
+
+
+## Moduł 6
+|Wykład 6|Lab 6|
+|:-------|:-------|
+|<ul><li>`Shared Preferences`</li><li> `SQLite` </li><li> `ViewBinding` </li></ul>| <ul><li>`ViewBinding` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.1.1%20-%20Java%20-%20ViewBinding.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.1.2%20-%20Kotlin%20-%20ViewBinding.ipynb)  </li><li>`Shared Preferences` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.2.1%20-%20Java%20-%20SharedPreferences.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.2.2.%20-%20Kotlin%20-%20SharedPreferences.ipynb) </li><li>`SQLite` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.3.1%20-%20Java%20-%20SQLite.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.3.2%20-%20Kotlin%20-%20SQLite.ipynb) </li></ul></ul>|
+|Aplikacje|  |
+|<ul><li>Tasky - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.4.1%20-%20Java%20-%20Tasky.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.4.2%20-%20Kotlin%20-%20Tasky.ipynb)<ul><li>`Shared Preferences`</li><li>`JSON`</li><li>`Gson`</li><li>`RecyclerView`</li></ul></ul>| <table><tr><td><img src="https://media4.giphy.com/media/Dv16lqPAAbY3wcR5yQ/giphy.gif?cid=790b76110f283c94c4653f3110e6fecb2a9d0820a3829b21&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media4.giphy.com/media/NTntAP53dVMiI7x2jO/giphy.gif?cid=790b76112a65996659d22cdbc3f09ca05eafa714f38f57d0&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media2.giphy.com/media/V1hvzLlvSPlEzKhrjM/giphy.gif?cid=790b7611f83aa25dbb5b41859105e74c7fec193a551e4e61&rid=giphy.gif&ct=g" width="150" /></td></tr></table>
