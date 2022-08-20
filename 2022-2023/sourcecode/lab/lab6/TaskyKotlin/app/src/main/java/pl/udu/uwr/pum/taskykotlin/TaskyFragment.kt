@@ -29,7 +29,8 @@ class TaskyFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val tasks: MutableList<Task> = getTasksList(requireContext()).toMutableList()
+        val tasks: MutableList<Task> =
+            getTasksList(requireContext()).toMutableList()
         binding.rvTasky.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = TaskAdapter(tasks)

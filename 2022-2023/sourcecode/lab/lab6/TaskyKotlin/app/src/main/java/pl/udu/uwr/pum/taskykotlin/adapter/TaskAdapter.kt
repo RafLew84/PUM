@@ -12,7 +12,7 @@ import pl.udu.uwr.pum.taskykotlin.util.saveTaskList
 
 class TaskAdapter(private val tasksList: MutableList<Task>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    private var groupedList = tasksList.groupBy { it.type }.flatMap {
+    private val groupedList = tasksList.groupBy { it.type }.flatMap {
         listOf(TaskRow.Header(it.key.name), *(it.value.map { task ->
             (TaskRow.Task(task.name))
         }).toTypedArray())
@@ -21,7 +21,9 @@ class TaskAdapter(private val tasksList: MutableList<Task>) : RecyclerView.Adapt
     fun add(task: Task, context: Context){
         tasksList.add(task)
         saveTaskList(context, tasksList)
-        val header = groupedList.filterIsInstance<TaskRow.Header>().find { it.name == task.type.name }
+        val header = groupedList
+            .filterIsInstance<TaskRow.Header>()
+            .find { it.name == task.type.name }
         if (header == null)
             groupedList.apply {
                 add(TaskRow.Header(task.type.name))
@@ -29,11 +31,9 @@ class TaskAdapter(private val tasksList: MutableList<Task>) : RecyclerView.Adapt
                 notifyItemInserted(groupedList.size)
             }
         else{
-            if (header.isExpanded) {
-                val i = groupedList.indexOf(TaskRow.Header(task.type.name))
-                groupedList.add(i + subList(task.type.name).size, TaskRow.Task(task.name))
-                notifyItemInserted(i + subList(task.type.name).size)
-            }
+            val i = groupedList.indexOf(TaskRow.Header(task.type.name))
+            groupedList.add(i + subList(task.type.name).size, TaskRow.Task(task.name))
+            notifyItemInserted(i + subList(task.type.name).size)
         }
     }
 
@@ -85,6 +85,8 @@ class TaskAdapter(private val tasksList: MutableList<Task>) : RecyclerView.Adapt
     override fun getItemViewType(position: Int): Int = groupedList[position].rowType
 
     private fun subList(groupName: String): List<TaskRow>{
-        return tasksList.filter { it.type.name == groupName }.map {TaskRow.Task(it.name)}
+        return tasksList
+            .filter { it.type.name == groupName }
+            .map {TaskRow.Task(it.name)}
     }
 }
