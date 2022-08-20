@@ -37,28 +37,25 @@ class TaskAdapter(private val tasksList: MutableList<Task>) : RecyclerView.Adapt
         }
     }
 
+    fun clear(context: Context){
+        tasksList.clear()
+        notifyItemRangeRemoved(0, groupedList.size)
+        groupedList.clear()
+        saveTaskList(context, tasksList)
+    }
 
-    class TaskViewHolder(private val itemBinding: ItemTaskRowBinding)
+
+    private class TaskViewHolder(private val itemBinding: ItemTaskRowBinding)
         : RecyclerView.ViewHolder(itemBinding.root) {
         fun bind(task: TaskRow.Task) {
             itemBinding.taskTextView.text = task.name
         }
     }
 
-    inner class HeaderViewHolder(private val itemBinding: ItemGroupRowBinding)
+    private class HeaderViewHolder(private val itemBinding: ItemGroupRowBinding)
         : RecyclerView.ViewHolder(itemBinding.root) {
         fun bind(header: TaskRow.Header) {
             itemBinding.groupTextView.text = header.name
-            itemBinding.groupTextView.setOnClickListener {
-                if (header.isExpanded) {
-                    collapseParentRow(groupedList.indexOf(header))
-                    itemBinding.indicatorTextView.text = "+"
-                }
-                else {
-                    expandParentRow(groupedList.indexOf(header))
-                    itemBinding.indicatorTextView.text = "–"
-                }
-            }
         }
     }
 
@@ -89,21 +86,5 @@ class TaskAdapter(private val tasksList: MutableList<Task>) : RecyclerView.Adapt
 
     private fun subList(groupName: String): List<TaskRow>{
         return tasksList.filter { it.type.name == groupName }.map {TaskRow.Task(it.name)}
-    }
-
-    private fun collapseParentRow(position: Int){
-        val item = groupedList[position] as TaskRow.Header
-        item.isExpanded = false
-        val remove = subList(item.name)
-        groupedList.removeAll(remove)
-        notifyItemRangeRemoved(position + 1, remove.size)
-    }
-
-    private fun expandParentRow(position: Int){
-        val item = groupedList[position] as TaskRow.Header
-        val expand = subList(item.name).reversed()
-        item.isExpanded = true
-        expand.forEach{groupedList.add(position + 1, it)}
-        notifyItemRangeInserted(position + 1, expand.size)
     }
 }

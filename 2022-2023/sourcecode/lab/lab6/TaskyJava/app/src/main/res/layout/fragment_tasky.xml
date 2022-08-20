@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".TaskyFragment">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,14 +51,14 @@
                     android:textSize="15sp" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
-
         <Button
             android:id="@+id/addButton"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
-            android:text="dodaj"
             android:layout_margin="4dp"
+            android:text="dodaj"
             android:layout_height="wrap_content"/>
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

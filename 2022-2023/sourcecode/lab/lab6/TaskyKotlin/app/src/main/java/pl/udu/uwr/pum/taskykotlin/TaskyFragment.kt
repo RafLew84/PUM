@@ -22,7 +22,7 @@ class TaskyFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentTaskyBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -44,6 +44,10 @@ class TaskyFragment : Fragment() {
                 binding.groupEditText.text?.clear()
                 binding.taskEditText.text?.clear()
             }
+        }
+
+        binding.clearButton.setOnClickListener {
+            (binding.rvTasky.adapter as TaskAdapter).clear(requireContext())
         }
     }
 }
