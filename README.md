@@ -3,18 +3,29 @@
  
 |Moduł|Lista|
 |:-------|:--------|
-|[Moduł 1](#moduł-1)| Lista 1 |
-|[Moduł 2](#moduł-2)| Lista 2 |
+|[Moduł 0](#moduł-0)|  |
+|[Moduł 1](#moduł-1)|  |
+|[Moduł 2](#moduł-2)|  |
 |[Moduł 3](#moduł-3)|  |
 |[Moduł 4](#moduł-4)|  |
 |[Moduł 5](#moduł-5)|  |
+|[Moduł 6](#moduł-6)|  |
+
+---
+
+## Moduł 0
+|Wykład 0|Lab 0|
+|:-------|:-------|
+|<ul><li> podstawowe informacje </li><li> treści programowe </li><li> warunki zaliczenia </li></ul>| <ul><li>Podstawowe informacje</li><li>Android Studio</li></ul> |
+|Aplikacje|  |
+||
 
 ---
 
 ## Moduł 1
 |Wykład 1|Lab 1|
 |:-------|:-------|
-|<ul><li> podstawowe informacje </li><li> treści programowe </li><li> warunki zaliczenia </li></ul>| <ul><li> LinearLayout - [notatnik](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.1%20-%20Interfejs%20-%20LinearLayout.ipynb) </li><li> ConstraintLayout - [notatnik](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.2%20-%20Interfejs%20-%20ConstraintLayout.ipynb) </li><li> Obsługa `onClick` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.4.1%20-%20Java%20-%20Obs%C5%82uga%20OnClick.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.4.2%20-%20Kotlin%20-%20Obs%C5%82uga%20OnClick.ipynb)</li></ul>|
+|<ul><li>Struktura projektu</li><li> `Activity` </li><li> Cykl życia aktywności </li></ul>|<ul><li> LinearLayout - [notatnik](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.1%20-%20Interfejs%20-%20LinearLayout.ipynb) </li><li> ConstraintLayout - [notatnik](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.2%20-%20Interfejs%20-%20ConstraintLayout.ipynb) </li><li> Obsługa `onClick` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.4.1%20-%20Java%20-%20Obs%C5%82uga%20OnClick.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.4.2%20-%20Kotlin%20-%20Obs%C5%82uga%20OnClick.ipynb)</li></ul>|
 |Aplikacje|  |
 |<ul><li>CounterApp - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.3.1%20-%20Java%20-%20CounterApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.3.2%20-%20Kotlin%20-%20CounterApp.ipynb)</ul>| <img src="https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/images/counterapp.png" width="200" />|
 
@@ -23,18 +34,21 @@
 ## Moduł 2
 |Wykład 2|Lab 2|
 |:-------|:-------|
-|<ul><li>Struktura projektu</li><li> `Activity` </li><li> Cykl życia aktywności </li><li> Stan instancji </li><li> `Bundle` </li><li> `Intent` </li></ul>| <ul><li>Mechanizm intentów - jawne - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.1.1%20-%20Java%20-%20Mechanizm%20Intent%C3%B3w%20-%20Jawne.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.1.2%20-%20Kotlin%20-%20Mechanizm%20Intent%C3%B3w%20-%20Jawne.ipynb)  <ul><li> startActivity </li><li> Intent </li><li> registerForActivityResult </li></ul></li><li>Interfejsy `Parcelable`, `Serializable` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.2.1%20-%20Java%20-%20Interfejs%20Parcelable.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.2.2%20-%20Kotlin%20-%20Interfejs%20Parcelable.ipynb)</li><li>Mechanizm intentów - domniemane - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.3.1%20-%20Java%20-%20Mechanizm%20intent%C3%B3w%20-%20Domniemane.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.3.2%20-%20Kotlin%20-%20Mechanizm%20intent%C3%B3w%20-%20Domniemane.ipynb)</li><ul><li>Rodzaje akcji</li><li>Kategorie</li><li>`<queries>`</li><li>`<intent-filter>`</li></ul></ul>|
+|<ul><li> Stan instancji </li><li> `Bundle` </li><li> `Intent` </li></ul>| <ul><li>Mechanizm intentów - jawne - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.1.1%20-%20Java%20-%20Mechanizm%20Intent%C3%B3w%20-%20Jawne.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.1.2%20-%20Kotlin%20-%20Mechanizm%20Intent%C3%B3w%20-%20Jawne.ipynb) </li><li>Interfejsy `Parcelable`, `Serializable` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.2.1%20-%20Java%20-%20Interfejs%20Parcelable.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.2.2%20-%20Kotlin%20-%20Interfejs%20Parcelable.ipynb)</li><li>Mechanizm intentów - domniemane - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.3.1%20-%20Java%20-%20Mechanizm%20intent%C3%B3w%20-%20Domniemane.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.3.2%20-%20Kotlin%20-%20Mechanizm%20intent%C3%B3w%20-%20Domniemane.ipynb)</li></ul>|
 |Aplikacje|  |
 |<ul><li>QuizApp - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.4.1%20-%20Java%20-%20QuizApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.4.2%20-%20Kotlin%20-%20QuizApp.ipynb)</ul>| <img src="https://media1.giphy.com/media/KkRBm5TqFbEWEqnrIy/giphy.gif?cid=790b76114709b5b4e63072bd5b3af809b31816e92c710c39&rid=giphy.gif&ct=g\" width="200" />
+
+---
 
 ## Moduł 3
 |Wykład 3|Lab 3|
 |:-------|:-------|
-|<ul><li>`RecyclerView`</li><li> `Adapter` </li><li> `ViewHolder` </li><li> `Selector` </li></ul>| <ul><li>`RecyclerView` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.1.1%20-%20Java%20-%20RecyclerView%20-%20Podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.1.2%20-%20Kotlin%20-%20RecyclerView%20-%20Podstawy.ipynb)  <ul><li> `Adapter` </li><li> `ViewHolder` </li><li> `RecyclerView` </li></ul></li><li>`Selector` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.2.1%20-%20Java%20-%20RecyclerView%20-%20Selector.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.2.2%20-%20Kotlin%20-%20RecyclerView%20-%20Selector.ipynb) <ul><li> `SelectionTracker` </li><li> `RecyclerView` </li></ul></li></ul></ul>|
+|<ul><li>`RecyclerView`</li><li> `Adapter` </li><li> `ViewHolder` </li><li> `Selector` </li></ul>| <ul><li>`RecyclerView` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.1.1%20-%20Java%20-%20RecyclerView%20-%20Podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.1.2%20-%20Kotlin%20-%20RecyclerView%20-%20Podstawy.ipynb) </li><li>`Selector` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.2.1%20-%20Java%20-%20RecyclerView%20-%20Selector.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.2.2%20-%20Kotlin%20-%20RecyclerView%20-%20Selector.ipynb) </li></ul></ul>|
 |Aplikacje|  |
 |<ul><li>WFiApp - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.3.1%20-%20Java%20-%20WFiApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.3.2%20-%20Kotlin%20-%20WFiApp.ipynb)<ul><li>`RecyclerView`</li><li>`CardView`</li><li>`GridLayout`</li><li>`ItemTouchHelper`</li><li>`ImageView`</li></ul></ul>| <table><tr><td><img src="https://media2.giphy.com/media/gooBI30gtU5fMkmCZu/giphy.gif?cid=790b7611df027999cb2a17ec28a3095ad5693e6e76c37990&rid=giphy.gif&ct=g" width="200" /></td><td><img src="https://media2.giphy.com/media/h5Xh7V5IA5E3BV4ytL/giphy.gif?cid=790b7611412fedb227b91c2cb44067aa88f517a18214afde&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media2.giphy.com/media/uwDAUUAjLZnyKqLg3J/giphy.gif?cid=790b76110bdb83e20fb638b9fb5150422cf100e384687bcf&rid=giphy.gif&ct=g" width="150" /></td></tr></table>|
 |<ul><li>QuickYoga - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.4.1%20-%20Java%20-%20QuickYoga.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.3.2%20-%20Kotlin%20-%20WFiApp.ipynb)<ul><li>`RecyclerView`</li><li>`MediaPlayer`</li><li>`TextToSpeech`</li><li>customowy `ProgressBar`</li><li>`ImageView`</li><li>`RippleEffect`</li></ul></ul>| <img src="https://media3.giphy.com/media/vmZ6b9CGnFihvmYrGT/giphy.gif?cid=790b7611ec174e1283189e1ed95201abaf1700ead6582144&rid=giphy.gif&ct=g" width="200" />|
 
+---
 
 ## Moduł 4
 |Wykład 4|Lab 4|
@@ -44,6 +58,7 @@
 |<ul><li>ListOfLists - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.4.1%20-%20Java%20-%20ListOfLists.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.4.2%20-%20Kotlin%20-%20ListOfLists.ipynb)<ul><li>`RecyclerView`</li><li>`Jetpack Navigation`</li><li>`Implicit Intent`</li><li>`Adapter`</li></ul></ul>| <table><tr><td><img src="https://media4.giphy.com/media/12aNUkEltsj9IJX3DK/giphy.gif?cid=790b761153d67ec7afbe0798454db3f988f74125c2830ad8&rid=giphy.gif&ct=g" width="150" /></td></tr></table>|
 |<ul><li>PUMApp - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.5.1%20-%20Java%20-%20PUMApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.5.2%20-%20Kotlin%20-%20PUMApp.ipynb)<ul><li>`RecyclerView`</li><li>`Jetpack Navigation`</li><li>`Drawer Navigation`</li><li>`Dark Theme`</li></ul></ul>| <table><tr><td><img src="https://media4.giphy.com/media/vxFCJk2ezJecGe0q51/giphy.gif?cid=790b7611375b0d8e309f01295b707e9b33cd918c6b2cec75&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media0.giphy.com/media/rsqB9pEWGHKi5L6TbN/giphy.gif?cid=790b76115b96ca067a07916491cdb73faee0b317424c8e4a&rid=giphy.gif&ct=g" width="150" /></td></tr></table>|
 
+---
 
 ## Moduł 5
 |Wykład 5|Lab 5|
@@ -52,3 +67,12 @@
 |Aplikacje|  |
 |<ul><li>MyFinance - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.5.1%20-%20Java%20-%20MyFinanceApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.5.2%20-%20Kotlin%20-%20MyFinanceApp.ipynb)<ul><li>`TabLayout`</li><li>`ViewPager2`</li><li>`RecyclerView`</li></ul></ul>| <table><tr><td><img src="https://media1.giphy.com/media/49RzyXBmRBa59Wi47n/giphy.gif?cid=790b76111b9b9991bd4197bf8d7295e517603d04f8ba2992&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media1.giphy.com/media/zbqykvBYncTRQLCAja/giphy.gif?cid=790b7611d47e3d6d46e7b736ac29fe3cc9bc281aed07c1c0&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media3.giphy.com/media/BbcDIUyV6IodX2yGVx/giphy.gif?cid=790b7611d1bf2abf7deacc8ad5a71a6a13adfbc9f4344954&rid=giphy.gif&ct=g" width="150" /></td></tr></table>
 |<ul><li>Carsy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.6.1%20-%20Java%20-%20CarsyApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.6.2%20-%20Kotlin%20-%20CarsyApp.ipynb)<ul><li>`BottomNavigation`</li><li>`Jetpack Navigation`</li><li>`RecyclerView`</li></ul></ul>| <table><tr><td><img src="https://media2.giphy.com/media/0lpf97nejk58XmgAP1/giphy.gif?cid=790b7611c2da1160570c8dd99550ec3cec763c3d4c38b025&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media2.giphy.com/media/hv5Ewg1qBwSj99Ju82/giphy.gif?cid=790b7611ccbb9fccb551bafa99c524b39c01a03d957a334b&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media4.giphy.com/media/FkSzT1Y6TNOtg89XKr/giphy.gif?cid=790b76119c5e65885f7be2c85549b516585eebeb4a8d4baa&rid=giphy.gif&ct=g" width="150" /></td></tr></table>
+
+---
+
+## Moduł 6
+|Wykład 6|Lab 6|
+|:-------|:-------|
+|<ul><li>`Shared Preferences`</li><li> `SQLite` </li><li> `ViewBinding` </li></ul>| <ul><li>`ViewBinding` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.1.1%20-%20Java%20-%20ViewBinding.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.1.2%20-%20Kotlin%20-%20ViewBinding.ipynb)  </li><li>`Shared Preferences` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.2.1%20-%20Java%20-%20SharedPreferences.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.2.2.%20-%20Kotlin%20-%20SharedPreferences.ipynb) </li><li>`SQLite` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.3.1%20-%20Java%20-%20SQLite.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.3.2%20-%20Kotlin%20-%20SQLite.ipynb) </li></ul></ul>|
+|Aplikacje|  |
+|<ul><li>Tasky - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.4.1%20-%20Java%20-%20Tasky.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.4.2%20-%20Kotlin%20-%20Tasky.ipynb)<ul><li>`Shared Preferences`</li><li>`JSON`</li><li>`Gson`</li><li>`RecyclerView`</li></ul></ul>| <table><tr><td><img src="https://media4.giphy.com/media/Dv16lqPAAbY3wcR5yQ/giphy.gif?cid=790b76110f283c94c4653f3110e6fecb2a9d0820a3829b21&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media4.giphy.com/media/NTntAP53dVMiI7x2jO/giphy.gif?cid=790b76112a65996659d22cdbc3f09ca05eafa714f38f57d0&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media2.giphy.com/media/V1hvzLlvSPlEzKhrjM/giphy.gif?cid=790b7611f83aa25dbb5b41859105e74c7fec193a551e4e61&rid=giphy.gif&ct=g" width="150" /></td></tr></table>
