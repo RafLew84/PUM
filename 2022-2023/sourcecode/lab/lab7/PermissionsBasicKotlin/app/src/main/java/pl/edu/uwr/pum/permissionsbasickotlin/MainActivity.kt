@@ -22,12 +22,12 @@ class MainActivity : AppCompatActivity() {
             when {ContextCompat.checkSelfPermission(
                 this, Manifest.permission.CAMERA) ==
                 PackageManager.PERMISSION_GRANTED -> {
-                Toast.makeText(this, "Upoważnienie nadane", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Upoważnienie nadane", Toast.LENGTH_SHORT).show()
                 }
                 ActivityCompat.shouldShowRequestPermissionRationale(
                     this,
                     Manifest.permission.CAMERA) -> {
-                    showMessageOKCancel("Wymagane upoważnienie")
+                    s   howMessageOKCancel("Wymagane upoważnienie")
                     }
                 else -> {
                     requestPermissionLauncher.launch(Manifest.permission.CAMERA)
