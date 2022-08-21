@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                 ActivityCompat.shouldShowRequestPermissionRationale(
                     this,
                     Manifest.permission.CAMERA) -> {
-                    s   howMessageOKCancel("Wymagane upoważnienie")
+                       showMessageOKCancel("Wymagane upoważnienie")
                     }
                 else -> {
                     requestPermissionLauncher.launch(Manifest.permission.CAMERA)
