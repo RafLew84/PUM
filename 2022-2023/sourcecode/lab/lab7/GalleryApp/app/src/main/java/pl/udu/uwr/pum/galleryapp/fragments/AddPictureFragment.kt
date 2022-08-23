@@ -22,7 +22,6 @@ import pl.udu.uwr.pum.galleryapp.databinding.FragmentAddPictureBinding
 class AddPictureFragment : Fragment(){
 
     private lateinit var binding: FragmentAddPictureBinding
-    private val RC_CAMERA_PERM = 123
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,12 +35,7 @@ class AddPictureFragment : Fragment(){
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonCamera.setOnClickListener {
-            if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.CAMERA) ==
-                PackageManager.PERMISSION_GRANTED) {
-                val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-                resultLauncher.launch(intent)
-            } else
-                checkForPermission()
+            checkForPermission()
         }
     }
 
@@ -56,7 +50,11 @@ class AddPictureFragment : Fragment(){
 
     private val requestPermissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
-    ) {}
+    ) {
+        if (it){
+            launchCamera()
+        }
+    }
 
     private fun showMessageOKCancel(message: String) {
         AlertDialog.Builder(requireContext())
@@ -71,7 +69,11 @@ class AddPictureFragment : Fragment(){
     }
 
     private fun checkForPermission(){
-        when {
+        when {ContextCompat.checkSelfPermission(
+            requireContext(), Manifest.permission.CAMERA) ==
+                PackageManager.PERMISSION_GRANTED -> {
+            launchCamera()
+        }
             ActivityCompat.shouldShowRequestPermissionRationale(
                 requireActivity(),
                 Manifest.permission.CAMERA) -> {
@@ -81,5 +83,10 @@ class AddPictureFragment : Fragment(){
                 requestPermissionLauncher.launch(Manifest.permission.CAMERA)
             }
         }
+    }
+
+    private fun launchCamera(){
+        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+        resultLauncher.launch(intent)
     }
 }
