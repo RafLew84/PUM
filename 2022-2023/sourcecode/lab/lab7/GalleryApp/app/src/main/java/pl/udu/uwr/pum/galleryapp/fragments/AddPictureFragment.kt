@@ -23,6 +23,7 @@ import androidx.fragment.app.Fragment
 import pl.udu.uwr.pum.galleryapp.dataProvider.DataProvider
 import pl.udu.uwr.pum.galleryapp.R
 import pl.udu.uwr.pum.galleryapp.databinding.FragmentAddPictureBinding
+import pl.udu.uwr.pum.galleryapp.db.DBHandler
 import pl.udu.uwr.pum.galleryapp.model.PictureModel
 import java.io.File
 import java.io.FileOutputStream
@@ -55,13 +56,16 @@ class AddPictureFragment : Fragment(){
             if (checkForErrors())
                 Toast.makeText(context, getString(R.string.error_imageView), Toast.LENGTH_LONG).show()
             else{
-                //if (this::pictureAbsolutePath.isInitialized)
                 val item = PictureModel(
                     binding.editTextTitle.text.toString(),
                     pictureAbsolutePath.toString()
                 )
-                DataProvider.dummyData.add(item)
-                Log.d("dummy", DataProvider.dummyData.size.toString())
+
+                val dbHandler = DBHandler(requireContext())
+                val addItemResult = dbHandler.addToGallery(item)
+
+                if(addItemResult > 0)
+                    Toast.makeText(context, "SUCCESS", Toast.LENGTH_SHORT).show()
             }
         }
     }

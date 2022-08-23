@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import pl.udu.uwr.pum.galleryapp.databinding.ItemViewBinding
 import pl.udu.uwr.pum.galleryapp.model.PictureModel
 
-class GalleryAdapter(private val pictures: MutableList<PictureModel>) : RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
+class GalleryAdapter(private val pictures: List<PictureModel>) : RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
 
     class ViewHolder(private val itemBinding: ItemViewBinding) : RecyclerView.ViewHolder(itemBinding.root) {
         fun bind (item: PictureModel){
