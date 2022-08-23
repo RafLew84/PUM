@@ -31,40 +31,33 @@
             android:layout_margin="40dp"
             android:contentDescription="picture" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/button_camera"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_marginEnd="4dp"
-            android:layout_height="wrap_content"
-            android:text="aparat"
-            android:gravity="center"/>
-
-            <Button
-                android:id="@+id/button_gallery"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_marginStart="4dp"
-                android:layout_height="wrap_content"
-                android:text="galeria"
-                android:gravity="center"/>
-        </LinearLayout>
-
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_margin="25dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="otwórz aparat"
+        android:gravity="center"/>
 
     <Button
         android:id="@+id/button_save_picture"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
-
         android:gravity="center"
+        android:layout_gravity="center"
         android:text="zapisz"/>
+    </LinearLayout>
 
 
 </LinearLayout>

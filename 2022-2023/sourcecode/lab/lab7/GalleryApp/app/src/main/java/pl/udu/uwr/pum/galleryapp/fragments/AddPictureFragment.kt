@@ -39,7 +39,7 @@ class AddPictureFragment : Fragment(){
         }
     }
 
-    private val resultLauncher = registerForActivityResult(
+    private val resultLauncherCamera = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == RESULT_OK) {
             val data: Intent? = result.data
@@ -48,7 +48,7 @@ class AddPictureFragment : Fragment(){
         }
     }
 
-    private val requestPermissionLauncher = registerForActivityResult(
+    private val requestCameraPermissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) {
         if (it){
@@ -60,7 +60,7 @@ class AddPictureFragment : Fragment(){
         AlertDialog.Builder(requireContext())
             .setMessage(message)
             .setPositiveButton("OK") { dialogInterface: DialogInterface, _: Int ->
-                requestPermissionLauncher.launch(Manifest.permission.CAMERA)
+                requestCameraPermissionLauncher.launch(Manifest.permission.CAMERA)
                 dialogInterface.dismiss()
             }
             .setNegativeButton("Cancel", null)
@@ -80,13 +80,13 @@ class AddPictureFragment : Fragment(){
                 showMessageOKCancel(getString(R.string.rationale_camera))
             }
             else -> {
-                requestPermissionLauncher.launch(Manifest.permission.CAMERA)
+                requestCameraPermissionLauncher.launch(Manifest.permission.CAMERA)
             }
         }
     }
 
     private fun launchCamera(){
         val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        resultLauncher.launch(intent)
+        resultLauncherCamera.launch(intent)
     }
 }
