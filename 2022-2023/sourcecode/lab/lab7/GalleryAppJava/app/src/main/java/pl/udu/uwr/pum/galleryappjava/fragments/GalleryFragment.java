@@ -33,10 +33,7 @@ public class GalleryFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         DBHandler dbHandler = new DBHandler(requireContext());
-
-
         binding.recycler.setLayoutManager(new LinearLayoutManager(requireContext()));
         binding.recycler.setAdapter(new GalleryAdapter(dbHandler.getAllItems()));
-
     }
 }

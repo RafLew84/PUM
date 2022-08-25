@@ -23,11 +23,8 @@ public class DBHandler extends SQLiteOpenHelper {
     private static final String KEY_TITLE = "title";
     private static final String KEY_IMAGE = "image";
 
-    private final Context context;
-
     public DBHandler(@Nullable Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        this.context = context;
     }
 
     @Override
@@ -88,7 +85,6 @@ public class DBHandler extends SQLiteOpenHelper {
             e.printStackTrace();
             return new ArrayList<>();
         }
-
         return itemList;
     }
 }

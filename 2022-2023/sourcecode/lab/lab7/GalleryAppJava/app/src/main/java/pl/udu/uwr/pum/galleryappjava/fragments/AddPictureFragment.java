@@ -88,12 +88,12 @@ public class AddPictureFragment extends Fragment {
             result -> {
                 if (result.getResultCode() == Activity.RESULT_OK) {
                     Intent data = result.getData();
-                    Bitmap imageBitmap = null;
+                    Bitmap imageBitmap;
                     if (data != null) {
                         imageBitmap = (Bitmap) data.getExtras().get("data");
+                        binding.imageViewPicture.setImageBitmap(imageBitmap);
+                        pictureAbsolutePath = saveImage(imageBitmap);
                     }
-                    binding.imageViewPicture.setImageBitmap(imageBitmap);
-                    pictureAbsolutePath = saveImage(imageBitmap);
                 }
             });
 
