@@ -83,9 +83,7 @@ class AddPictureFragment : Fragment(){
     private val requestCameraPermissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) {
-        if (it){
-            launchCamera()
-        }
+        if (it){ launchCamera() }
     }
 
     private fun showMessageOKCancel(message: String) {
