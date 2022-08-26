@@ -1,11 +1,8 @@
-package pl.udu.uwr.pum.notyjava.activities;
+package pl.udu.uwr.pum.notyjava;
 
-import android.appwidget.AppWidgetManager;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import pl.udu.uwr.pum.notyjava.R;
 
 public class MainActivity extends AppCompatActivity {
 
