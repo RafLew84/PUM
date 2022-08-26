@@ -13,7 +13,7 @@ class NotyWidgetService : RemoteViewsService() {
         return NotyWidgetItemFactory(applicationContext, intent)
     }
 
-    internal class NotyWidgetItemFactory(private val context: Context, intent: Intent) :
+    class NotyWidgetItemFactory(private val context: Context, intent: Intent) :
         RemoteViewsFactory {
         private val appWidgetId: Int
         private lateinit var noteList: List<String>
@@ -27,9 +27,7 @@ class NotyWidgetService : RemoteViewsService() {
             // zamknac polaczenie z baza
         }
 
-        override fun getCount(): Int {
-            return noteList.size
-        }
+        override fun getCount(): Int = noteList.size
 
         override fun getViewAt(position: Int): RemoteViews {
             val remoteViews = RemoteViews(context.packageName, R.layout.item_list)
@@ -41,17 +39,11 @@ class NotyWidgetService : RemoteViewsService() {
             return null
         }
 
-        override fun getViewTypeCount(): Int {
-            return 1
-        }
+        override fun getViewTypeCount(): Int = 1
 
-        override fun getItemId(position: Int): Long {
-            return position.toLong() // identyfikacja
-        }
+        override fun getItemId(position: Int): Long = position.toLong() // identyfikacja
 
-        override fun hasStableIds(): Boolean {
-            return true
-        }
+        override fun hasStableIds(): Boolean = true
 
         init {
             appWidgetId = intent.getIntExtra(
