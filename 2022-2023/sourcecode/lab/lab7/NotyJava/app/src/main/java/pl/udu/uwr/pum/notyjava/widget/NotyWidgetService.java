@@ -1,5 +1,6 @@
 package pl.udu.uwr.pum.notyjava.widget;
 
+import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.content.Context;
 import android.content.Intent;
@@ -38,7 +39,7 @@ public class NotyWidgetService extends RemoteViewsService {
 
         @Override
         public void onDataSetChanged() {
-            DataProvider.dummyData.add("Nowa notatka");
+            DataProvider.dummyData.add("Nowa notatka " + (DataProvider.dummyData.size() + 1));
         }
 
         @Override

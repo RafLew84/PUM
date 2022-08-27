@@ -25,12 +25,25 @@ public class NotyWidgetProvider extends AppWidgetProvider {
 
             Intent clickIntent = new Intent(context, NotyWidgetProvider.class);
             clickIntent.setAction(ACTION_REFRESH);
-            PendingIntent clickPendingIntent = PendingIntent.getBroadcast(context, 0, clickIntent, PendingIntent.FLAG_MUTABLE);
 
+            Intent intentUpdate = new Intent(context, NotyWidgetProvider.class);
+            intentUpdate.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
+
+
+            int[] idArray = new int[]{appWidgetId};
+            intentUpdate.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, idArray);
+
+            PendingIntent pendingUpdate = PendingIntent.getBroadcast(
+                    context, appWidgetId, intentUpdate,
+                    PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_MUTABLE);
+
+            PendingIntent clickPendingIntent = PendingIntent.getBroadcast(context, 0, clickIntent, PendingIntent.FLAG_MUTABLE);
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.noty_widget_provider);
             views.setRemoteAdapter(R.id.listViewWidget, serviceIntent);
             views.setEmptyView(R.id.listViewWidget, R.id.emptyViewTextView);
             views.setPendingIntentTemplate(R.id.listViewWidget, clickPendingIntent);
+            views.setOnClickPendingIntent(R.id.refreshButtonWidget, pendingUpdate);
+
             appWidgetManager.updateAppWidget(appWidgetId, views);
             appWidgetManager.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listViewWidget);
         }
