@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.notyjava.service;
+package pl.udu.uwr.pum.notyjava.widget;
 
 import android.appwidget.AppWidgetManager;
 import android.content.Context;
@@ -38,7 +38,7 @@ public class NotyWidgetService extends RemoteViewsService {
 
         @Override
         public void onDataSetChanged() {
-
+            DataProvider.dummyData.add("Nowa notatka");
         }
 
         @Override
@@ -55,6 +55,10 @@ public class NotyWidgetService extends RemoteViewsService {
         public RemoteViews getViewAt(int position) {
             RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.item_list);
             remoteViews.setTextViewText(R.id.itemListTextView, noteList.get(position));
+
+            Intent fillIntent = new Intent();
+            fillIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
+            remoteViews.setOnClickFillInIntent(R.id.itemListTextView, fillIntent);
             return remoteViews;
         }
 
