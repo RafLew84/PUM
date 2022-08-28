@@ -70,6 +70,7 @@ class NotyWidgetProvider : AppWidgetProvider() {
             val appWidgetManager = AppWidgetManager.getInstance(context)
             val dbHandler = DBHandler(context)
             dbHandler.updateNote(id)
+            dbHandler.close()
             appWidgetManager.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listViewWidget)
         }
         super.onReceive(context, intent)
