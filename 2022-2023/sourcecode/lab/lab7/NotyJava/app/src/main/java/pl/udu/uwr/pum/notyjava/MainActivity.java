@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import pl.udu.uwr.pum.notyjava.data.DataProvider;
+import pl.udu.uwr.pum.notyjava.db.DBHandler;
 import pl.udu.uwr.pum.notyjava.widget.NotyWidgetProvider;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,10 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button button = findViewById(R.id.button);
-        button.setOnClickListener(v -> {
-            DataProvider.dummyData.add("Main Activity");
-        });
+        DBHandler dbHandler = new DBHandler(this);
+        DataProvider.dummyData2.forEach(dbHandler::addNote);
+        dbHandler.close();
     }
 }

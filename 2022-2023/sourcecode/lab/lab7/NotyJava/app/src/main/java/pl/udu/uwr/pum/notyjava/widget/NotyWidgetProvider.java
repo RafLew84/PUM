@@ -14,6 +14,8 @@ import androidx.annotation.RequiresApi;
 
 import pl.udu.uwr.pum.notyjava.R;
 import pl.udu.uwr.pum.notyjava.data.DataProvider;
+import pl.udu.uwr.pum.notyjava.db.DBHandler;
+import pl.udu.uwr.pum.notyjava.model.NoteModel;
 
 
 public class NotyWidgetProvider extends AppWidgetProvider {
@@ -62,10 +64,11 @@ public class NotyWidgetProvider extends AppWidgetProvider {
         if (ACTION_DONE.equals(intent.getAction())){
             int appWidgetId = intent.getIntExtra(AppWidgetManager.EXTRA_APPWIDGET_ID,
                     AppWidgetManager.INVALID_APPWIDGET_ID);
-            int position = intent.getIntExtra("position", 100);
+            int id = intent.getIntExtra("id", 100);
             AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
 
-            DataProvider.dummyData.set(position, "zmiana");
+            DBHandler dbHandler = new DBHandler(context);
+            dbHandler.updateNote(id);
 
             appWidgetManager.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listViewWidget);
         }
