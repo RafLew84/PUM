@@ -4,6 +4,7 @@ import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.content.Context;
 import android.content.Intent;
+import android.text.style.StrikethroughSpan;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
 
@@ -59,6 +60,7 @@ public class NotyWidgetService extends RemoteViewsService {
 
             Intent fillIntent = new Intent();
             fillIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
+            fillIntent.putExtra("position", position);
             remoteViews.setOnClickFillInIntent(R.id.itemListTextView, fillIntent);
             return remoteViews;
         }
