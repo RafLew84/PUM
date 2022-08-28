@@ -6,7 +6,9 @@ import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import android.os.Build
 import android.widget.RemoteViews
+import androidx.annotation.RequiresApi
 import pl.udu.uwr.pum.notykotlin.R
 import pl.udu.uwr.pum.notykotlin.data.DataProvider
 
@@ -14,6 +16,7 @@ const val ACTION_DONE = "actionDone"
 
 class NotyWidgetProvider : AppWidgetProvider() {
 
+    @RequiresApi(Build.VERSION_CODES.S)
     override fun onUpdate(
         context: Context,
         appWidgetManager: AppWidgetManager,
