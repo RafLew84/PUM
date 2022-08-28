@@ -39,8 +39,6 @@ public class NotyWidgetService extends RemoteViewsService {
 
         @Override
         public void onCreate() {
-            // otworz baze danych
-            //noteList = DataProvider.dummyData2;
             dbHandler = new DBHandler(context);
             noteList = dbHandler.getNotes();
         }
@@ -66,7 +64,6 @@ public class NotyWidgetService extends RemoteViewsService {
             remoteViews.setTextViewText(R.id.itemListTextView, noteList.get(position).getTime().toString()
                     + "\n" + noteList.get(position).getTextNote());
             remoteViews.setTextColor(R.id.itemListTextView,  noteList.get(position).getColor());
-            Log.d("data3", String.valueOf(noteList.get(position).getColor()));
 
             Intent fillIntent = new Intent();
             fillIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);

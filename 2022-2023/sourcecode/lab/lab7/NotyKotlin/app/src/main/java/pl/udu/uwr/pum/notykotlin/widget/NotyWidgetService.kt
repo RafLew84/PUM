@@ -6,43 +6,49 @@ import android.content.Intent
 import android.widget.RemoteViews
 import android.widget.RemoteViewsService
 import pl.udu.uwr.pum.notykotlin.R
-import pl.udu.uwr.pum.notykotlin.data.DataProvider
+import pl.udu.uwr.pum.notykotlin.db.DBHandler
+import pl.udu.uwr.pum.notykotlin.model.NoteModel
 
 class NotyWidgetService : RemoteViewsService() {
+
     override fun onGetViewFactory(intent: Intent): RemoteViewsFactory {
         return NotyWidgetItemFactory(applicationContext, intent)
     }
 
     class NotyWidgetItemFactory(private val context: Context, intent: Intent) :
         RemoteViewsFactory {
+        private lateinit var dbHandler: DBHandler
         private val appWidgetId: Int
-        private lateinit var noteList: List<String>
+        private lateinit var noteList: List<NoteModel>
+
         override fun onCreate() {
-            // otworz baze danych
-            noteList = DataProvider.dummyData
+            dbHandler = DBHandler(context)
+            noteList = dbHandler.notes
         }
 
         override fun onDataSetChanged() {
-            DataProvider.dummyData.add("Nowa notatka " + (DataProvider.dummyData.size + 1))
+            noteList = dbHandler.notes
         }
 
         override fun onDestroy() {
-            // zamknac polaczenie z baza
+            dbHandler.close()
         }
 
         override fun getCount(): Int = noteList.size
 
         override fun getViewAt(position: Int): RemoteViews {
             val remoteViews = RemoteViews(context.packageName, R.layout.item_list)
-            remoteViews.setTextViewText(R.id.itemListTextView, noteList[position])
+            remoteViews.setTextViewText(
+                R.id.itemListTextView, noteList[position].time.toString() + "\n" + noteList[position].textNote
+            )
+            remoteViews.setTextColor(R.id.itemListTextView, noteList[position].color)
 
             val fillIntent = Intent()
             fillIntent.apply {
                 putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId)
-                putExtra("position", position)
+                putExtra("id", noteList[position].id)
             }
             remoteViews.setOnClickFillInIntent(R.id.itemListTextView, fillIntent)
-
             return remoteViews
         }
 

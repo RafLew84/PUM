@@ -15,11 +15,6 @@ public class NoteModel {
         this.time = date;
     }
 
-//    public NoteModel(int id, String textNote, LocalTime time) {
-//        this(textNote, time);
-//        this.id = id;
-//    }
-
     public NoteModel(int id, String textNote, LocalTime time, int color) {
         this(textNote, time);
         this.id = id;

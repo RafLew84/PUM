@@ -10,13 +10,12 @@ import android.os.Build
 import android.widget.RemoteViews
 import androidx.annotation.RequiresApi
 import pl.udu.uwr.pum.notykotlin.R
-import pl.udu.uwr.pum.notykotlin.data.DataProvider
+import pl.udu.uwr.pum.notykotlin.db.DBHandler
 
 const val ACTION_DONE = "actionDone"
 
 class NotyWidgetProvider : AppWidgetProvider() {
 
-    @RequiresApi(Build.VERSION_CODES.S)
     override fun onUpdate(
         context: Context,
         appWidgetManager: AppWidgetManager,
@@ -61,15 +60,16 @@ class NotyWidgetProvider : AppWidgetProvider() {
         super.onUpdate(context, appWidgetManager, appWidgetIds)
     }
 
-    override fun onReceive(context: Context?, intent: Intent) {
+    override fun onReceive(context: Context, intent: Intent) {
         if (ACTION_DONE == intent.action) {
             val appWidgetId = intent.getIntExtra(
                 AppWidgetManager.EXTRA_APPWIDGET_ID,
                 AppWidgetManager.INVALID_APPWIDGET_ID
             )
-            val position = intent.getIntExtra("position", 100)
+            val id = intent.getIntExtra("id", 100)
             val appWidgetManager = AppWidgetManager.getInstance(context)
-            DataProvider.dummyData[position] = "zmiana"
+            val dbHandler = DBHandler(context)
+            dbHandler.updateNote(id)
             appWidgetManager.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listViewWidget)
         }
         super.onReceive(context, intent)
