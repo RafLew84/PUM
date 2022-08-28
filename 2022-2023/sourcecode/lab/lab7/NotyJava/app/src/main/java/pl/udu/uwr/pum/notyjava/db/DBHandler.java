@@ -18,7 +18,7 @@ import pl.udu.uwr.pum.notyjava.model.NoteModel;
 public class DBHandler extends SQLiteOpenHelper {
 
     private static int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "notesBDo.db";
+    private static final String DATABASE_NAME = "notesBDk.db";
     private static final String NOTES_TABLE = "NotesTable";
 
     private static final String COLUMN_ID = "_id";
