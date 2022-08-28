@@ -35,7 +35,7 @@ public class NotyWidgetProvider extends AppWidgetProvider {
             intentUpdate.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
 
             int[] idArray = new int[]{appWidgetId};
-            intentUpdate.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
+            intentUpdate.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, idArray);
 
             PendingIntent pendingUpdate = PendingIntent.getBroadcast(
                     context, appWidgetId, intentUpdate,
