@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.notykotlin.service
+package pl.udu.uwr.pum.notykotlin.widget
 
 import android.appwidget.AppWidgetManager
 import android.content.Context
@@ -22,7 +22,10 @@ class NotyWidgetService : RemoteViewsService() {
             noteList = DataProvider.dummyData
         }
 
-        override fun onDataSetChanged() {}
+        override fun onDataSetChanged() {
+            DataProvider.dummyData.add("Nowa notatka " + (DataProvider.dummyData.size + 1))
+        }
+
         override fun onDestroy() {
             // zamknac polaczenie z baza
         }
@@ -32,6 +35,14 @@ class NotyWidgetService : RemoteViewsService() {
         override fun getViewAt(position: Int): RemoteViews {
             val remoteViews = RemoteViews(context.packageName, R.layout.item_list)
             remoteViews.setTextViewText(R.id.itemListTextView, noteList[position])
+
+            val fillIntent = Intent()
+            fillIntent.apply {
+                putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId)
+                putExtra("position", position)
+            }
+            remoteViews.setOnClickFillInIntent(R.id.itemListTextView, fillIntent)
+
             return remoteViews
         }
 

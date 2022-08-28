@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <receiver
-            android:name=".provider.NotyWidgetProvider"
+            android:name=".widget.NotyWidgetProvider"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -35,7 +35,7 @@
         </receiver>
 
         <service
-            android:name=".service.NotyWidgetService"
+            android:name=".widget.NotyWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
     </application>
 
