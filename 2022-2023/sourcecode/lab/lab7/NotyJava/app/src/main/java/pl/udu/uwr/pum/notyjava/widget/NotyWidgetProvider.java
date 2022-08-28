@@ -69,6 +69,7 @@ public class NotyWidgetProvider extends AppWidgetProvider {
 
             DBHandler dbHandler = new DBHandler(context);
             dbHandler.updateNote(id);
+            dbHandler.close();
 
             appWidgetManager.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listViewWidget);
         }
