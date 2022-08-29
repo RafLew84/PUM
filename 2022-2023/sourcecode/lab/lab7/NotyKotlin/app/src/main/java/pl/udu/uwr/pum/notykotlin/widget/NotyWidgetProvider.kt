@@ -6,9 +6,7 @@ import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
-import android.os.Build
 import android.widget.RemoteViews
-import androidx.annotation.RequiresApi
 import pl.udu.uwr.pum.notykotlin.R
 import pl.udu.uwr.pum.notykotlin.db.DBHandler
 
@@ -69,7 +67,7 @@ class NotyWidgetProvider : AppWidgetProvider() {
             val id = intent.getIntExtra("id", 100)
             val appWidgetManager = AppWidgetManager.getInstance(context)
             val dbHandler = DBHandler(context)
-            dbHandler.updateNote(id)
+            dbHandler.refreshNote(id)
             dbHandler.close()
             appWidgetManager.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listViewWidget)
         }

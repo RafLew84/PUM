@@ -65,8 +65,8 @@ class DBHandler(context: Context) :
             return notes
         }
 
-    fun getNote(id: Int): NoteModel? {
-        var note: NoteModel? = null
+    fun getNote(id: Int): NoteModel {
+        lateinit var note: NoteModel
         val db = this.readableDatabase
         val cursor =
             db.rawQuery("SELECT * FROM $NOTES_TABLE WHERE $COLUMN_ID = $id", null)
@@ -85,10 +85,28 @@ class DBHandler(context: Context) :
         return note
     }
 
-    fun updateNote(id: Int) {
+    fun refreshNote(id: Int) {
         val db = this.writableDatabase
         val contentValues = ContentValues()
         contentValues.put(COLUMN_COLOR, Color.CYAN)
+        db.update(
+            NOTES_TABLE,
+            contentValues,
+            "$COLUMN_ID=$id",
+            null
+        )
+        db.close()
+    }
+
+    fun updateNote(id: Int, text: String, time: LocalTime, color: Int) {
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+        contentValues.apply {
+            put(COLUMN_ID, id)
+            put(COLUMN_TEXT, text)
+            put(COLUMN_TIME, time.toString())
+            put(COLUMN_COLOR, color)
+        }
         db.update(
             NOTES_TABLE,
             contentValues,
