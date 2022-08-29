@@ -18,7 +18,7 @@ import pl.udu.uwr.pum.notyjava.model.NoteModel;
 public class DBHandler extends SQLiteOpenHelper {
 
     private static int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "notesBDk.db";
+    private static final String DATABASE_NAME = "notesBDa.db";
     private static final String NOTES_TABLE = "NotesTable";
 
     private static final String COLUMN_ID = "_id";
@@ -110,10 +110,27 @@ public class DBHandler extends SQLiteOpenHelper {
         return note;
     }
 
-    public void updateNote (int id){
+    public void refreshNote(int id){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COLUMN_COLOR, Color.CYAN);
+
+        db.update(NOTES_TABLE,
+                contentValues,
+                COLUMN_ID + "=" + id,
+                null);
+
+        db.close();
+    }
+
+    public void updateNote(int id, String text, LocalTime time, int color){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(COLUMN_ID, id);
+        contentValues.put(COLUMN_TEXT, text);
+        contentValues.put(COLUMN_TIME, time.toString());
+        contentValues.put(COLUMN_COLOR, color);
 
         db.update(NOTES_TABLE,
                 contentValues,

@@ -7,15 +7,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
-import android.text.style.StrikethroughSpan;
 import android.widget.RemoteViews;
 
 import androidx.annotation.RequiresApi;
 
 import pl.udu.uwr.pum.notyjava.R;
-import pl.udu.uwr.pum.notyjava.data.DataProvider;
 import pl.udu.uwr.pum.notyjava.db.DBHandler;
-import pl.udu.uwr.pum.notyjava.model.NoteModel;
 
 
 public class NotyWidgetProvider extends AppWidgetProvider {
@@ -68,7 +65,7 @@ public class NotyWidgetProvider extends AppWidgetProvider {
             AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
 
             DBHandler dbHandler = new DBHandler(context);
-            dbHandler.updateNote(id);
+            dbHandler.refreshNote(id);
             dbHandler.close();
 
             appWidgetManager.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listViewWidget);
