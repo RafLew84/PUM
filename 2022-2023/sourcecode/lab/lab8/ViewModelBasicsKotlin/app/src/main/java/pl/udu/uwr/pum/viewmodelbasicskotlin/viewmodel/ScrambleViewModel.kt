@@ -27,11 +27,11 @@ class ScrambleViewModel : ViewModel() {
     }
 
     fun isUserWordCorrect(playerWord: String): Boolean {
-        if (playerWord.equals(currentWord, true)) {
+        return if (playerWord.equals(currentWord, true)) {
             increaseScore()
-            return true
+            true
         }
-        return false
+        else false
     }
 
     fun reinitializeData() {
