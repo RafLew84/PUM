@@ -18,8 +18,6 @@
 |Wykład 0|Lab 0|
 |:-------|:-------|
 |<ul><li> podstawowe informacje </li><li> treści programowe </li><li> warunki zaliczenia </li></ul>| <ul><li>Podstawowe informacje</li><li>Android Studio</li></ul> |
-|Aplikacje|  |
-||
 
 ---
 
