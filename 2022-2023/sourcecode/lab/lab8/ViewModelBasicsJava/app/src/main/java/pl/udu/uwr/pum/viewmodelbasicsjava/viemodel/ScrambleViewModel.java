@@ -1,7 +1,5 @@
 package pl.udu.uwr.pum.viewmodelbasicsjava.viemodel;
 
-import android.util.Log;
-
 import androidx.lifecycle.ViewModel;
 
 import java.util.ArrayList;
@@ -49,17 +47,17 @@ public class ScrambleViewModel extends ViewModel {
         Random rand = new Random();
         currentWord = DataProvider.allWordsList.get(rand.nextInt(DataProvider.allWordsList.size()));;
         char[] tempWord = currentWord.toCharArray();
-        while (String.valueOf(tempWord).equals(currentWord)){
-            for (int i = tempWord.length - 1; i > 0; i--){
-                int j = (int) (Math.random() * (i + 1));
-
-                char temp = tempWord[i];
-                tempWord[i] = tempWord[j];
-                tempWord[j] = temp;
-            }
-        }
         if (usedWordsList.contains(currentWord)) getNextWord();
         else {
+            do{
+                for (int i = tempWord.length - 1; i > 0; i--){
+                    int j = (int) (Math.random() * (i + 1));
+
+                    char temp = tempWord[i];
+                    tempWord[i] = tempWord[j];
+                    tempWord[j] = temp;
+                }
+            }while (String.valueOf(tempWord).equals(currentWord));
             currentScrambledWord = Arrays.toString(tempWord)
                     .replace(",", "")
                     .replace("[", "")
