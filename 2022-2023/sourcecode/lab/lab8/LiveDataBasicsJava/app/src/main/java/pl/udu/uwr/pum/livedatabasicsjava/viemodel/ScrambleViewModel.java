@@ -1,5 +1,7 @@
 package pl.udu.uwr.pum.livedatabasicsjava.viemodel;
 
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import java.util.ArrayList;
@@ -9,11 +11,11 @@ import java.util.Random;
 import pl.udu.uwr.pum.livedatabasicsjava.data.DataProvider;
 
 public class ScrambleViewModel extends ViewModel {
-    private int currentWordCount = 0;
-    private int score = 0;
+    private MutableLiveData<Integer> currentWordCount = new MutableLiveData<>(0);
+    private final MutableLiveData<Integer> score = new MutableLiveData<>(0);
     private String currentWord;
     private final ArrayList<String> usedWordsList = new ArrayList<>();
-    private String currentScrambledWord;
+    private final MutableLiveData<String> currentScrambledWord = new MutableLiveData<>();
 
     public ScrambleViewModel () {
         super();
@@ -21,11 +23,12 @@ public class ScrambleViewModel extends ViewModel {
     }
 
     public boolean nextWord() {
-        if (currentWordCount < DataProvider.MAX_NO_OF_WORDS) {
-            getNextWord();
-            return true;
-        }
-        return false;
+            if (currentWordCount.getValue() != null &&
+                    currentWordCount.getValue() < DataProvider.MAX_NO_OF_WORDS) {
+                getNextWord();
+                return true;
+            }
+            return false;
     }
 
     public boolean isUserWordCorrect(String playerWord) {
@@ -37,8 +40,8 @@ public class ScrambleViewModel extends ViewModel {
     }
 
     public void reinitializeData() {
-        score = 0;
-        currentWordCount = 0;
+        score.setValue(0);
+        currentWordCount.setValue(0);
         usedWordsList.clear();
         getNextWord();
     }
@@ -58,26 +61,32 @@ public class ScrambleViewModel extends ViewModel {
         }
         if (usedWordsList.contains(currentWord)) getNextWord();
         else {
-            currentScrambledWord = Arrays.toString(tempWord)
+            currentScrambledWord.setValue(Arrays.toString(tempWord)
                     .replace(",", "")
                     .replace("[", "")
                     .replace("]", "")
                     .replace(" ", "")
-                    .trim();
-            ++currentWordCount;
+                    .trim());
+            if (currentWordCount.getValue() != null)
+                currentWordCount.setValue(currentWordCount.getValue() + 1);
             usedWordsList.add(currentWord);
         }
     }
 
     private void increaseScore() {
-        score += DataProvider.SCORE_INCREASE;
+        if (score.getValue() != null)
+            score.setValue(score.getValue() + DataProvider.SCORE_INCREASE);
     }
 
-    public int getScore() {
+    public LiveData<Integer> getScore() {
         return score;
     }
 
-    public String getCurrentScrambledWord() {
+    public LiveData<String> getCurrentScrambledWord() {
         return currentScrambledWord;
+    }
+
+    public LiveData<Integer> getCurrentWordCount() {
+        return currentWordCount;
     }
 }

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -42,9 +43,17 @@ public class ScrambleFragment extends Fragment {
         binding.skip.setOnClickListener(v -> onSkipWord());
 
         updateNextWordOnScreen();
-        binding.score.setText(getString(R.string.score, 0));
         binding.wordCount.setText(getString(
                 R.string.word_count, 0, DataProvider.MAX_NO_OF_WORDS));
+
+        viewModel.getCurrentScrambledWord().observe(getViewLifecycleOwner(), newWord ->
+                binding.textViewUnscrambledWord.setText(newWord));
+
+        viewModel.getScore().observe(getViewLifecycleOwner(), score ->
+                binding.score.setText(String.valueOf(score)));
+
+        viewModel.getCurrentWordCount().observe(getViewLifecycleOwner(), wordCount ->
+                binding.wordCount.setText(getString(R.string.word_count, wordCount, DataProvider.MAX_NO_OF_WORDS)));
     }
 
     private void onSubmitWord() {
@@ -82,13 +91,13 @@ public class ScrambleFragment extends Fragment {
     }
 
     private void updateNextWordOnScreen() {
-        binding.textViewUnscrambledWord.setText(viewModel.getCurrentScrambledWord());
+        binding.textViewUnscrambledWord.setText(viewModel.getCurrentScrambledWord().getValue());
     }
 
     private void showFinalScoreDialog() {
         new MaterialAlertDialogBuilder(requireContext())
                 .setTitle(getString(R.string.congratulations))
-                .setMessage(getString(R.string.you_scored, viewModel.getScore()))
+                .setMessage(getString(R.string.you_scored, viewModel.getScore().getValue()))
                 .setCancelable(false)
                 .setNegativeButton(getString(R.string.exit), (dialog, which) -> exitGame())
             .setPositiveButton(getString(R.string.play_again), (dialog, which) -> restartGame())
