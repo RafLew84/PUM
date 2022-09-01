@@ -43,10 +43,8 @@ public class ScrambleFragment extends Fragment {
         binding.skip.setOnClickListener(v -> onSkipWord());
 
         binding.setScrambleViewModel(viewModel);
-
         binding.setMaxNoOfWords(DataProvider.MAX_NO_OF_WORDS);
-        binding.wordCount.setText(getString(
-                R.string.word_count, 0, DataProvider.MAX_NO_OF_WORDS));
+
         binding.setLifecycleOwner(getViewLifecycleOwner());
     }
 
