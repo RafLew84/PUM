@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -42,7 +41,6 @@ public class ScrambleFragment extends Fragment {
         binding.submit.setOnClickListener(v -> onSubmitWord());
         binding.skip.setOnClickListener(v -> onSkipWord());
 
-        updateNextWordOnScreen();
         binding.wordCount.setText(getString(
                 R.string.word_count, 0, DataProvider.MAX_NO_OF_WORDS));
 
@@ -63,15 +61,13 @@ public class ScrambleFragment extends Fragment {
 
         if (viewModel.isUserWordCorrect(playerWord)) {
             setErrorTextField(false);
-            if (viewModel.nextWord()) updateNextWordOnScreen();
-            else showFinalScoreDialog();
+            if (!viewModel.nextWord()) showFinalScoreDialog();
         } else setErrorTextField(true);
     }
 
     private void onSkipWord() {
         if (viewModel.nextWord()) {
             setErrorTextField(false);
-            updateNextWordOnScreen();
         } else showFinalScoreDialog();
     }
 
@@ -90,10 +86,6 @@ public class ScrambleFragment extends Fragment {
         }
     }
 
-    private void updateNextWordOnScreen() {
-        binding.textViewUnscrambledWord.setText(viewModel.getCurrentScrambledWord().getValue());
-    }
-
     private void showFinalScoreDialog() {
         new MaterialAlertDialogBuilder(requireContext())
                 .setTitle(getString(R.string.congratulations))
@@ -107,6 +99,5 @@ public class ScrambleFragment extends Fragment {
     private void restartGame() {
         viewModel.reinitializeData();
         setErrorTextField(false);
-        updateNextWordOnScreen();
     }
 }

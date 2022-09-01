@@ -11,7 +11,7 @@ import java.util.Random;
 import pl.udu.uwr.pum.livedatabasicsjava.data.DataProvider;
 
 public class ScrambleViewModel extends ViewModel {
-    private MutableLiveData<Integer> currentWordCount = new MutableLiveData<>(0);
+    private final MutableLiveData<Integer> currentWordCount = new MutableLiveData<>(0);
     private final MutableLiveData<Integer> score = new MutableLiveData<>(0);
     private String currentWord;
     private final ArrayList<String> usedWordsList = new ArrayList<>();
@@ -50,17 +50,17 @@ public class ScrambleViewModel extends ViewModel {
         Random rand = new Random();
         currentWord = DataProvider.allWordsList.get(rand.nextInt(DataProvider.allWordsList.size()));;
         char[] tempWord = currentWord.toCharArray();
-        while (String.valueOf(tempWord).equals(currentWord)){
-            for (int i = tempWord.length - 1; i > 0; i--){
-                int j = (int) (Math.random() * (i + 1));
-
-                char temp = tempWord[i];
-                tempWord[i] = tempWord[j];
-                tempWord[j] = temp;
-            }
-        }
         if (usedWordsList.contains(currentWord)) getNextWord();
         else {
+            do{
+                for (int i = tempWord.length - 1; i > 0; i--){
+                    int j = (int) (Math.random() * (i + 1));
+
+                    char temp = tempWord[i];
+                    tempWord[i] = tempWord[j];
+                    tempWord[j] = temp;
+                }
+            }while (String.valueOf(tempWord).equals(currentWord));
             currentScrambledWord.setValue(Arrays.toString(tempWord)
                     .replace(",", "")
                     .replace("[", "")
