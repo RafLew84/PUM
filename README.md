@@ -11,6 +11,7 @@
 |[Moduł 5](#moduł-5)|  |
 |[Moduł 6](#moduł-6)|  |
 |[Moduł 7](#moduł-7)|  |
+|[Moduł 8](#moduł-8)|  |
 
 ---
 
@@ -85,3 +86,10 @@
 |Aplikacje|  |
 |<ul><li>GalleryApp - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.4.1%20-%20Java%20-%20GalleryApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.4.2%20-%20Kotlin%20-%20GalleryApp.ipynb)<ul><li>`Permissions`</li><li>`Implicit Intent`</li><li>`Camera`</li><li>`SQLite`</li><li>`Navigation`</li></ul></ul>| <table><tr><td><img src="https://media0.giphy.com/media/G5SmlOFRHlILBw9R0p/giphy.gif?cid=790b7611e3c8a0777e1e09d8e312633955f2b237e8abe275&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media2.giphy.com/media/WxnetLg3yS6HddItSS/giphy.gif?cid=790b76112cb28038325c4acc25284dfa06b0788beca930d1&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media0.giphy.com/media/oHuY0UmB6ZQY7Q7h31/giphy.gif?cid=790b7611d9bf36c59e0682886abc760a9fbec4b5db0f4f2e&rid=giphy.gif&ct=g" width="150" /></td></tr></table>
 |<ul><li>NotyApp - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.5.1%20-%20Java%20-%20NotyApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.5.2%20-%20Kotlin%20-%20NotyApp.ipynb)<ul><li>`Widget`</li><li>`Broadcast Receiver`</li><li>`Service`</li><li>`SQLite`</li><li>`ListView`</li></ul></ul>| <table><tr><td><img src="https://media0.giphy.com/media/3Fy8K9fSojsxTMX0Tn/giphy.gif?cid=790b76118027642f3423b655d4e472d3c0fbd2efdad0b809&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media2.giphy.com/media/7SbvK3HIMAjOqhIMnr/giphy.gif?cid=790b7611f664ff3f0186d201e611c3da83b0271fa4f06023&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media2.giphy.com/media/QgsbpUcPcEkPP54ybL/giphy.gif?cid=790b76114c1fb8674be1e51f0e46805e2b6c3bae5f14212c&rid=giphy.gif&ct=g" width="150" /></td></tr></table>
+
+---
+
+## Moduł 8
+|Wykład 8|Lab 8|
+|:-------|:-------|
+|<ul><li>`ViewModel`</li><li> `LiveData` </li><li> `DataBinding` </li></ul>| <ul><li>`ViewModel` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.1.1%20-%20Java%20-%20ViewModel%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.1.2%20-%20Kotlin%20-%20ViewModel%20podstawy.ipynb)  </li><li>`LiveData` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.2.1%20-%20Java%20-%20LivaData%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.2.2%20-%20Kotlin%20-%20LiveData%20podstawy.ipynb) </li><li>`DataBinding` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.3.1%20-%20Java%20-%20DataBinding%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.3.2%20-%20Kotlin%20-%20DataBinding%20podstawy.ipynb) </li></ul></ul>|
