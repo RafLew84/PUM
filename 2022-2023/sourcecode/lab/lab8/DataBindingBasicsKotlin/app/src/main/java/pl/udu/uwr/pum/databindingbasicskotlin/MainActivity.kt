@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.livedatabasicskotlin
+package pl.udu.uwr.pum.databindingbasicskotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

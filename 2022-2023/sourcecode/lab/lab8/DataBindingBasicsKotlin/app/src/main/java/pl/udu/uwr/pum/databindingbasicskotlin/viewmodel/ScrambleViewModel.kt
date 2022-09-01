@@ -1,11 +1,11 @@
-package pl.udu.uwr.pum.livedatabasicskotlin.viewmodel
+package pl.udu.uwr.pum.databindingbasicskotlin.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import pl.udu.uwr.pum.livedatabasicskotlin.data.MAX_NO_OF_WORDS
-import pl.udu.uwr.pum.livedatabasicskotlin.data.SCORE_INCREASE
-import pl.udu.uwr.pum.livedatabasicskotlin.data.allWordsList
+import pl.udu.uwr.pum.databindingbasicskotlin.data.MAX_NO_OF_WORDS
+import pl.udu.uwr.pum.databindingbasicskotlin.data.SCORE_INCREASE
+import pl.udu.uwr.pum.databindingbasicskotlin.data.allWordsList
 
 class ScrambleViewModel : ViewModel() {
     private val _score = MutableLiveData(0)

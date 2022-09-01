@@ -1,15 +1,16 @@
-package pl.udu.uwr.pum.livedatabasicskotlin
+package pl.udu.uwr.pum.databindingbasicskotlin
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import pl.udu.uwr.pum.livedatabasicskotlin.data.MAX_NO_OF_WORDS
-import pl.udu.uwr.pum.livedatabasicskotlin.databinding.FragmentScrambleBinding
-import pl.udu.uwr.pum.livedatabasicskotlin.viewmodel.ScrambleViewModel
+import pl.udu.uwr.pum.databindingbasicskotlin.data.MAX_NO_OF_WORDS
+import pl.udu.uwr.pum.databindingbasicskotlin.databinding.FragmentScrambleBinding
+import pl.udu.uwr.pum.databindingbasicskotlin.viewmodel.ScrambleViewModel
 
 
 class ScrambleFragment : Fragment() {
@@ -22,28 +23,21 @@ class ScrambleFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentScrambleBinding.inflate(inflater, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_scramble, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.scrambleViewModel = viewModel
+
+        binding.maxNoOfWords = MAX_NO_OF_WORDS
+
         binding.submit.setOnClickListener { onSubmitWord() }
         binding.skip.setOnClickListener { onSkipWord() }
 
-        viewModel.currentScrambledWord.observe(viewLifecycleOwner) { newWord ->
-            binding.textViewUnscrambledWord.text = newWord
-        }
-
-        viewModel.score.observe(viewLifecycleOwner) {score ->
-            binding.score.text = score.toString()
-        }
-
-        viewModel.currentWordCount.observe(viewLifecycleOwner) {wordCount ->
-            binding.wordCount.text = getString(
-                R.string.word_count, wordCount, MAX_NO_OF_WORDS)
-        }
+        binding.lifecycleOwner = viewLifecycleOwner
     }
 
     private fun onSubmitWord() {

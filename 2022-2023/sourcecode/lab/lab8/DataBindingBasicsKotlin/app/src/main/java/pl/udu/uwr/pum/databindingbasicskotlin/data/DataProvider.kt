@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.livedatabasicskotlin.data
+package pl.udu.uwr.pum.databindingbasicskotlin.data
 
 const val MAX_NO_OF_WORDS = 10
 const val SCORE_INCREASE = 20

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="pl.udu.uwr.pum.livedatabasicskotlin">
+    package="pl.udu.uwr.pum.databindingbasicskotlin">
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,7 @@
         android:theme="@style/Theme.ViewModelBasicsKotlin"
         tools:targetApi="31">
         <activity
-            android:name="pl.udu.uwr.pum.livedatabasicskotlin.MainActivity"
+            android:name="pl.udu.uwr.pum.databindingbasicskotlin.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

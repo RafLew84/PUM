@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.livedatabasicskotlin
+package pl.udu.uwr.pum.databindingbasicskotlin
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
