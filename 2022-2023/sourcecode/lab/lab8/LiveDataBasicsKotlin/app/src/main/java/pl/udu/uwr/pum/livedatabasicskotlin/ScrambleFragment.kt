@@ -33,9 +33,19 @@ class ScrambleFragment : Fragment() {
         binding.skip.setOnClickListener { onSkipWord() }
 
         updateNextWordOnScreen()
-        binding.score.text = getString(R.string.score, 0)
-        binding.wordCount.text = getString(
-            R.string.word_count, 0, MAX_NO_OF_WORDS)
+
+        viewModel.currentScrambledWord.observe(viewLifecycleOwner) { newWord ->
+            binding.textViewUnscrambledWord.text = newWord
+        }
+
+        viewModel.score.observe(viewLifecycleOwner) {score ->
+            binding.score.text = score.toString()
+        }
+
+        viewModel.currentWordCount.observe(viewLifecycleOwner) {wordCount ->
+            binding.wordCount.text = getString(
+                R.string.word_count, wordCount, MAX_NO_OF_WORDS)
+        }
     }
 
     private fun onSubmitWord() {
@@ -76,13 +86,13 @@ class ScrambleFragment : Fragment() {
     }
 
     private fun updateNextWordOnScreen() {
-        binding.textViewUnscrambledWord.text = viewModel.currentScrambledWord
+        binding.textViewUnscrambledWord.text = viewModel.currentScrambledWord.value
     }
 
     private fun showFinalScoreDialog() {
         MaterialAlertDialogBuilder(requireContext())
             .setTitle(getString(R.string.congratulations))
-            .setMessage(getString(R.string.you_scored, viewModel.score))
+            .setMessage(getString(R.string.you_scored, viewModel.score.value))
             .setCancelable(false)
             .setNegativeButton(getString(R.string.exit)) { _, _ -> exitGame() }
             .setPositiveButton(getString(R.string.play_again)) { _, _ -> restartGame() }
