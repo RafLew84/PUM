@@ -32,8 +32,6 @@ class ScrambleFragment : Fragment() {
         binding.submit.setOnClickListener { onSubmitWord() }
         binding.skip.setOnClickListener { onSkipWord() }
 
-        updateNextWordOnScreen()
-
         viewModel.currentScrambledWord.observe(viewLifecycleOwner) { newWord ->
             binding.textViewUnscrambledWord.text = newWord
         }
@@ -53,22 +51,19 @@ class ScrambleFragment : Fragment() {
 
         if (viewModel.isUserWordCorrect(playerWord)) {
             setErrorTextField(false)
-            if (viewModel.nextWord()) updateNextWordOnScreen()
-            else showFinalScoreDialog()
+            if (!viewModel.nextWord()) showFinalScoreDialog()
         } else setErrorTextField(true)
     }
 
     private fun onSkipWord() {
         if (viewModel.nextWord()) {
             setErrorTextField(false)
-            updateNextWordOnScreen()
         } else showFinalScoreDialog()
     }
 
     private fun restartGame() {
         viewModel.reinitializeData()
         setErrorTextField(false)
-        updateNextWordOnScreen()
     }
 
     private fun exitGame() {
@@ -85,10 +80,6 @@ class ScrambleFragment : Fragment() {
         }
     }
 
-    private fun updateNextWordOnScreen() {
-        binding.textViewUnscrambledWord.text = viewModel.currentScrambledWord.value
-    }
-
     private fun showFinalScoreDialog() {
         MaterialAlertDialogBuilder(requireContext())
             .setTitle(getString(R.string.congratulations))
@@ -98,5 +89,4 @@ class ScrambleFragment : Fragment() {
             .setPositiveButton(getString(R.string.play_again)) { _, _ -> restartGame() }
             .show()
     }
-
 }
