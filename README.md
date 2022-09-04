@@ -17,9 +17,9 @@
 ---
 
 ## Moduł 0
-|Wykład 0|Lab 0|
+|[Wykład 0](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad0.pdf)|Lab 0|
 |:-------|:-------|
-|<ul><li> podstawowe informacje </li><li> treści programowe </li><li> warunki zaliczenia </li></ul>| <ul><li>Podstawowe informacje</li><li>Android Studio</li></ul> |
+|<ul><li> podstawowe informacje </li><li> treści programowe </li><li> warunki zaliczenia - [wykład](https://github.com/RafLew84/PUM/blob/main/2022-2023/zasady_zaliczenia/Zasady%20Zaliczenia%20-%20Wyk%C5%82ad.pdf), [lab](https://github.com/RafLew84/PUM/blob/main/2022-2023/zasady_zaliczenia/Zasady%20Zaliczenia%20-%20Laboratorium.pdf) </li></ul>| <ul><li>Podstawowe informacje</li><li>Android Studio</li></ul> |
 
 ---
 
