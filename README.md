@@ -12,6 +12,7 @@
 |[Moduł 6](#moduł-6)|  |
 |[Moduł 7](#moduł-7)|  |
 |[Moduł 8](#moduł-8)|  |
+|[Moduł 9](#moduł-9)|  |
 
 ---
 
@@ -93,3 +94,11 @@
 |Wykład 8|Lab 8|
 |:-------|:-------|
 |<ul><li>`ViewModel`</li><li> `LiveData` </li><li> `DataBinding` </li></ul>| <ul><li>`ViewModel` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.1.1%20-%20Java%20-%20ViewModel%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.1.2%20-%20Kotlin%20-%20ViewModel%20podstawy.ipynb)  </li><li>`LiveData` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.2.1%20-%20Java%20-%20LivaData%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.2.2%20-%20Kotlin%20-%20LiveData%20podstawy.ipynb) </li><li>`DataBinding` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.3.1%20-%20Java%20-%20DataBinding%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.3.2%20-%20Kotlin%20-%20DataBinding%20podstawy.ipynb) </li></ul></ul>|
+
+
+---
+
+## Moduł 9
+|Wykład 9|Lab 9|
+|:-------|:-------|
+|<ul><li>`ROOM`</li><li> relacja 1-1 </li><li> relacja 1-N </li><li> relacja M-N </li></ul>| <ul><li>`ROOM` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.1.1%20-%20Java%20-%20ROOM%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.1.2%20-%20Kotlin%20-%20ROOM%20podstawy.ipynb)  </li><li>`ROOM` - relacje - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.2.1%20-%20Java%20-%20ROOM%20relacje.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.2.2%20-%20Kotlin%20-%20ROOM%20relacje.ipynb) </li></ul></ul>|
