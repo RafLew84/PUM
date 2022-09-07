@@ -41,8 +41,14 @@ class ListFragment : Fragment() {
             findNavController().navigate(ListFragmentDirections.actionListFragmentToAddFragment())
         }
 
-        ItemTouchHelper(object: ItemTouchHelper.SimpleCallback(0,
-        ItemTouchHelper.RIGHT or ItemTouchHelper.LEFT){
+        swipeToDelete(adapter)
+    }
+
+    private fun swipeToDelete(adapter: ItemAdapter) {
+        ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(
+            0,
+            ItemTouchHelper.RIGHT or ItemTouchHelper.LEFT
+        ) {
             override fun onMove(
                 recyclerView: RecyclerView,
                 viewHolder: RecyclerView.ViewHolder,
