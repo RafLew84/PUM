@@ -1,13 +1,16 @@
-package pl.udu.uwr.pum.shoppykotlin.data
+package pl.udu.uwr.pum.shoppykotlin.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
+import pl.udu.uwr.pum.shoppykotlin.data.Item
+import pl.udu.uwr.pum.shoppykotlin.data.ItemDatabase
+import pl.udu.uwr.pum.shoppykotlin.repository.ItemRepository
 
 class ItemViewModel(application: Application) : AndroidViewModel(application) {
-    private val readAllData: LiveData<List<Item>>
+    val readAllData: LiveData<List<Item>>
     private val repository: ItemRepository
 
     init {
