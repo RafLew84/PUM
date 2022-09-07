@@ -28,4 +28,7 @@ public interface ItemDao {
 
     @Delete
     void deleteItem(Item item);
+
+    @Query("DELETE FROM item_table")
+    void deleteAll();
 }

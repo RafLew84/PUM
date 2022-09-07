@@ -52,6 +52,12 @@ public class ListFragment extends Fragment {
                         .navigate(ListFragmentDirections.actionListFragmentToAddFragment()));
 
         swipeToDelete(adapter);
+
+        binding.clearDataFAB.setOnClickListener(v -> deleteAll());
+    }
+
+    private void deleteAll() {
+        itemViewModel.deleteAll();
     }
 
     private void swipeToDelete(ItemAdapter adapter) {

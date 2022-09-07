@@ -38,4 +38,6 @@ public class ItemRepository {
     }
 
     public void insert(Item item) { itemDao.addItem(item); }
+
+    public void deleteAll(){ itemDao.deleteAll(); }
 }

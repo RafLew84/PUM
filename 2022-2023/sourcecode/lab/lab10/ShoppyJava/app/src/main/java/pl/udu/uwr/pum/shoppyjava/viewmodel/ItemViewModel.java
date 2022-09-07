@@ -43,4 +43,8 @@ public class ItemViewModel extends AndroidViewModel {
     public void delete(Item item){
         ItemDatabase.databaseWriteExecutor.execute(() -> repository.delete(item));
     }
+
+    public void deleteAll(){
+        ItemDatabase.databaseWriteExecutor.execute(repository::deleteAll);
+    }
 }
