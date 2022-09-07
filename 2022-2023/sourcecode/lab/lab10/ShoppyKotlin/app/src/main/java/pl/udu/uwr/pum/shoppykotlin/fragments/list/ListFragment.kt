@@ -42,6 +42,14 @@ class ListFragment : Fragment() {
         }
 
         swipeToDelete(adapter)
+
+        binding.clearDataFAB.setOnClickListener {
+            deleteAll()
+        }
+    }
+
+    private fun deleteAll() {
+        itemViewModel.deleteAll()
     }
 
     private fun swipeToDelete(adapter: ItemAdapter) {

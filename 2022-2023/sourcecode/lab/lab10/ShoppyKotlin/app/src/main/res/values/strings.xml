@@ -9,4 +9,5 @@
     <string name="lista">Lista zakupowa</string>
     <string name="aktualizuj">aktualizuj</string>
     <string name="edytuj">Edytuj</string>
+    <string name="delete_all">delete all</string>
 </resources>

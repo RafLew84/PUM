@@ -21,4 +21,7 @@ interface ItemDao {
 
     @Delete
     suspend fun deleteItem(item: Item)
+
+    @Query("DELETE FROM item_table")
+    suspend fun deleteAllItems()
 }

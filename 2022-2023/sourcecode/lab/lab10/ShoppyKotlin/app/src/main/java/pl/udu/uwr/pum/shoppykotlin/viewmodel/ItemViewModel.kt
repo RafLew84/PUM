@@ -40,4 +40,10 @@ class ItemViewModel(application: Application) : AndroidViewModel(application) {
             repository.deleteItem(item)
         }
     }
+
+    fun deleteAll(){
+        viewModelScope.launch {
+            repository.deleteAllItems()
+        }
+    }
 }
