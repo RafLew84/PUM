@@ -7,7 +7,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,5 +50,22 @@ public class ListFragment extends Fragment {
         binding.addItemFAB.setOnClickListener(v ->
                 Navigation.findNavController(view)
                         .navigate(ListFragmentDirections.actionListFragmentToAddFragment()));
+
+        swipeToDelete(adapter);
+    }
+
+    private void swipeToDelete(ItemAdapter adapter) {
+        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0,
+                ItemTouchHelper.RIGHT | ItemTouchHelper.LEFT) {
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+                itemViewModel.delete(adapter.getItemAt(viewHolder.getAdapterPosition()));
+            }
+        }).attachToRecyclerView(binding.listRecyclerView);
     }
 }

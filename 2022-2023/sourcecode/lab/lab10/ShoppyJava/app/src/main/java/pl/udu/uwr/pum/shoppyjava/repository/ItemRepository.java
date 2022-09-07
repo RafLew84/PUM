@@ -21,10 +21,6 @@ public class ItemRepository {
         readAllData = itemDao.readAllData();
     }
 
-    public void insert(Item item) {
-        ItemDatabase.databaseWriteExecutor.execute(() -> itemDao.addItem(item));
-    }
-
     public LiveData<List<Item>> ReadAllData() {
         return readAllData;
     }
@@ -33,7 +29,13 @@ public class ItemRepository {
         return itemDao.getItem(id);
     }
 
-    public void update(Item item){
-        ItemDatabase.databaseWriteExecutor.execute(() -> itemDao.updateItem(item));
+    public void delete(Item item){
+        itemDao.deleteItem(item);
     }
+
+    public void update(Item item){
+        itemDao.addItem(item);
+    }
+
+    public void insert(Item item) { itemDao.addItem(item); }
 }

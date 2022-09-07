@@ -28,4 +28,8 @@ public class ItemAdapter extends ListAdapter<Item, ItemViewHolder> {
         Item item = getItem(position);
         holder.bind(item);
     }
+
+    public Item getItemAt(int position){
+        return getItem(position);
+    }
 }
