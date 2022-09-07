@@ -33,9 +33,7 @@ class ListFragment : Fragment() {
         binding.listRecyclerView.adapter = adapter
         binding.listRecyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        itemViewModel.readAllData.observe(viewLifecycleOwner) { items ->
-            items?.let { adapter.submitList(it) }
-        }
+        itemViewModel.readAllData.observe(viewLifecycleOwner, adapter::submitList)
 
         binding.addItemFAB.setOnClickListener {
             findNavController().navigate(ListFragmentDirections.actionListFragmentToAddFragment())
