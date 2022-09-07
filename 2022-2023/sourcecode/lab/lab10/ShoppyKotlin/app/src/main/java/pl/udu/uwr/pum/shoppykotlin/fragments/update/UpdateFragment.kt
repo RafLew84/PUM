@@ -33,13 +33,9 @@ class UpdateFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        itemViewModel.getItem(itemId).observe(viewLifecycleOwner){
-            displayItem(it)
-        }
+        itemViewModel.getItem(itemId).observe(viewLifecycleOwner, this::displayItem)
 
-        binding.updateButton.setOnClickListener {
-            updateItem()
-        }
+        binding.updateButton.setOnClickListener { updateItem() }
     }
 
     private fun displayItem(item: Item){
