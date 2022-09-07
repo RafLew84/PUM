@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.shoppyjava.data;
+package pl.udu.uwr.pum.shoppyjava.viewmodel;
 
 import android.app.Application;
 
@@ -7,6 +7,9 @@ import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
 import java.util.List;
+
+import pl.udu.uwr.pum.shoppyjava.data.Item;
+import pl.udu.uwr.pum.shoppyjava.repository.ItemRepository;
 
 public class ItemViewModel extends AndroidViewModel {
 

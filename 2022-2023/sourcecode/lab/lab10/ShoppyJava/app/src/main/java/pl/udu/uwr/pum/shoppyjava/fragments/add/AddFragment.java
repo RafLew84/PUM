@@ -13,7 +13,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
 import pl.udu.uwr.pum.shoppyjava.data.Item;
-import pl.udu.uwr.pum.shoppyjava.data.ItemViewModel;
+import pl.udu.uwr.pum.shoppyjava.viewmodel.ItemViewModel;
 import pl.udu.uwr.pum.shoppyjava.databinding.FragmentAddBinding;
 
 public class AddFragment extends Fragment {
