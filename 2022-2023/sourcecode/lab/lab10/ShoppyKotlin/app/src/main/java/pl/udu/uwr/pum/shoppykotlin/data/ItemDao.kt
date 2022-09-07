@@ -24,4 +24,7 @@ interface ItemDao {
 
     @Query("DELETE FROM item_table")
     suspend fun deleteAllItems()
+
+    @Query("SELECT * FROM item_table WHERE name LIKE :query")
+    fun search(query: String): LiveData<List<Item>>
 }

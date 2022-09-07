@@ -26,4 +26,8 @@ class ItemRepository(private val itemDao: ItemDao) {
     suspend fun deleteAllItems(){
         itemDao.deleteAllItems()
     }
+
+    fun searchItem(query: String): LiveData<List<Item>>{
+        return itemDao.search(query)
+    }
 }

@@ -5,12 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import pl.udu.uwr.pum.shoppykotlin.R
 import pl.udu.uwr.pum.shoppykotlin.databinding.FragmentListBinding
 import pl.udu.uwr.pum.shoppykotlin.viewmodel.ItemViewModel
 
@@ -45,6 +45,31 @@ class ListFragment : Fragment() {
 
         binding.clearDataFAB.setOnClickListener {
             deleteAll()
+        }
+
+        setupSearchView(adapter)
+    }
+
+    private fun setupSearchView(adapter: ItemAdapter) {
+        binding.searchSearchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                if (query != null) search(query, adapter)
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                if (newText != null) search(newText, adapter)
+                return true
+            }
+
+        })
+    }
+
+    private fun search(query: String, adapter: ItemAdapter){
+        val searchQuery = "%$query%"
+
+        itemViewModel.searchItem(searchQuery).observe(viewLifecycleOwner) { list ->
+            list.let { adapter.submitList(list)}
         }
     }
 

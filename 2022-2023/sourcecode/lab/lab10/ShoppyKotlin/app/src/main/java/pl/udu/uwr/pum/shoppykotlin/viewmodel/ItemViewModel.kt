@@ -46,4 +46,8 @@ class ItemViewModel(application: Application) : AndroidViewModel(application) {
             repository.deleteAllItems()
         }
     }
+
+    fun searchItem(query: String): LiveData<List<Item>>{
+        return repository.searchItem(query)
+    }
 }
