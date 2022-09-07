@@ -18,4 +18,8 @@ class ItemAdapter(itemComparator: ItemComparator) : ListAdapter<Item, ItemViewHo
         val item = getItem(position)
         holder.bind(item)
     }
+
+    public fun getItemAt(position: Int): Item{
+        return getItem(position)
+    }
 }

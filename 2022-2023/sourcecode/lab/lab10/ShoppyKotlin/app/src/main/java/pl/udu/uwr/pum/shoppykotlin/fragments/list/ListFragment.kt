@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import pl.udu.uwr.pum.shoppykotlin.R
 import pl.udu.uwr.pum.shoppykotlin.databinding.FragmentListBinding
 import pl.udu.uwr.pum.shoppykotlin.viewmodel.ItemViewModel
@@ -38,5 +40,20 @@ class ListFragment : Fragment() {
         binding.addItemFAB.setOnClickListener {
             findNavController().navigate(ListFragmentDirections.actionListFragmentToAddFragment())
         }
+
+        ItemTouchHelper(object: ItemTouchHelper.SimpleCallback(0,
+        ItemTouchHelper.RIGHT or ItemTouchHelper.LEFT){
+            override fun onMove(
+                recyclerView: RecyclerView,
+                viewHolder: RecyclerView.ViewHolder,
+                target: RecyclerView.ViewHolder
+            ): Boolean {
+                return false
+            }
+
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+                itemViewModel.deleteItem(adapter.getItemAt(viewHolder.adapterPosition))
+            }
+        }).attachToRecyclerView(binding.listRecyclerView)
     }
 }
