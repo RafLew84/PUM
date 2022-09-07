@@ -68,9 +68,7 @@ class ListFragment : Fragment() {
     private fun search(query: String, adapter: ItemAdapter){
         val searchQuery = "%$query%"
 
-        itemViewModel.searchItem(searchQuery).observe(viewLifecycleOwner) { list ->
-            list.let { adapter.submitList(list)}
-        }
+        itemViewModel.searchItem(searchQuery).observe(viewLifecycleOwner, adapter::submitList)
     }
 
     private fun deleteAll() {

@@ -34,10 +34,14 @@ public class ItemRepository {
     }
 
     public void update(Item item){
-        itemDao.addItem(item);
+        itemDao.updateItem(item);
     }
 
     public void insert(Item item) { itemDao.addItem(item); }
 
     public void deleteAll(){ itemDao.deleteAll(); }
+
+    public LiveData<List<Item>> searchItem(String query){
+        return itemDao.searchItem(query);
+    }
 }

@@ -47,4 +47,8 @@ public class ItemViewModel extends AndroidViewModel {
     public void deleteAll(){
         ItemDatabase.databaseWriteExecutor.execute(repository::deleteAll);
     }
+
+    public LiveData<List<Item>> search(String query){
+        return repository.searchItem(query);
+    }
 }

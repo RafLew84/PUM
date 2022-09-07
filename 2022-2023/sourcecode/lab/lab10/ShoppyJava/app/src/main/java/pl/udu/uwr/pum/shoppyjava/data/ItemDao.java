@@ -31,4 +31,7 @@ public interface ItemDao {
 
     @Query("DELETE FROM item_table")
     void deleteAll();
+
+    @Query("SELECT * FROM item_table WHERE name LIKE :query")
+    LiveData<List<Item>> searchItem(String query);
 }
