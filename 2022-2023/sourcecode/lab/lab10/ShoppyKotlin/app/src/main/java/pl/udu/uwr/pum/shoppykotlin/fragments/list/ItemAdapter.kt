@@ -3,7 +3,7 @@ package pl.udu.uwr.pum.shoppykotlin.fragments.list
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import pl.udu.uwr.pum.shoppykotlin.data.Item
+import pl.udu.uwr.pum.shoppykotlin.model.Item
 import pl.udu.uwr.pum.shoppykotlin.databinding.ItemRecyclerviewBinding
 
 class ItemAdapter(itemComparator: ItemComparator) : ListAdapter<Item, ItemViewHolder>(itemComparator) {

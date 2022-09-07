@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.shoppykotlin.data
+package pl.udu.uwr.pum.shoppykotlin.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -8,5 +8,5 @@ data class Item (
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     val name: String,
-    val quantity: Int,
+    val quantity: Int
 )

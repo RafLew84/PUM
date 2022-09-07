@@ -1,7 +1,7 @@
 package pl.udu.uwr.pum.shoppykotlin.fragments.list
 
 import androidx.recyclerview.widget.DiffUtil
-import pl.udu.uwr.pum.shoppykotlin.data.Item
+import pl.udu.uwr.pum.shoppykotlin.model.Item
 
 class ItemComparator : DiffUtil.ItemCallback<Item>() {
     override fun areItemsTheSame(oldItem: Item, newItem: Item): Boolean {
