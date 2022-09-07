@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.shoppyjava.data;
+package pl.udu.uwr.pum.shoppyjava.model;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

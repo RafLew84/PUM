@@ -7,4 +7,6 @@
     <string name="ilosc">Ilość</string>
     <string name="dodaj">Dodaj</string>
     <string name="lista">Lista zakupowa</string>
+    <string name="aktualizuj">aktualizuj</string>
+    <string name="edytuj">Edytuj</string>
 </resources>

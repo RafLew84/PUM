@@ -9,6 +9,8 @@ import androidx.room.RoomDatabase;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import pl.udu.uwr.pum.shoppyjava.model.Item;
+
 @Database(entities = {Item.class}, version = 1, exportSchema = false)
 abstract public class ItemDatabase extends RoomDatabase {
 

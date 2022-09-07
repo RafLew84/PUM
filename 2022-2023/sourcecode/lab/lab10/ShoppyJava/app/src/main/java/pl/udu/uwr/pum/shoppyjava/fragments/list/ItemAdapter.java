@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.ListAdapter;
 
-import pl.udu.uwr.pum.shoppyjava.data.Item;
+import pl.udu.uwr.pum.shoppyjava.model.Item;
 import pl.udu.uwr.pum.shoppyjava.databinding.ItemRecyclerviewBinding;
 
 public class ItemAdapter extends ListAdapter<Item, ItemViewHolder> {

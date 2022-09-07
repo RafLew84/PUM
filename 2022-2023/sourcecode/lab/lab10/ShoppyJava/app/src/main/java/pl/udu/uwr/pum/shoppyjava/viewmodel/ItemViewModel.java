@@ -8,7 +8,7 @@ import androidx.lifecycle.LiveData;
 
 import java.util.List;
 
-import pl.udu.uwr.pum.shoppyjava.data.Item;
+import pl.udu.uwr.pum.shoppyjava.model.Item;
 import pl.udu.uwr.pum.shoppyjava.repository.ItemRepository;
 
 public class ItemViewModel extends AndroidViewModel {
@@ -27,5 +27,13 @@ public class ItemViewModel extends AndroidViewModel {
 
     public LiveData<List<Item>> getAllData() {
         return readAllData;
+    }
+
+    public void update(Item item){
+        repository.update(item);
+    }
+
+    public LiveData<Item> getItem(int id){
+        return repository.getItem(id);
     }
 }

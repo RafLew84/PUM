@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
-import pl.udu.uwr.pum.shoppyjava.data.Item;
+import pl.udu.uwr.pum.shoppyjava.model.Item;
 import pl.udu.uwr.pum.shoppyjava.viewmodel.ItemViewModel;
 import pl.udu.uwr.pum.shoppyjava.databinding.FragmentAddBinding;
 

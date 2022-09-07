@@ -6,7 +6,7 @@ import androidx.lifecycle.LiveData;
 
 import java.util.List;
 
-import pl.udu.uwr.pum.shoppyjava.data.Item;
+import pl.udu.uwr.pum.shoppyjava.model.Item;
 import pl.udu.uwr.pum.shoppyjava.data.ItemDao;
 import pl.udu.uwr.pum.shoppyjava.data.ItemDatabase;
 
@@ -27,5 +27,13 @@ public class ItemRepository {
 
     public LiveData<List<Item>> ReadAllData() {
         return readAllData;
+    }
+
+    public LiveData<Item> getItem(int id){
+        return itemDao.getItem(id);
+    }
+
+    public void update(Item item){
+        ItemDatabase.databaseWriteExecutor.execute(() -> itemDao.updateItem(item));
     }
 }
