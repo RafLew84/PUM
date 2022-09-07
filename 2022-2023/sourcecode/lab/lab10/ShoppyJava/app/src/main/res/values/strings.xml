@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ShoppyJava</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add">add</string>
+    <string name="nazwa">Nazwa</string>
+    <string name="ilosc">Ilość</string>
+    <string name="dodaj">Dodaj</string>
+    <string name="lista">Lista zakupowa</string>
 </resources>
