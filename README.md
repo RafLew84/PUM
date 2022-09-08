@@ -13,6 +13,7 @@
 |[Moduł 7](#moduł-7)|  |
 |[Moduł 8](#moduł-8)|  |
 |[Moduł 9](#moduł-9)|  |
+|[Moduł 10](#moduł-10)|  |
 
 ---
 
@@ -102,3 +103,12 @@
 |Wykład 9|Lab 9|
 |:-------|:-------|
 |<ul><li>`ROOM`</li><li> relacja 1-1 </li><li> relacja 1-N </li><li> relacja M-N </li></ul>| <ul><li>`ROOM` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.1.1%20-%20Java%20-%20ROOM%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.1.2%20-%20Kotlin%20-%20ROOM%20podstawy.ipynb)  </li><li>`ROOM` - relacje - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.2.1%20-%20Java%20-%20ROOM%20relacje.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.2.2%20-%20Kotlin%20-%20ROOM%20relacje.ipynb) </li></ul></ul>|
+
+---
+
+## Moduł 10
+|Wykład 10|Lab 10|
+|:-------|:-------|
+|<ul><li>`MVC`</li><li> `MVP` </li><li> `MVVM` </li></ul>| <ul><li>`MVC` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.1.1%20-%20Java%20-%20MVC%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.1.2%20-%20Kotlin%20-%20MVC%20podstawy.ipynb)  </li><li>`MVP` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.2.1%20-%20Java%20-%20MVP%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.2.2%20-%20Kotlin%20-%20MVP%20podstawy.ipynb) </li><li>`MVVM` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.1%20-%20Java%20-%20MVVM%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.2%20-%20Kotlin%20-%20MVVM%20podstawy.ipynb) </li></ul></ul>|
+|Aplikacje|  |
+|<ul><li>Shoppy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.4.1%20-%20Java%20-%20Shoppy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.4.2%20-%20Kotlin%20-%20Shoppy.ipynb)<ul><li>`MVVM`</li><li>`ROOM`</li><li>`SearchView`</li><li>`RecyclerView`</li><li>`Navigation`</li></ul></ul>| <table><tr><td><img src="https://media3.giphy.com/media/ouvom1jyvtZYaTs9G9/giphy.gif?cid=790b7611d6c84e1ec4e6db0e79b771fd1c02fd8a6d5da16f&rid=giphy.gif&ct=g" width="200" /></td><td><img src="https://media0.giphy.com/media/VrYeQAyTcvFKGJdmp7/giphy.gif?cid=790b76113f512f653e3146ecf9bf27459f52dfd0dd521d6f&rid=giphy.gif&ct=g" width="200" /></td><td><img src="https://media0.giphy.com/media/WbFFN7etkNJOanDaL0/giphy.gif?cid=790b76112339dfc45d7da2080b004ae36bb5ac2dd7971c73&rid=giphy.gif&ct=g" width="200" /></td></tr></table>
