@@ -14,7 +14,7 @@ interface PlaceholderService {
         @Field("userId") userId: Int,
         @Field("title") title: String,
         @Field("body") text: String
-    ): Call<Post?>?
+    ): Call<Post>
 
     @FormUrlEncoded
     @POST("posts")
