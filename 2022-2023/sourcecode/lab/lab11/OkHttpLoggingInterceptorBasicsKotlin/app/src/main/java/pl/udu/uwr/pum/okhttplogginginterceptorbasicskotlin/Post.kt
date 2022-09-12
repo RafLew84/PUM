@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.retrofitputpatchdeletebasicskotlin
+package pl.udu.uwr.pum.okhttplogginginterceptorbasicskotlin
 
 import com.google.gson.annotations.SerializedName
 

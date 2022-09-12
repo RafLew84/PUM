@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.retrofitputpatchdeletebasicskotlin
+package pl.udu.uwr.pum.okhttplogginginterceptorbasicskotlin
 
 import retrofit2.Call
 import retrofit2.http.*
