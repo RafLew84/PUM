@@ -14,6 +14,10 @@
 |[Moduł 8](#moduł-8)|  |
 |[Moduł 9](#moduł-9)|  |
 |[Moduł 10](#moduł-10)|  |
+|[Moduł 11](#moduł-11)|  |
+|[Moduł 12](#moduł-12)|  |
+|[Moduł 13](#moduł-13)|  |
+|[Moduł 14](#moduł-14)|  |
 
 ---
 
@@ -112,3 +116,43 @@
 |<ul><li>`MVC`</li><li> `MVP` </li><li> `MVVM` </li></ul>| <ul><li>`MVC` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.1.1%20-%20Java%20-%20MVC%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.1.2%20-%20Kotlin%20-%20MVC%20podstawy.ipynb)  </li><li>`MVP` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.2.1%20-%20Java%20-%20MVP%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.2.2%20-%20Kotlin%20-%20MVP%20podstawy.ipynb) </li><li>`MVVM` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.1%20-%20Java%20-%20MVVM%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.2%20-%20Kotlin%20-%20MVVM%20podstawy.ipynb) </li></ul></ul>|
 |Aplikacje|  |
 |<ul><li>Shoppy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.4.1%20-%20Java%20-%20Shoppy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.4.2%20-%20Kotlin%20-%20Shoppy.ipynb)<ul><li>`MVVM`</li><li>`ROOM`</li><li>`SearchView`</li><li>`RecyclerView`</li><li>`Navigation`</li></ul></ul>| <table><tr><td><img src="https://media3.giphy.com/media/ouvom1jyvtZYaTs9G9/giphy.gif?cid=790b7611d6c84e1ec4e6db0e79b771fd1c02fd8a6d5da16f&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media0.giphy.com/media/VrYeQAyTcvFKGJdmp7/giphy.gif?cid=790b76113f512f653e3146ecf9bf27459f52dfd0dd521d6f&rid=giphy.gif&ct=g" width="150" /></td><td><img src="https://media0.giphy.com/media/WbFFN7etkNJOanDaL0/giphy.gif?cid=790b76112339dfc45d7da2080b004ae36bb5ac2dd7971c73&rid=giphy.gif&ct=g" width="150" /></td></tr></table>
+
+
+---
+
+## Moduł 11
+|Wykład 11|Lab 11|
+|:-------|:-------|
+|<ul><li>`Retrofit`</li><li> `OkHttp` </li></ul>| <ul><li>`Retrofit` - `@GET` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.1.1%20-%20Java%20-%20MVC%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.1.2%20-%20Kotlin%20-%20MVC%20podstawy.ipynb)  </li><li>`Retrofit` - `URL` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.2.1%20-%20Java%20-%20MVP%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.2.2%20-%20Kotlin%20-%20MVP%20podstawy.ipynb) </li><li>`Retrofit` - `@POST` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.1%20-%20Java%20-%20MVVM%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.2%20-%20Kotlin%20-%20MVVM%20podstawy.ipynb) </li><li>`Retrofit` - `@PATCH`, `@PUT` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.1%20-%20Java%20-%20MVVM%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.2%20-%20Kotlin%20-%20MVVM%20podstawy.ipynb) </li><li>`OkHttp` - `LoggingInterceptor` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.1%20-%20Java%20-%20MVVM%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.2%20-%20Kotlin%20-%20MVVM%20podstawy.ipynb) </li></ul></ul>|
+|Aplikacje|  |
+|<ul><li>VeryNobleApp - [Java](), [Kotlin]()<ul><li>`MVVM`</li><li>`ROOM`</li><li>`Retrofit`</li><li>`LoggingInterceptor`</li><li>`Navigation`</li><li>`RecyclerView`</li></ul></ul>| 
+|<ul><li>RedPlanetApp - [Java](), [Kotlin]()<ul><li>`MVVM`</li><li>`ROOM`</li><li>`Retrofit`</li><li>`LoggingInterceptor`</li><li>`Navigation`</li><li>`RecyclerView`</li></ul></ul>| 
+
+
+---
+
+## Moduł 12
+|Wykład 12|Lab 12|
+|:-------|:-------|
+|<ul><li>`Dagger`</li><li> Dependency Injection </li></ul>| <ul></ul></ul>|
+|Aplikacje|  |
+|<ul>app1</ul></ul>| 
+
+
+---
+
+## Moduł 13
+|Wykład 13|Lab 13|
+|:-------|:-------|
+|<ul><li>`Hilt`</li></ul>| <ul></ul></ul>|
+|Aplikacje|  |
+|<ul>app1</ul>| 
+|<ul>app2</ul>| 
+
+
+---
+
+## Moduł 14
+|Wykład 14|Lab 14|
+|:-------|:-------|
+|<ul><li>Podsumowanie</li><li> Zaliczenie </li></ul>| <ul><li>Podsumowanie</li><li> Zaliczenie </li></ul></ul>|
