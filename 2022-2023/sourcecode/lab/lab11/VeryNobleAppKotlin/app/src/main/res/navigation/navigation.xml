@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/nobleAwardsFragment">
+
+    <fragment
+        android:id="@+id/nobleAwardsFragment"
+        android:name="pl.udu.uwr.pum.verynobleappkotlin.PhysicsNobleAwardsFragment"
+        android:label="fragment_physics_noble_awards"
+        tools:layout="@layout/fragment_noble_awards" />
+    <fragment
+        android:id="@+id/nobleCategoryAndYearFragment"
+        android:name="pl.udu.uwr.pum.verynobleappkotlin.NobleAwardByCategoryAndYearFragment"
+        android:label="fragment_noble_award_by_category_and_year"
+        tools:layout="@layout/fragment_noble_category_and_year" />
+    <fragment
+        android:id="@+id/favoriteAwardsFragment"
+        android:name="pl.udu.uwr.pum.verynobleappkotlin.FavoriteAwardsFragment"
+        android:label="fragment_favorite_awards"
+        tools:layout="@layout/fragment_favorite_awards" />
+</navigation>
