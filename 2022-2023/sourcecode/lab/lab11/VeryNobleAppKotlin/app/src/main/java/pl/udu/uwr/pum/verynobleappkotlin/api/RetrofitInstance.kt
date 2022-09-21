@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.ui.api
+package pl.udu.uwr.pum.verynobleappkotlin.api
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

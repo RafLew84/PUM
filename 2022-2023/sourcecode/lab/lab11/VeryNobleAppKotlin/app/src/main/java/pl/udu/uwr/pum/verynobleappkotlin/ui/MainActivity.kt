@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        //val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav_view)
         binding.bottomNavView.setupWithNavController(navController)
     }
 }

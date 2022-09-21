@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@id/nobleAwardsFragment"
+        android:id="@id/nobelAwardsFragment"
         android:title="@string/nagrody"
         android:icon="@drawable/ic_awards"/>
     <item
-        android:id="@id/nobleCategoryAndYearFragment"
+        android:id="@id/nobelByCategoryAndYearFragment"
         android:title="@string/wyszukaj"
         android:icon="@drawable/ic_category"/>
 
     <item
-        android:id="@id/favoriteAwardsFragment"
+        android:id="@id/favoriteNobelAwardsFragment"
         android:title="@string/ulubione"
         android:icon="@drawable/ic_favorite"/>
 </menu>

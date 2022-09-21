@@ -7,13 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import pl.udu.uwr.pum.verynobleappkotlin.R
 
-class FavoriteAwardsFragment : Fragment() {
+
+class NobelByCategoryAndYearFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_favorite_awards, container, false)
+        return inflater.inflate(R.layout.fragment_nobel_by_category_and_year, container, false)
     }
 }

@@ -3,21 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/nobleAwardsFragment">
+    app:startDestination="@id/nobelAwardsFragment">
 
     <fragment
-        android:id="@+id/nobleAwardsFragment"
-        android:name="pl.udu.uwr.pum.verynobleappkotlin.PhysicsNobleAwardsFragment"
-        android:label="fragment_physics_noble_awards"
-        tools:layout="@layout/fragment_noble_awards" />
+        android:id="@+id/nobelAwardsFragment"
+        android:name="pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.NobelAwardsFragment"
+        android:label="fragment_nobel_awards"
+        tools:layout="@layout/fragment_nobel_awards" />
     <fragment
-        android:id="@+id/nobleCategoryAndYearFragment"
-        android:name="pl.udu.uwr.pum.verynobleappkotlin.NobleAwardByCategoryAndYearFragment"
-        android:label="fragment_noble_award_by_category_and_year"
-        tools:layout="@layout/fragment_noble_category_and_year" />
+        android:id="@+id/nobelByCategoryAndYearFragment"
+        android:name="pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.NobelByCategoryAndYearFragment"
+        android:label="fragment_nobel_by_category_and_year"
+        tools:layout="@layout/fragment_nobel_by_category_and_year" />
     <fragment
-        android:id="@+id/favoriteAwardsFragment"
-        android:name="pl.udu.uwr.pum.verynobleappkotlin.FavoriteAwardsFragment"
-        android:label="fragment_favorite_awards"
-        tools:layout="@layout/fragment_favorite_awards" />
+        android:id="@+id/favoriteNobelAwardsFragment"
+        android:name="pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.FavoriteNobelAwardsFragment"
+        android:label="fragment_favorite_nobel_awards"
+        tools:layout="@layout/fragment_favorite_nobel_awards" />
 </navigation>

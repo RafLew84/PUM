@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.ui.data
+package pl.udu.uwr.pum.verynobleappkotlin.data
 
 data class NobelPrizeResponse(
     val meta: Meta,

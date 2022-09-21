@@ -13,4 +13,4 @@ val categories = mapOf(
     Cat.MEDICINE to "med"
 )
 
-const val baseUrl: String = "http://api.nobelprize.org/"
+const val baseUrl: String = "https://api.nobelprize.org/"
