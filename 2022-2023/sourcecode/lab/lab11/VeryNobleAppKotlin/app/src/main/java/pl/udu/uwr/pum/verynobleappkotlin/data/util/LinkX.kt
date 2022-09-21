@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.data
+package pl.udu.uwr.pum.verynobleappkotlin.data.util
 
 data class LinkX(
     val action: String,

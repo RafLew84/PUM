@@ -2,7 +2,7 @@ package pl.udu.uwr.pum.verynobleappkotlin.api
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import pl.udu.uwr.pum.verynobleappkotlin.ui.util.baseUrl
+import pl.udu.uwr.pum.verynobleappkotlin.util.baseUrl
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

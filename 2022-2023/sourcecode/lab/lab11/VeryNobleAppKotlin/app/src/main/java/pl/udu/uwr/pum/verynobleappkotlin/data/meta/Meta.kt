@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.data
+package pl.udu.uwr.pum.verynobleappkotlin.data.meta
 
 data class Meta(
     val count: Int,

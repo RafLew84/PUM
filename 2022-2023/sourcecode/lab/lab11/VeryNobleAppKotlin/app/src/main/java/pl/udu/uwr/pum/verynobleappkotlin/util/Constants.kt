@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.ui.util
+package pl.udu.uwr.pum.verynobleappkotlin.util
 
 enum class Cat{
     PHYSICS, CHEMISTRY, LITERATURE, PEACE, ECONOMY, MEDICINE

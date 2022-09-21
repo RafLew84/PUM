@@ -1,9 +1,10 @@
 package pl.udu.uwr.pum.verynobleappkotlin.api
 
 import pl.udu.uwr.pum.verynobleappkotlin.data.NobelPrizeResponse
-import pl.udu.uwr.pum.verynobleappkotlin.ui.util.Cat
-import pl.udu.uwr.pum.verynobleappkotlin.ui.util.categories
+import pl.udu.uwr.pum.verynobleappkotlin.util.Cat
+import pl.udu.uwr.pum.verynobleappkotlin.util.categories
 import retrofit2.Call
+import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -17,5 +18,5 @@ interface NobelPrizeApi {
         @Query("yearTo") yearTo: Int,
         @Query("nobelPrizeCategory") category: String = categories[Cat.PHYSICS]!!,
         @Query("format") format: String = "json"
-    ) : Call<NobelPrizeResponse>
+    ) : Response<NobelPrizeResponse>
 }
