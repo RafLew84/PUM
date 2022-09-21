@@ -135,8 +135,6 @@
 |Wykład 12|Lab 12|
 |:-------|:-------|
 |<ul><li>`Dagger`</li><li> Dependency Injection </li></ul>| <ul></ul></ul>|
-|Aplikacje|  |
-|<ul>app1</ul></ul>| 
 
 
 ---
