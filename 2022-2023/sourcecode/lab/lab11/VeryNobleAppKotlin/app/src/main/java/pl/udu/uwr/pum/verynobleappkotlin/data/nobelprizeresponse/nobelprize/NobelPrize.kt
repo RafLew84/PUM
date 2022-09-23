@@ -1,7 +1,7 @@
-package pl.udu.uwr.pum.verynobleappkotlin.data.nobelprize
+package pl.udu.uwr.pum.verynobleappkotlin.data.nobelprizeresponse.nobelprize
 
-import pl.udu.uwr.pum.verynobleappkotlin.data.Laureate.Laureate
-import pl.udu.uwr.pum.verynobleappkotlin.data.util.LinkX
+import pl.udu.uwr.pum.verynobleappkotlin.data.nobelprizeresponse.laureate.Laureate
+import pl.udu.uwr.pum.verynobleappkotlin.data.nobelprizeresponse.util.LinkX
 
 data class NobelPrize(
     val awardYear: String,

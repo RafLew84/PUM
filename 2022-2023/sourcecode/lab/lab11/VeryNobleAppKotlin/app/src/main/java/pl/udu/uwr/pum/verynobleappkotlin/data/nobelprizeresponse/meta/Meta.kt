@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.data.meta
+package pl.udu.uwr.pum.verynobleappkotlin.data.nobelprizeresponse.meta
 
 data class Meta(
     val count: Int,

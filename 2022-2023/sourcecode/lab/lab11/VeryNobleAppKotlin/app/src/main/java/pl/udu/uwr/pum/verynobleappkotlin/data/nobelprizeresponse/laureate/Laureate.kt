@@ -1,6 +1,6 @@
-package pl.udu.uwr.pum.verynobleappkotlin.data.Laureate
+package pl.udu.uwr.pum.verynobleappkotlin.data.nobelprizeresponse.laureate
 
-import pl.udu.uwr.pum.verynobleappkotlin.data.util.LinkX
+import pl.udu.uwr.pum.verynobleappkotlin.data.nobelprizeresponse.util.LinkX
 
 data class Laureate(
     val fullName: FullName,

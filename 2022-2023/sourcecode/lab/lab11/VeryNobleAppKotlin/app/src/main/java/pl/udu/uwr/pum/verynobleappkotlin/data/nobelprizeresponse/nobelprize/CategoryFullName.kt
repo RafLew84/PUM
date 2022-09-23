@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.data.nobelprize
+package pl.udu.uwr.pum.verynobleappkotlin.data.nobelprizeresponse.nobelprize
 
 data class CategoryFullName(
     val en: String,
