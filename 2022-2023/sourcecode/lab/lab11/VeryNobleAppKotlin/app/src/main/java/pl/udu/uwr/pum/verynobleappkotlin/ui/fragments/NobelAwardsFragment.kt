@@ -5,9 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import pl.udu.uwr.pum.verynobleappkotlin.R
+import pl.udu.uwr.pum.verynobleappkotlin.ui.NobelViewModel
 
 class NobelAwardsFragment : Fragment() {
+
+    private val nobelViewModel: NobelViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

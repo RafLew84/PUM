@@ -18,7 +18,7 @@ class NobelPrizeAdapter(itemComparator: NobelPrizeComparator) : ListAdapter<Nobe
         holder.bind(item)
     }
 
-    public fun getItemAt(position: Int): NobelPrize{
+    fun getItemAt(position: Int): NobelPrize{
         return getItem(position)
     }
 }
