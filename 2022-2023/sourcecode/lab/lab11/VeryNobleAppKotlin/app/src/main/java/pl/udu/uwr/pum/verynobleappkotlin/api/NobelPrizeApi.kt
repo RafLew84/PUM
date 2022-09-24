@@ -16,4 +16,12 @@ interface NobelPrizeApi {
         @Query("nobelPrizeCategory") category: String,
         @Query("format") format: String = "json"
     ) : Response<NobelPrizeResponse>
+
+    @GET("2.1/nobelPrizes")
+    suspend fun getNobelPrize(
+        @Query("limit") limit: Int = 1,
+        @Query("sort") sort: String = "desc",
+        @Query("nobelPrizeYear") year: Int,
+        @Query("nobelPrizeCategory") category: String,
+    ) : Response<NobelPrizeResponse>
 }

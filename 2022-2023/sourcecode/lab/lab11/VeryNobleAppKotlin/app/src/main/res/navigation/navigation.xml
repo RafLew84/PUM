@@ -7,17 +7,37 @@
 
     <fragment
         android:id="@+id/nobelAwardsFragment"
-        android:name="pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.NobelAwardsFragment"
-        android:label="Nagrody z Fizyki"
-        tools:layout="@layout/fragment_nobel_awards" />
+        android:name="pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.nobleawards.NobelAwardsFragment"
+        android:label="Nagrody Nobla"
+        tools:layout="@layout/fragment_nobel_awards" >
+        <action
+            android:id="@+id/action_nobelAwardsFragment_to_nobelAwardFragment"
+            app:destination="@id/nobelAwardFragment" >
+            <argument
+                android:name="category"
+                app:argType="string" />
+            <argument
+                android:name="awardYear"
+                app:argType="string" />
+        </action>
+    </fragment>
     <fragment
         android:id="@+id/nobelByCategoryAndYearFragment"
         android:name="pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.NobelByCategoryAndYearFragment"
-        android:label="fragment_nobel_by_category_and_year"
+        android:label="Przegląd"
         tools:layout="@layout/fragment_nobel_by_category_and_year" />
     <fragment
-        android:id="@+id/favoriteNobelAwardsFragment"
+        android:id="@+id/searchNobelAwardsFragment"
         android:name="pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.SearchNobelAwardsFragment"
-        android:label="fragment_favorite_nobel_awards"
+        android:label="Ulubione"
         tools:layout="@layout/fragment_search_nobel_awards" />
+    <fragment
+        android:id="@+id/nobelAwardFragment"
+        android:name="pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.nobelaward.NobelAwardFragment"
+        android:label="Nagroda Nobla"
+        tools:layout="@layout/fragment_nobel_award" >
+        <action
+            android:id="@+id/action_nobelAwardFragment_to_nobelAwardsFragment"
+            app:destination="@id/nobelAwardsFragment" />
+    </fragment>
 </navigation>

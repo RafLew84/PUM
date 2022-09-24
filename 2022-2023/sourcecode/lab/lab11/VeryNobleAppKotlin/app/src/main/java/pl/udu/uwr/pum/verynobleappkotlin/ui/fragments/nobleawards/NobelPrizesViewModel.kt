@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.ui
+package pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.nobleawards
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -12,7 +12,7 @@ import pl.udu.uwr.pum.verynobleappkotlin.util.Resource
 import pl.udu.uwr.pum.verynobleappkotlin.util.categories
 import retrofit2.Response
 
-class NobelViewModel : ViewModel() {
+class NobelPrizesViewModel : ViewModel() {
     private val repository: NobelRepository = NobelRepository()
     private val _nobelPrizes: MutableLiveData<Resource<NobelPrizeResponse>> = MutableLiveData()
 

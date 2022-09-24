@@ -5,6 +5,9 @@ import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import pl.udu.uwr.pum.verynobleappkotlin.R
 import pl.udu.uwr.pum.verynobleappkotlin.databinding.ActivityMainBinding
@@ -18,10 +21,21 @@ class MainActivity : AppCompatActivity() {
                 as NavHostFragment
         navHostFragment.findNavController()
     }
+
+    private val appBarConfiguration: AppBarConfiguration by lazy {
+        AppBarConfiguration(navController.graph)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
         binding.bottomNavView.setupWithNavController(navController)
+        setupActionBarWithNavController(navController, appBarConfiguration)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp(appBarConfiguration)
+                || super.onSupportNavigateUp()
     }
 }

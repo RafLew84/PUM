@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.ui.fragments
+package pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.nobleawards
 
 import android.os.Bundle
 import android.util.Log
@@ -11,10 +11,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import pl.udu.uwr.pum.verynobleappkotlin.R
-import pl.udu.uwr.pum.verynobleappkotlin.adapters.nobelprize.NobelPrizeAdapter
-import pl.udu.uwr.pum.verynobleappkotlin.adapters.nobelprize.NobelPrizeComparator
+import pl.udu.uwr.pum.verynobleappkotlin.adapters.nobelprizes.NobelPrizeAdapter
+import pl.udu.uwr.pum.verynobleappkotlin.adapters.nobelprizes.NobelPrizeComparator
 import pl.udu.uwr.pum.verynobleappkotlin.databinding.FragmentNobelAwardsBinding
-import pl.udu.uwr.pum.verynobleappkotlin.ui.NobelViewModel
 import pl.udu.uwr.pum.verynobleappkotlin.util.Resource
 import pl.udu.uwr.pum.verynobleappkotlin.util.categories
 
@@ -22,7 +21,7 @@ class NobelAwardsFragment : Fragment() {
 
     private lateinit var binding: FragmentNobelAwardsBinding
 
-    private val nobelViewModel: NobelViewModel by viewModels()
+    private val nobelPrizesViewModel: NobelPrizesViewModel by viewModels()
     private val TAG = "NobelAwardsFragment"
 
     override fun onCreateView(
@@ -45,7 +44,7 @@ class NobelAwardsFragment : Fragment() {
     }
 
     private fun observeNoblePrizeList(nobelAdapter: NobelPrizeAdapter) {
-        nobelViewModel.noblePrizes.observe(viewLifecycleOwner) { response ->
+        nobelPrizesViewModel.noblePrizes.observe(viewLifecycleOwner) { response ->
             when (response) {
                 is Resource.Success -> {
                     hideProgressBar()
@@ -80,7 +79,7 @@ class NobelAwardsFragment : Fragment() {
                     position: Int,
                     id: Long
                 ) {
-                    nobelViewModel.getNobelPrizes(categories.values.map { it }[position])
+                    nobelPrizesViewModel.getNobelPrizes(categories.values.map { it }[position])
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {}

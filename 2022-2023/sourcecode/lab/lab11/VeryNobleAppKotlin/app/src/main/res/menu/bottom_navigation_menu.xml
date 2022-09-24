@@ -10,7 +10,7 @@
         android:icon="@drawable/ic_category"/>
 
     <item
-        android:id="@id/favoriteNobelAwardsFragment"
+        android:id="@id/searchNobelAwardsFragment"
         android:title="@string/wyszukaj"
         android:icon="@drawable/ic_search"/>
 </menu>

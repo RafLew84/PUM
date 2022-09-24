@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.adapters.nobelprize
+package pl.udu.uwr.pum.verynobleappkotlin.adapters.nobelprizes
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -16,9 +16,5 @@ class NobelPrizeAdapter(itemComparator: NobelPrizeComparator) : ListAdapter<Nobe
     override fun onBindViewHolder(holder: NobelPrizeViewHolder, position: Int) {
         val item = getItem(position)
         holder.bind(item)
-    }
-
-    fun getItemAt(position: Int): NobelPrize{
-        return getItem(position)
     }
 }
