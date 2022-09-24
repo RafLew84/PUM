@@ -6,11 +6,11 @@
         android:icon="@drawable/ic_awards"/>
     <item
         android:id="@id/nobelByCategoryAndYearFragment"
-        android:title="@string/wyszukaj"
+        android:title="@string/przeglad"
         android:icon="@drawable/ic_category"/>
 
     <item
         android:id="@id/favoriteNobelAwardsFragment"
-        android:title="Wyszukaj"
+        android:title="@string/wyszukaj"
         android:icon="@drawable/ic_search"/>
 </menu>
