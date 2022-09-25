@@ -13,7 +13,7 @@ import pl.udu.uwr.pum.verynobleappkotlin.util.categories
 import retrofit2.Response
 
 class NobelPrizesViewModel : ViewModel() {
-    private val repository: NobelRepository = NobelRepository()
+    private val repository = NobelRepository()
     private val _nobelPrizes: MutableLiveData<Resource<NobelPrizeResponse>> = MutableLiveData()
 
     init {

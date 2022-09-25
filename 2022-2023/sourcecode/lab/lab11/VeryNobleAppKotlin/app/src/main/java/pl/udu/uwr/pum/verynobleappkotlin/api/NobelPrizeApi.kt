@@ -1,8 +1,11 @@
 package pl.udu.uwr.pum.verynobleappkotlin.api
 
+import pl.udu.uwr.pum.verynobleappkotlin.data.laureateresponse.LaureateResponse
+import pl.udu.uwr.pum.verynobleappkotlin.data.laureateresponse.LaureateResponseItem
 import pl.udu.uwr.pum.verynobleappkotlin.data.nobelprizeresponse.NobelPrizeResponse
 import retrofit2.Response
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 
@@ -24,4 +27,7 @@ interface NobelPrizeApi {
         @Query("nobelPrizeYear") year: Int,
         @Query("nobelPrizeCategory") category: String,
     ) : Response<NobelPrizeResponse>
+
+    @GET("2.1/laureate/{laureateID}")
+    suspend fun getLaureates(@Path("laureateID") id: String) : Response<LaureateResponse>
 }
