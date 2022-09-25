@@ -4,10 +4,6 @@
         android:id="@id/nobelAwardsFragment"
         android:title="@string/nagrody"
         android:icon="@drawable/ic_awards"/>
-    <item
-        android:id="@id/nobelByCategoryAndYearFragment"
-        android:title="@string/przeglad"
-        android:icon="@drawable/ic_category"/>
 
     <item
         android:id="@id/searchNobelAwardsFragment"

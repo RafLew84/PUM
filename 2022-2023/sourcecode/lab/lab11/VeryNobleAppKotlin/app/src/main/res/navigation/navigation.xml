@@ -22,11 +22,6 @@
         </action>
     </fragment>
     <fragment
-        android:id="@+id/nobelByCategoryAndYearFragment"
-        android:name="pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.NobelByCategoryAndYearFragment"
-        android:label="Przegląd"
-        tools:layout="@layout/fragment_nobel_by_category_and_year" />
-    <fragment
         android:id="@+id/searchNobelAwardsFragment"
         android:name="pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.SearchNobelAwardsFragment"
         android:label="Ulubione"
