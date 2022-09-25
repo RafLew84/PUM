@@ -50,10 +50,22 @@
     <fragment
         android:id="@+id/laureateFragment"
         android:name="pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.laureate.LaureateFragment"
-        android:label="fragment_laureate"
+        android:label="Laureat"
         tools:layout="@layout/fragment_laureate" >
         <action
             android:id="@+id/action_laureateFragment_to_nobelAwardFragment"
             app:destination="@id/nobelAwardFragment" />
+        <action
+            android:id="@+id/action_laureateFragment_to_wikiLaureateFragment"
+            app:destination="@id/wikiLaureateFragment" >
+            <argument
+                android:name="url"
+                app:argType="string" />
+        </action>
     </fragment>
+    <fragment
+        android:id="@+id/wikiLaureateFragment"
+        android:name="pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.wiki.WikiLaureateFragment"
+        android:label="Wikipedia"
+        tools:layout="@layout/fragment_wiki_laureate" />
 </navigation>

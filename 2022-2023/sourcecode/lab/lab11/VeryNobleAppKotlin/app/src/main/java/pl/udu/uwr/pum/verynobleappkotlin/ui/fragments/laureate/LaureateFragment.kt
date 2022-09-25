@@ -7,10 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.NavDirections
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import pl.udu.uwr.pum.verynobleappkotlin.adapters.laureatenobleprizes.NobelPrizeAdapter
 import pl.udu.uwr.pum.verynobleappkotlin.adapters.laureatenobleprizes.NobelPrizeComparator
-import pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureates.LaureateAdapter
 import pl.udu.uwr.pum.verynobleappkotlin.data.laureateresponse.LaureateResponseItem
 import pl.udu.uwr.pum.verynobleappkotlin.databinding.FragmentLaureateBinding
 import pl.udu.uwr.pum.verynobleappkotlin.util.Resource
@@ -54,9 +55,17 @@ class LaureateFragment : Fragment() {
             when (response) {
                 is Resource.Success -> {
                     hideProgressBar()
-                    response.data?.let {
-                        inflateLayoutWithDate(it[0])
-                        nobelPrizeAdapter.submitList(it[0].nobelPrizes)
+                    response.data?.let { res ->
+                        inflateLayoutWithDate(res[0])
+                        nobelPrizeAdapter.submitList(res[0].nobelPrizes)
+
+                        binding.wikiButton.setOnClickListener {
+                            val action: NavDirections = LaureateFragmentDirections
+                                .actionLaureateFragmentToWikiLaureateFragment(
+                                    res[0].wikipedia.english
+                                )
+                            findNavController().navigate(action)
+                        }
                     }
                 }
                 is Resource.Error -> {
