@@ -7,12 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import pl.udu.uwr.pum.verynobleappkotlin.R
-import pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureate.LaureateAdapter
+import androidx.recyclerview.widget.LinearLayoutManager
+import pl.udu.uwr.pum.verynobleappkotlin.adapters.laureatenobleprizes.NobelPrizeAdapter
+import pl.udu.uwr.pum.verynobleappkotlin.adapters.laureatenobleprizes.NobelPrizeComparator
+import pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureates.LaureateAdapter
 import pl.udu.uwr.pum.verynobleappkotlin.data.laureateresponse.LaureateResponseItem
 import pl.udu.uwr.pum.verynobleappkotlin.databinding.FragmentLaureateBinding
-import pl.udu.uwr.pum.verynobleappkotlin.databinding.FragmentNobelAwardBinding
-import pl.udu.uwr.pum.verynobleappkotlin.ui.fragments.nobelaward.NobelPrizeViewModel
 import pl.udu.uwr.pum.verynobleappkotlin.util.Resource
 
 class LaureateFragment : Fragment() {
@@ -34,7 +34,11 @@ class LaureateFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         laureateViewModel.getLaureate(id!!)
-        observeLaureatePrize()
+
+        val nobelPrizeAdapter = NobelPrizeAdapter(NobelPrizeComparator())
+
+        setupRecyclerView(nobelPrizeAdapter)
+        observeLaureatePrize(nobelPrizeAdapter)
     }
 
     private fun hideProgressBar(){
@@ -45,13 +49,14 @@ class LaureateFragment : Fragment() {
         binding.laureateProgressBar.visibility = View.VISIBLE
     }
 
-    private fun observeLaureatePrize() {
+    private fun observeLaureatePrize(nobelPrizeAdapter: NobelPrizeAdapter) {
         laureateViewModel.laureate.observe(viewLifecycleOwner) { response ->
             when (response) {
                 is Resource.Success -> {
                     hideProgressBar()
                     response.data?.let {
                         inflateLayoutWithDate(it[0])
+                        nobelPrizeAdapter.submitList(it[0].nobelPrizes)
                     }
                 }
                 is Resource.Error -> {
@@ -71,5 +76,12 @@ class LaureateFragment : Fragment() {
         binding.deathDateTextView.text = item.death?.date?:""
         binding.deathCityTextView.text = item.death?.place?.city?.en?:""
         binding.deathCountryTextView.text = item.death?.place?.country?.en?:""
+    }
+
+    private fun setupRecyclerView(nobelPrizeAdapter: NobelPrizeAdapter) {
+        binding.laureateRV.apply {
+            adapter = nobelPrizeAdapter
+            layoutManager = LinearLayoutManager(requireContext())
+        }
     }
 }

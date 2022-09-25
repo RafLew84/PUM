@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureate
+package pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureates
 
 import androidx.navigation.NavDirections
 import androidx.navigation.Navigation

@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureate
+package pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureates
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

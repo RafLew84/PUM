@@ -4,7 +4,7 @@ import pl.udu.uwr.pum.verynobleappkotlin.data.laureateresponse.laureate.Link
 import pl.udu.uwr.pum.verynobleappkotlin.data.laureateresponse.nobelprize.affiliation.Affiliation
 
 data class NobelPrize(
-    val affiliations: List<Affiliation>,
+    val affiliations: List<Affiliation>?,
     val awardYear: String,
     val category: Category,
     val categoryFullName: CategoryFullName,

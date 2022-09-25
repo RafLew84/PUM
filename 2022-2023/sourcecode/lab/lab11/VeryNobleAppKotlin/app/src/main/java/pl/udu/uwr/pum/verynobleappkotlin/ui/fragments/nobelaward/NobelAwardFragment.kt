@@ -8,9 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import pl.udu.uwr.pum.verynobleappkotlin.adapters.nobelprizes.NobelPrizeAdapter
-import pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureate.LaureateAdapter
-import pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureate.LaureateComparator
+import pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureates.LaureateAdapter
+import pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureates.LaureateComparator
 import pl.udu.uwr.pum.verynobleappkotlin.databinding.FragmentNobelAwardBinding
 import pl.udu.uwr.pum.verynobleappkotlin.util.Cat
 import pl.udu.uwr.pum.verynobleappkotlin.util.Resource

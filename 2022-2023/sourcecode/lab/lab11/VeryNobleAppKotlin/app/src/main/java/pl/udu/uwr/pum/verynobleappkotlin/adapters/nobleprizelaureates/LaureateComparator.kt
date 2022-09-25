@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureate
+package pl.udu.uwr.pum.verynobleappkotlin.adapters.nobleprizelaureates
 
 import androidx.recyclerview.widget.DiffUtil
 import pl.udu.uwr.pum.verynobleappkotlin.data.nobelprizeresponse.laureate.Laureate
