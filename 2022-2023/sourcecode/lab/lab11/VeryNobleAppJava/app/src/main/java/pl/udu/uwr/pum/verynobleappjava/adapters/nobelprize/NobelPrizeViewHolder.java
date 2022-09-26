@@ -1,8 +1,5 @@
 package pl.udu.uwr.pum.verynobleappjava.adapters.nobelprize;
 
-import android.view.View;
-
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import pl.udu.uwr.pum.verynobleappjava.data.NobelAwardsResponse;
@@ -17,7 +14,7 @@ public class NobelPrizeViewHolder extends RecyclerView.ViewHolder {
 
     public void bind(NobelAwardsResponse.NobelPrizes item){
         binding.year.setText(item.getAwardYear());
-        if (item.getTopMotivation() != null)
+        if (item.getTopMotivation() != null && item.getTopMotivation().getEn() != null)
             binding.motivation.setText(item.getTopMotivation().getEn());
         else
             binding.motivation.setText("not specified");
@@ -28,7 +25,11 @@ public class NobelPrizeViewHolder extends RecyclerView.ViewHolder {
     private String laureates(NobelAwardsResponse.NobelPrizes item){
         StringBuilder laureates = new StringBuilder();
         if (item.getLaureates() != null)
-            item.getLaureates().forEach(laureate -> laureates.append(laureate.getFullName().getEn()).append(" "));
+            for(NobelAwardsResponse.NobelPrizes.Laureates laureate : item.getLaureates()) {
+                if (laureate.getFullName().getEn() != null && laureate.getFullName() != null)
+                    laureates.append(laureate.getFullName().getEn()).append(" ");
+                else laureates.append("no name");
+            }
         else
             laureates.append("no names");
         return laureates.toString();

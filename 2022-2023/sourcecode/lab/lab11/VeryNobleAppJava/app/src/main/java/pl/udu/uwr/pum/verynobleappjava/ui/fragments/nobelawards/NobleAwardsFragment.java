@@ -11,10 +11,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 
+import java.util.List;
+
+import pl.udu.uwr.pum.verynobleappjava.R;
 import pl.udu.uwr.pum.verynobleappjava.adapters.nobelprize.NobelPrizeAdapter;
 import pl.udu.uwr.pum.verynobleappjava.adapters.nobelprize.NobelPrizeComparator;
 import pl.udu.uwr.pum.verynobleappjava.databinding.FragmentNobleAwardsFragmentBinding;
+import pl.udu.uwr.pum.verynobleappjava.util.Constants;
 
 public class NobleAwardsFragment extends Fragment {
 
@@ -42,10 +48,31 @@ public class NobleAwardsFragment extends Fragment {
         viewModel.getNobelPrizes().observe(getViewLifecycleOwner(), nobelAwardsResponse -> {
             adapter.submitList(nobelAwardsResponse.getNobelPrizes());
         });
+
+        setupSpinner();
     }
 
     private void setupRecyclerView(NobelPrizeAdapter adapter){
         binding.nobelPrizeRV.setAdapter(adapter);
         binding.nobelPrizeRV.setLayoutManager(new LinearLayoutManager(requireContext()));
+    }
+
+    private void setupSpinner(){
+        binding.categorySpinner.setAdapter(
+                new ArrayAdapter<>(requireContext(),
+                        R.layout.spinner_nobel_award_layout,
+                        (Constants.categories.values().toArray())));
+        binding.categorySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                viewModel.getNobelPrizes(200, "desc", 1901, 2022,
+                        (Constants.categories.values().toArray()[position].toString()));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 }
