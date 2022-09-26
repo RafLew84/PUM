@@ -7,17 +7,7 @@
 
     <fragment
         android:id="@+id/nobleAwardsFragmentFragment"
-        android:name="pl.udu.uwr.pum.verynobleappjava.ui.fragments.NobleAwardsFragmentFragment"
+        android:name="pl.udu.uwr.pum.verynobleappjava.ui.fragments.nobelawards.NobleAwardsFragment"
         android:label="fragment_noble_awards_fragment"
         tools:layout="@layout/fragment_noble_awards_fragment" />
-    <fragment
-        android:id="@+id/nobleCategoryYearFragment"
-        android:name="pl.udu.uwr.pum.verynobleappjava.ui.fragments.NobleCategoryYearFragment"
-        android:label="fragment_noble_category_year"
-        tools:layout="@layout/fragment_noble_category_year" />
-    <fragment
-        android:id="@+id/favoriteAwardsFragment"
-        android:name="pl.udu.uwr.pum.verynobleappjava.ui.fragments.FavoriteAwardsFragment"
-        android:label="fragment_favorite_awards"
-        tools:layout="@layout/fragment_favorite_awards" />
 </navigation>
