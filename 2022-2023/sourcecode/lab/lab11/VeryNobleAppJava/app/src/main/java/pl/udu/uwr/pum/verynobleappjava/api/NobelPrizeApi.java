@@ -1,8 +1,10 @@
 package pl.udu.uwr.pum.verynobleappjava.api;
 
-import pl.udu.uwr.pum.verynobleappjava.data.NobelAwardsResponse;
+import pl.udu.uwr.pum.verynobleappjava.data.laureateresponse.LaureateResponse;
+import pl.udu.uwr.pum.verynobleappjava.data.nobelprizeresponse.NobelAwardsResponse;
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface NobelPrizeApi {
@@ -20,4 +22,7 @@ public interface NobelPrizeApi {
             @Query("nobelPrizeYear") int year,
             @Query("nobelPrizeCategory") String category
     );
+
+    @GET("2.1/laureate/{laureateID}")
+    Call<LaureateResponse> getLaureates(@Path("laureateID") String id);
 }

@@ -3,7 +3,7 @@ package pl.udu.uwr.pum.verynobleappjava.adapters.nobelprizelaureates;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 
-import pl.udu.uwr.pum.verynobleappjava.data.NobelAwardsResponse;
+import pl.udu.uwr.pum.verynobleappjava.data.nobelprizeresponse.NobelAwardsResponse;
 
 public class LaureateComparator extends DiffUtil.ItemCallback<NobelAwardsResponse.NobelPrizes.Laureates> {
     @Override

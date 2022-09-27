@@ -4,10 +4,9 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 
-import pl.udu.uwr.pum.verynobleappjava.data.NobelAwardsResponse;
+import pl.udu.uwr.pum.verynobleappjava.data.nobelprizeresponse.NobelAwardsResponse;
 import pl.udu.uwr.pum.verynobleappjava.databinding.LaureateRvItemBinding;
 
 public class LaureateAdapter extends ListAdapter<NobelAwardsResponse.NobelPrizes.Laureates, LaureateViewHolder> {

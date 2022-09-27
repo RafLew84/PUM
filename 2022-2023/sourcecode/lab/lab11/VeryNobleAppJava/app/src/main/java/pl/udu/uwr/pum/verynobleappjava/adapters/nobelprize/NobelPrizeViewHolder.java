@@ -4,7 +4,7 @@ import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import pl.udu.uwr.pum.verynobleappjava.data.NobelAwardsResponse;
+import pl.udu.uwr.pum.verynobleappjava.data.nobelprizeresponse.NobelAwardsResponse;
 import pl.udu.uwr.pum.verynobleappjava.databinding.NobelPrizeRvItemBinding;
 import pl.udu.uwr.pum.verynobleappjava.ui.fragments.nobelawards.NobleAwardsFragmentDirections;
 

@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.verynobleappjava.data;
+package pl.udu.uwr.pum.verynobleappjava.data.nobelprizeresponse;
 
 import java.io.Serializable;
 import java.lang.Integer;

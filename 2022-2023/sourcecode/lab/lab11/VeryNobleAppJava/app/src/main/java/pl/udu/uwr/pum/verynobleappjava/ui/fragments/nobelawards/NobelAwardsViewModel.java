@@ -7,7 +7,7 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import pl.udu.uwr.pum.verynobleappjava.data.NobelAwardsResponse;
+import pl.udu.uwr.pum.verynobleappjava.data.nobelprizeresponse.NobelAwardsResponse;
 import pl.udu.uwr.pum.verynobleappjava.repository.NobelRepository;
 import retrofit2.Call;
 import retrofit2.Callback;

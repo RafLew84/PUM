@@ -8,19 +8,16 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import pl.udu.uwr.pum.verynobleappjava.R;
-import pl.udu.uwr.pum.verynobleappjava.adapters.nobelprize.NobelPrizeAdapter;
-import pl.udu.uwr.pum.verynobleappjava.adapters.nobelprize.NobelPrizeComparator;
 import pl.udu.uwr.pum.verynobleappjava.adapters.nobelprizelaureates.LaureateAdapter;
 import pl.udu.uwr.pum.verynobleappjava.adapters.nobelprizelaureates.LaureateComparator;
-import pl.udu.uwr.pum.verynobleappjava.data.NobelAwardsResponse;
+import pl.udu.uwr.pum.verynobleappjava.data.laureateresponse.nobelprize.affiliation.Affiliation;
+import pl.udu.uwr.pum.verynobleappjava.data.nobelprizeresponse.NobelAwardsResponse;
 import pl.udu.uwr.pum.verynobleappjava.databinding.FragmentNobelAwardBinding;
-import pl.udu.uwr.pum.verynobleappjava.databinding.FragmentNobleAwardsFragmentBinding;
-import pl.udu.uwr.pum.verynobleappjava.ui.fragments.nobelawards.NobelAwardsViewModel;
 import pl.udu.uwr.pum.verynobleappjava.util.Constants;
 
 public class NobelAwardFragment extends Fragment {
