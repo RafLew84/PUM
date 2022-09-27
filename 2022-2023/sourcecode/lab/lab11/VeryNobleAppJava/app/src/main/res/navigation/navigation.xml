@@ -9,5 +9,25 @@
         android:id="@+id/nobleAwardsFragmentFragment"
         android:name="pl.udu.uwr.pum.verynobleappjava.ui.fragments.nobelawards.NobleAwardsFragment"
         android:label="fragment_noble_awards_fragment"
-        tools:layout="@layout/fragment_noble_awards_fragment" />
+        tools:layout="@layout/fragment_noble_awards_fragment" >
+        <action
+            android:id="@+id/action_nobleAwardsFragmentFragment_to_nobelAwardFragment"
+            app:destination="@id/nobelAwardFragment" >
+            <argument
+                android:name="category"
+                app:argType="string" />
+            <argument
+                android:name="awardYear"
+                app:argType="string" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/nobelAwardFragment"
+        android:name="pl.udu.uwr.pum.verynobleappjava.ui.fragments.nobelaward.NobelAwardFragment"
+        android:label="fragment_nobel_award"
+        tools:layout="@layout/fragment_nobel_award" >
+        <action
+            android:id="@+id/action_nobelAwardFragment_to_nobleAwardsFragmentFragment"
+            app:destination="@id/nobleAwardsFragmentFragment" />
+    </fragment>
 </navigation>

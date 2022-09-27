@@ -14,4 +14,10 @@ public interface NobelPrizeApi {
             @Query("yearTo") int yearTo,
             @Query("nobelPrizeCategory") String category
     );
+
+    @GET("2.1/nobelPrizes")
+    Call<NobelAwardsResponse> getNobelPrize(
+            @Query("nobelPrizeYear") int year,
+            @Query("nobelPrizeCategory") String category
+    );
 }

@@ -14,4 +14,10 @@ public class NobelRepository {
         return RetrofitInstance.getApi().getNobelPrizes(
                 limit, sort, yearFrom, yearTo, category);
     }
+
+    public Call<NobelAwardsResponse> getNobelPrize (
+            int year, String category
+    ){
+        return RetrofitInstance.getApi().getNobelPrize(year, category);
+    }
 }

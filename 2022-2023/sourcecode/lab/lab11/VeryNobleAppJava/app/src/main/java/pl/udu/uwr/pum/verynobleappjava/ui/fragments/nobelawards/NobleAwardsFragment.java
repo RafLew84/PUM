@@ -30,7 +30,7 @@ public class NobleAwardsFragment extends Fragment {
     private NobelAwardsViewModel viewModel;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentNobleAwardsFragmentBinding.inflate(inflater, container, false);
         return binding.getRoot();

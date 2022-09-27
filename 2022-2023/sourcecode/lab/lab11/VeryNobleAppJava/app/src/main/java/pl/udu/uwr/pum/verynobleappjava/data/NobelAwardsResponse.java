@@ -173,7 +173,7 @@ public class NobelAwardsResponse implements Serializable {
 
     private List<? extends Links> links;
 
-    private List<? extends Laureates> laureates;
+    private List<Laureates> laureates;
 
     private CategoryFullName category;
 
@@ -227,11 +227,11 @@ public class NobelAwardsResponse implements Serializable {
       this.links = links;
     }
 
-    public List<? extends Laureates> getLaureates() {
+    public List<Laureates> getLaureates() {
       return this.laureates;
     }
 
-    public void setLaureates(List<? extends Laureates> laureates) {
+    public void setLaureates(List<Laureates> laureates) {
       this.laureates = laureates;
     }
 
