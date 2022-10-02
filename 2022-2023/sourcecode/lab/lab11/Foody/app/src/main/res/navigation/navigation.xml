@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/foodListFragment">
+
+    <fragment
+        android:id="@+id/foodListFragment"
+        android:name="pl.udu.uwr.pum.foody.ui.foodlist.FoodListFragment"
+        android:label="fragment_food_list"
+        tools:layout="@layout/fragment_food_list" >
+        <action
+            android:id="@+id/action_foodListFragment_to_foodDetailFragment"
+            app:destination="@id/foodDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailFragment"
+        android:name="pl.udu.uwr.pum.foody.ui.FoodDetailFragment"
+        android:label="fragment_food_detail"
+        tools:layout="@layout/fragment_food_detail" >
+        <action
+            android:id="@+id/action_foodDetailFragment_to_foodListFragment"
+            app:destination="@id/foodListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="pl.udu.uwr.pum.foody.ui.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+</navigation>
