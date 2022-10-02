@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.foody.ui.foodlist
+package pl.udu.uwr.pum.foody.ui.fooddetail
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -10,25 +10,21 @@ import pl.udu.uwr.pum.foody.repository.FoodRepository
 import pl.udu.uwr.pum.foody.util.Resource
 import retrofit2.Response
 
-class FoodListViewModel : ViewModel() {
+class FoodDetailViewModel : ViewModel() {
     private val repository = FoodRepository()
-    private val _mealList: MutableLiveData<Resource<MealResponse>> = MutableLiveData()
+    private val _meal: MutableLiveData<Resource<MealResponse>> = MutableLiveData()
 
-    val mealList: LiveData<Resource<MealResponse>>
-        get() = _mealList
+    val meal: LiveData<Resource<MealResponse>>
+        get() = _meal
 
-    init {
-        getMealList()
-    }
-
-    private fun getMealList() = viewModelScope.launch {
-        _mealList.postValue(Resource.Loading())
-        val response = repository.getFood()
-        _mealList.postValue(handleMealResponse(response))
+    fun getMealById(id: String) = viewModelScope.launch {
+        _meal.postValue(Resource.Loading())
+        val response = repository.getFoodById(id)
+        _meal.postValue(handleMealResponse(response))
     }
 
     private fun handleMealResponse(response: Response<MealResponse>)
-            : Resource<MealResponse>{
+            : Resource<MealResponse> {
         if (response.isSuccessful)
             response.body()?.let { return Resource.Success(it) }
         return Resource.Error(response.message())

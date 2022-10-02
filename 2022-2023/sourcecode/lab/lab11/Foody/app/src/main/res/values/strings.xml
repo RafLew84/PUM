@@ -5,4 +5,8 @@
     <string name="food_image">food image</string>
     <string name="food">Food</string>
     <string name="favorite">Favorite</string>
+    <string name="favorite_button">favorite button</string>
+    <string name="title">title</string>
+    <string name="category">category</string>
+    <string name="instructions">instructions</string>
 </resources>

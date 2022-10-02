@@ -3,7 +3,7 @@ package pl.udu.uwr.pum.foody.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import pl.udu.uwr.pum.foody.data.list.Meal
+import pl.udu.uwr.pum.foody.data.Meal
 import pl.udu.uwr.pum.foody.databinding.ListItemRvBinding
 
 class FoodAdapter(itemComparator: FoodComparator) : ListAdapter<Meal, FoodViewHolder>(itemComparator) {

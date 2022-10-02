@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.foody.data.list
+package pl.udu.uwr.pum.foody.data
 
 data class Meal(
     val idMeal: String,

@@ -12,11 +12,15 @@
         tools:layout="@layout/fragment_food_list" >
         <action
             android:id="@+id/action_foodListFragment_to_foodDetailFragment"
-            app:destination="@id/foodDetailFragment" />
+            app:destination="@id/foodDetailFragment" >
+            <argument
+                android:name="id"
+                app:argType="string" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/foodDetailFragment"
-        android:name="pl.udu.uwr.pum.foody.ui.FoodDetailFragment"
+        android:name="pl.udu.uwr.pum.foody.ui.fooddetail.FoodDetailFragment"
         android:label="fragment_food_detail"
         tools:layout="@layout/fragment_food_detail" >
         <action
