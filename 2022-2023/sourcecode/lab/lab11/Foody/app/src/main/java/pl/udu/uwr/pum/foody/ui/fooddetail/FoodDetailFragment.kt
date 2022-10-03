@@ -42,6 +42,9 @@ class FoodDetailFragment : Fragment() {
                     response.data?.let { res ->
                         val item = res.meals.first()
                         inflate(item)
+                        binding.favoriteButton.setOnClickListener {
+                            foodViewModel.insert(item)
+                        }
                     }
                 }
                 is Resource.Error -> {
