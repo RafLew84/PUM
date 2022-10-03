@@ -1,8 +1,9 @@
-package pl.udu.uwr.pum.foody.adapters
+package pl.udu.uwr.pum.foody.adapters.foodlist
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
+import pl.udu.uwr.pum.foody.adapters.FoodComparator
 import pl.udu.uwr.pum.foody.data.Meal
 import pl.udu.uwr.pum.foody.databinding.ListItemRvBinding
 

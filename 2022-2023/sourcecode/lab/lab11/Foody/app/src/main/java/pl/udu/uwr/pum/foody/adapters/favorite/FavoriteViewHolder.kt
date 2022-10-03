@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.foody.adapters
+package pl.udu.uwr.pum.foody.adapters.favorite
 
 import androidx.navigation.NavDirections
 import androidx.navigation.Navigation
@@ -6,9 +6,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import pl.udu.uwr.pum.foody.data.Meal
 import pl.udu.uwr.pum.foody.databinding.ListItemRvBinding
-import pl.udu.uwr.pum.foody.ui.foodlist.FoodListFragmentDirections
+import pl.udu.uwr.pum.foody.ui.fragments.FavoriteFragmentDirections
+import pl.udu.uwr.pum.foody.ui.fragments.FoodListFragmentDirections
 
-class FoodViewHolder(private val binding: ListItemRvBinding)
+class FavoriteViewHolder(private val binding: ListItemRvBinding)
     : RecyclerView.ViewHolder(binding.root){
         fun bind(item: Meal){
             binding.name.text = item.strMeal
@@ -16,8 +17,8 @@ class FoodViewHolder(private val binding: ListItemRvBinding)
                 .load(item.strMealThumb)
                 .into(binding.image)
             binding.root.setOnClickListener {
-                val action: NavDirections = FoodListFragmentDirections
-                    .actionFoodListFragmentToFoodDetailFragment(
+                val action: NavDirections = FavoriteFragmentDirections
+                    .actionFavoriteFragmentToFoodDetailFragment(
                         item.idMeal
                     )
                 Navigation.findNavController(binding.root).navigate(action)

@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.foody.ui.fooddetail
+package pl.udu.uwr.pum.foody.ui.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
 import pl.udu.uwr.pum.foody.data.Meal
 import pl.udu.uwr.pum.foody.databinding.FragmentFoodDetailBinding

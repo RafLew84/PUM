@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/foodListFragment"
-        android:name="pl.udu.uwr.pum.foody.ui.foodlist.FoodListFragment"
+        android:name="pl.udu.uwr.pum.foody.ui.fragments.FoodListFragment"
         android:label="fragment_food_list"
         tools:layout="@layout/fragment_food_list" >
         <action
@@ -20,16 +20,27 @@
     </fragment>
     <fragment
         android:id="@+id/foodDetailFragment"
-        android:name="pl.udu.uwr.pum.foody.ui.fooddetail.FoodDetailFragment"
+        android:name="pl.udu.uwr.pum.foody.ui.fragments.FoodDetailFragment"
         android:label="fragment_food_detail"
         tools:layout="@layout/fragment_food_detail" >
         <action
             android:id="@+id/action_foodDetailFragment_to_foodListFragment"
             app:destination="@id/foodListFragment" />
+        <action
+            android:id="@+id/action_foodDetailFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
     </fragment>
     <fragment
         android:id="@+id/favoriteFragment"
-        android:name="pl.udu.uwr.pum.foody.ui.favorite.FavoriteFragment"
+        android:name="pl.udu.uwr.pum.foody.ui.fragments.FavoriteFragment"
         android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_foodDetailFragment"
+            app:destination="@id/foodDetailFragment" >
+            <argument
+                android:name="id"
+                app:argType="string" />
+        </action>
+    </fragment>
 </navigation>

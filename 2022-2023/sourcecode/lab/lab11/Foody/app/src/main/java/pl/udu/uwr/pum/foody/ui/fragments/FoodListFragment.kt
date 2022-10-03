@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.foody.ui.foodlist
+package pl.udu.uwr.pum.foody.ui.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -7,9 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import pl.udu.uwr.pum.foody.adapters.FoodAdapter
+import pl.udu.uwr.pum.foody.adapters.foodlist.FoodAdapter
 import pl.udu.uwr.pum.foody.adapters.FoodComparator
 import pl.udu.uwr.pum.foody.databinding.FragmentFoodListBinding
 import pl.udu.uwr.pum.foody.ui.FoodViewModel
