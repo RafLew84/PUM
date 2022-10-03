@@ -13,9 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import pl.udu.uwr.pum.foodyjava.adapters.MealComparator;
 import pl.udu.uwr.pum.foodyjava.adapters.meallist.MealAdapter;
-import pl.udu.uwr.pum.foodyjava.adapters.meallist.MealViewHolder;
 import pl.udu.uwr.pum.foodyjava.databinding.FragmentMealListBinding;
-import pl.udu.uwr.pum.foodyjava.ui.MainActivity;
 import pl.udu.uwr.pum.foodyjava.ui.MealViewModel;
 
 public class MealListFragment extends Fragment {

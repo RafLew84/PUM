@@ -2,65 +2,58 @@ package pl.udu.uwr.pum.foodyjava.ui.fragments;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import pl.udu.uwr.pum.foodyjava.R;
+import com.bumptech.glide.Glide;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link MealDetailFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import pl.udu.uwr.pum.foodyjava.R;
+import pl.udu.uwr.pum.foodyjava.data.Meal;
+import pl.udu.uwr.pum.foodyjava.databinding.FragmentMealDetailBinding;
+import pl.udu.uwr.pum.foodyjava.databinding.FragmentMealListBinding;
+import pl.udu.uwr.pum.foodyjava.ui.MealViewModel;
+
 public class MealDetailFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private FragmentMealDetailBinding binding;
+    private MealViewModel viewModel;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public MealDetailFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment MealDetailFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static MealDetailFragment newInstance(String param1, String param2) {
-        MealDetailFragment fragment = new MealDetailFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    private String id;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_meal_detail, container, false);
+        binding = FragmentMealDetailBinding.inflate(inflater, container, false);
+        id = requireArguments().getString("id");
+        viewModel = new ViewModelProvider(requireActivity()).get(MealViewModel.class);
+        viewModel.getMealById(id);
+        return binding.getRoot();
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        viewModel.getMeal().observe(getViewLifecycleOwner(), mealResponse -> {
+            mealResponse.meals.stream().findFirst().ifPresent(this::inflate);
+            binding.favoriteButton.setOnClickListener(v -> {
+                viewModel.insert(mealResponse.meals.stream().findFirst().orElse(null));
+            });
+        });
+    }
+
+    private void inflate(Meal item){
+        Glide.with(this)
+                .load(item.strMealThumb)
+                .into(binding.foodImage);
+        binding.category.setText(item.strCategory);
+        binding.title.setText(item.strMeal);
+        binding.instructions.setText(item.strInstructions);
     }
 }
