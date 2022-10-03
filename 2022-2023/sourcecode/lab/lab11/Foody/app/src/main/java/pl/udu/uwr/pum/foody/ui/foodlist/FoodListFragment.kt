@@ -6,17 +6,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import pl.udu.uwr.pum.foody.adapters.FoodAdapter
 import pl.udu.uwr.pum.foody.adapters.FoodComparator
 import pl.udu.uwr.pum.foody.databinding.FragmentFoodListBinding
+import pl.udu.uwr.pum.foody.ui.FoodViewModel
 import pl.udu.uwr.pum.foody.util.Resource
 
 class FoodListFragment : Fragment() {
     private lateinit var binding: FragmentFoodListBinding
 
-    private val foodViewModel: FoodListViewModel by viewModels()
+    private val foodViewModel: FoodViewModel by activityViewModels()
     private val TAG = "FoodListFragment"
 
     override fun onCreateView(
@@ -29,6 +31,8 @@ class FoodListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        foodViewModel.getMealList()
 
         val adapter = FoodAdapter(FoodComparator())
         setupRecyclerView(adapter)

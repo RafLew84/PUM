@@ -19,4 +19,8 @@ class FoodAdapter(itemComparator: FoodComparator) : ListAdapter<Meal, FoodViewHo
         val item = getItem(position)
         holder.bind(item)
     }
+
+    fun getItemAt(position: Int): Meal{
+        return getItem(position)
+    }
 }

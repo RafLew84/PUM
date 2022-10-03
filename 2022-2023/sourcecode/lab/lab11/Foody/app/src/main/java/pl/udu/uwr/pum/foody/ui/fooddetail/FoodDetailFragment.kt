@@ -6,20 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
-import androidx.navigation.NavDirections
-import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
-import pl.udu.uwr.pum.foody.R
 import pl.udu.uwr.pum.foody.data.Meal
 import pl.udu.uwr.pum.foody.databinding.FragmentFoodDetailBinding
+import pl.udu.uwr.pum.foody.ui.FoodViewModel
 import pl.udu.uwr.pum.foody.util.Resource
 
 class FoodDetailFragment : Fragment() {
 
     private lateinit var binding: FragmentFoodDetailBinding
 
-    private val foodViewModel: FoodDetailViewModel by viewModels()
+    private val foodViewModel: FoodViewModel by activityViewModels()
     private val TAG = "FoodDetailFragment"
 
     private val id: String? by lazy { requireArguments().getString("id") }
@@ -43,7 +42,6 @@ class FoodDetailFragment : Fragment() {
                     response.data?.let { res ->
                         val item = res.meals.first()
                         inflate(item)
-                        Log.d("data", item.strMeal)
                     }
                 }
                 is Resource.Error -> {

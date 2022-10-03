@@ -29,7 +29,7 @@
     </fragment>
     <fragment
         android:id="@+id/favoriteFragment"
-        android:name="pl.udu.uwr.pum.foody.ui.FavoriteFragment"
+        android:name="pl.udu.uwr.pum.foody.ui.favorite.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
 </navigation>
