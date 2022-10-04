@@ -34,7 +34,11 @@ class FoodDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        foodViewModel.meal.observe(viewLifecycleOwner){response ->
+        observeMeal()
+    }
+
+    private fun observeMeal() {
+        foodViewModel.meal.observe(viewLifecycleOwner) { response ->
             when (response) {
                 is Resource.Success -> {
                     hideProgressBar()
