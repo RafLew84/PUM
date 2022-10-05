@@ -1,23 +1,23 @@
 # PUM
  Programowanie Urządzeń Mobilnych
  
-|Moduł|Lista|
-|:-------|:--------|
-|[Moduł 0](#moduł-0)|  |
-|[Moduł 1](#moduł-1)|  |
-|[Moduł 2](#moduł-2)|  |
-|[Moduł 3](#moduł-3)|  |
-|[Moduł 4](#moduł-4)|  |
-|[Moduł 5](#moduł-5)|  |
-|[Moduł 6](#moduł-6)|  |
-|[Moduł 7](#moduł-7)|  |
-|[Moduł 8](#moduł-8)|  |
-|[Moduł 9](#moduł-9)|  |
-|[Moduł 10](#moduł-10)|  |
-|[Moduł 11](#moduł-11)|  |
-|[Moduł 12](#moduł-12)|  |
-|[Moduł 13](#moduł-13)|  |
-|[Moduł 14](#moduł-14)|  |
+|Moduł|Lista|Termin|
+|:-------|:--------|:--------|
+|[Moduł 0](#moduł-0)|  |  |
+|[Moduł 1](#moduł-1)| [lista 1](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/lista1.pdf)  |  28.10.2022 |
+|[Moduł 2](#moduł-2)|  |  |
+|[Moduł 3](#moduł-3)|  |  |
+|[Moduł 4](#moduł-4)|  |  |
+|[Moduł 5](#moduł-5)|  |  |
+|[Moduł 6](#moduł-6)|  |  |
+|[Moduł 7](#moduł-7)|  |  |
+|[Moduł 8](#moduł-8)|  |  |
+|[Moduł 9](#moduł-9)|  |  |
+|[Moduł 10](#moduł-10)|  |  |
+|[Moduł 11](#moduł-11)|  |  |
+|[Moduł 12](#moduł-12)|  |  |
+|[Moduł 13](#moduł-13)|  |  |
+|[Moduł 14](#moduł-14)|  |  |
 
 ---
 
