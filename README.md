@@ -8,7 +8,7 @@
 |[Moduł 2](#moduł-2)|  |  |
 |[Moduł 3](#moduł-3)| [lista 2](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/lista2.pdf)  | 18.11.2022 |
 |[Moduł 4](#moduł-4)|  |  |
-|[Moduł 5](#moduł-5)|  |  |
+|[Moduł 5](#moduł-5)| [lista 3](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/lista3.pdf) | 16.12.2022 |
 |[Moduł 6](#moduł-6)|  |  |
 |[Moduł 7](#moduł-7)|  |  |
 |[Moduł 8](#moduł-8)|  |  |
