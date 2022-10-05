@@ -15,7 +15,7 @@
 |[Moduł 9](#moduł-9)|  |  |
 |[Moduł 10](#moduł-10)|  |  |
 |[Moduł 11](#moduł-11)|  |  |
-|[Moduł 12](#moduł-12)| lista 5 |  |
+|[Moduł 12](#moduł-12)| lista 5 | 07.02.2023 |
 |[Moduł 13](#moduł-13)|  |  |
 |[Moduł 14](#moduł-14)|  |  |
 
