@@ -24,14 +24,14 @@
 ## Moduł 0
 |[Wykład 0](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad0.pdf)|Lab 0|
 |:-------|:-------|
-|<ul><li> podstawowe informacje </li><li> treści programowe </li><li> warunki zaliczenia - [wykład](https://github.com/RafLew84/PUM/blob/main/2022-2023/zasady_zaliczenia/Zasady%20Zaliczenia%20-%20Wyk%C5%82ad.pdf), [lab](https://github.com/RafLew84/PUM/blob/main/2022-2023/zasady_zaliczenia/Zasady%20Zaliczenia%20-%20Laboratorium.pdf) </li></ul>| <ul><li>Podstawowe informacje</li><li>Android Studio</li></ul> |
+|<ul><li> podstawowe informacje </li><li> treści programowe </li><li> warunki zaliczenia - [wykład](https://github.com/RafLew84/PUM/blob/main/2022-2023/zasady_zaliczenia/Zasady%20Zaliczenia%20-%20Wyk%C5%82ad.pdf), [lab](https://github.com/RafLew84/PUM/blob/main/2022-2023/zasady_zaliczenia/Zasady%20Zaliczenia%20-%20Laboratorium.pdf) </li></ul>| <ul><li>Podstawowe informacje</li><li>Android Studio</li><li>Struktura projektu</li></ul> |
 
 ---
 
 ## Moduł 1
 |Wykład 1|Lab 1|
 |:-------|:-------|
-|<ul><li>Struktura projektu</li><li> `Activity` </li><li> Cykl życia aktywności </li></ul>|<ul><li> LinearLayout - [notatnik](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.1%20-%20Interfejs%20-%20LinearLayout.ipynb) </li><li> ConstraintLayout - [notatnik](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.2%20-%20Interfejs%20-%20ConstraintLayout.ipynb) </li><li> Obsługa `onClick` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.4.1%20-%20Java%20-%20Obs%C5%82uga%20OnClick.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.4.2%20-%20Kotlin%20-%20Obs%C5%82uga%20OnClick.ipynb)</li></ul>|
+|<ul><li> `Activity` </li><li> Cykl życia aktywności </li></ul>|<ul><li> LinearLayout - [notatnik](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.1%20-%20Interfejs%20-%20LinearLayout.ipynb) </li><li> ConstraintLayout - [notatnik](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.2%20-%20Interfejs%20-%20ConstraintLayout.ipynb) </li><li> Obsługa `onClick` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.4.1%20-%20Java%20-%20Obs%C5%82uga%20OnClick.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.4.2%20-%20Kotlin%20-%20Obs%C5%82uga%20OnClick.ipynb)</li></ul>|
 |Aplikacje|  |
 |<ul><li>CounterApp - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.3.1%20-%20Java%20-%20CounterApp.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.3.2%20-%20Kotlin%20-%20CounterApp.ipynb)</ul>| <img src="https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/images/counterapp.png" width="200" />|
 
