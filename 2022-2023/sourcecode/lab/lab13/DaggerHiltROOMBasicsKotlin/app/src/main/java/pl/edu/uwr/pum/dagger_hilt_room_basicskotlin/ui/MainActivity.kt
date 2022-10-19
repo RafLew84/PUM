@@ -19,18 +19,20 @@ class MainActivity : AppCompatActivity() {
 
         val textView = findViewById<TextView>(R.id.textview)
 
-        viewModel.insert(Student(0, "Rafa"))
-        viewModel.insert(Student(0, "Maciej"))
-        viewModel.insert(Student(0, "Kuba"))
+        viewModel.apply {
+            insert(Student(0, "Rafa"))
+            insert(Student(0, "Maciej"))
+            insert(Student(0, "Kuba"))
 
-        viewModel.readAllData.observe(this){student ->
-            val content = StringBuilder()
-            student.forEach {
-                content
-                    .append("id: ").append(it.id).append("\n")
-                    .append("Name: ").append(it.name).append("\n\n")
+            readAllData.observe(this@MainActivity) { student ->
+                val content = StringBuilder()
+                student.forEach {
+                    content
+                        .append("id: ").append(it.id).append("\n")
+                        .append("Name: ").append(it.name).append("\n\n")
+                }
+                textView.text = content
             }
-            textView.text = content
         }
     }
 }
