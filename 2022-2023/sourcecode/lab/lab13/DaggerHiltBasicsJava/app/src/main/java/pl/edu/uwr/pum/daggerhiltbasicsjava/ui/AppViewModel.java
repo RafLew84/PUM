@@ -13,7 +13,7 @@ import javax.inject.Inject;
 
 import dagger.hilt.android.lifecycle.HiltViewModel;
 import pl.edu.uwr.pum.daggerhiltbasicsjava.data.Post;
-import pl.edu.uwr.pum.daggerhiltbasicsjava.domain.remote.AppRepository;
+import pl.edu.uwr.pum.daggerhiltbasicsjava.data.repository.AppRepository;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

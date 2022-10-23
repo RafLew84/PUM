@@ -9,8 +9,7 @@ import dagger.hilt.components.SingletonComponent;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import pl.edu.uwr.pum.daggerhiltbasicsjava.data.remote.PlaceholderApi;
-import pl.edu.uwr.pum.daggerhiltbasicsjava.data.repository.AppRepositoryImpl;
-import pl.edu.uwr.pum.daggerhiltbasicsjava.domain.remote.AppRepository;
+import pl.edu.uwr.pum.daggerhiltbasicsjava.data.repository.AppRepository;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -36,6 +35,6 @@ public class AppModule {
     @Provides
     @Singleton
     AppRepository provideRepository(PlaceholderApi api){
-        return new AppRepositoryImpl(api);
+        return new AppRepository(api);
     }
 }
