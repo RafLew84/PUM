@@ -7,8 +7,7 @@ import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import pl.edu.uwr.pum.daggerhiltbasicskotlin.data.remote.PlaceholderApi
-import pl.edu.uwr.pum.daggerhiltbasicskotlin.data.repository.AppRepositoryImpl
-import pl.edu.uwr.pum.daggerhiltbasicskotlin.domain.remote.AppRepository
+import pl.edu.uwr.pum.daggerhiltbasicskotlin.data.repository.AppRepository
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
@@ -35,6 +34,6 @@ object AppModule {
     @Provides
     @Singleton
     fun provideAppRepository(api: PlaceholderApi) : AppRepository{
-        return AppRepositoryImpl(api)
+        return AppRepository(api)
     }
 }

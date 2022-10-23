@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import pl.edu.uwr.pum.daggerhiltbasicskotlin.data.Post
-import pl.edu.uwr.pum.daggerhiltbasicskotlin.domain.remote.AppRepository
+import pl.edu.uwr.pum.daggerhiltbasicskotlin.data.repository.AppRepository
 import pl.edu.uwr.pum.daggerhiltbasicskotlin.util.Resource
 import retrofit2.Response
 import javax.inject.Inject
