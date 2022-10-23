@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import pl.edu.uwr.pum.dagger_hilt_room_basicskotlin.data.Student
-import pl.edu.uwr.pum.dagger_hilt_room_basicskotlin.domain.repository.AppRepository
+import pl.edu.uwr.pum.dagger_hilt_room_basicskotlin.data.repository.AppRepository
 import javax.inject.Inject
 
 @HiltViewModel
