@@ -45,9 +45,7 @@ public abstract class NetworkBoundResource<ResultType, RequestType> {
     }
 
     private void saveResultAndReInit(RequestType response) {
-        UserDatabase.databaseWriteExecutor.execute(() -> {
-            saveCallResult(response);
-        });
+        UserDatabase.databaseWriteExecutor.execute(() -> saveCallResult(response));
         result.addSource(loadFromDb(), newData -> result.setValue(Resource.success(newData)));
 
     }
