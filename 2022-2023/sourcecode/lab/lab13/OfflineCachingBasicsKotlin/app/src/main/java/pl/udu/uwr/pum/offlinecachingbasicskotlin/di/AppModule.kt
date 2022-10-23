@@ -1,6 +1,7 @@
 package pl.udu.uwr.pum.offlinecachingbasicskotlin.di
 
 import android.app.Application
+import androidx.room.Room
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -41,5 +42,11 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideUserDatabase(app: Application): UserDatabase = UserDatabase.getDatabase(app)
+    fun provideUserDatabase(app: Application): UserDatabase =
+        Room
+            .databaseBuilder(
+                app,
+                UserDatabase::class.java,
+                "kotlin_user_database")
+            .build()
 }

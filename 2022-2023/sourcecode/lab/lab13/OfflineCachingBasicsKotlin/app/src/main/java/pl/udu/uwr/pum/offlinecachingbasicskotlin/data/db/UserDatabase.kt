@@ -16,20 +16,4 @@ import pl.udu.uwr.pum.offlinecachingbasicskotlin.data.converters.SubscriptionCon
 abstract class UserDatabase : RoomDatabase() {
 
     abstract fun usersDao(): UsersDao
-
-    companion object {
-        @Volatile
-        private var INSTANCE: UserDatabase? = null
-
-        fun getDatabase(context: Context): UserDatabase {
-            return INSTANCE ?: synchronized(this) {
-                val instance = Room.databaseBuilder(
-                    context.applicationContext,
-                    UserDatabase::class.java,
-                    "users_database_kotlin"
-                ).build().also { INSTANCE = it }
-                instance
-            }
-        }
-    }
 }
