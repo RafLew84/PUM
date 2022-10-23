@@ -10,9 +10,7 @@ import dagger.hilt.InstallIn;
 import dagger.hilt.components.SingletonComponent;
 import pl.edu.uwr.pum.dagger_hilt_room_basicsjava.data.db.AppDao;
 import pl.edu.uwr.pum.dagger_hilt_room_basicsjava.data.db.AppDatabase;
-import pl.edu.uwr.pum.dagger_hilt_room_basicsjava.data.repository.AppRepositoryImpl;
-import pl.edu.uwr.pum.dagger_hilt_room_basicsjava.domain.repository.AppRepository;
-
+import pl.edu.uwr.pum.dagger_hilt_room_basicsjava.data.repository.AppRepository;
 @Module
 @InstallIn(SingletonComponent.class)
 public class AppModule {
@@ -32,6 +30,6 @@ public class AppModule {
     @Singleton
     @Provides
     AppRepository provideAppRepository(AppDao appDao){
-        return new AppRepositoryImpl(appDao);
+        return new AppRepository(appDao);
     }
 }

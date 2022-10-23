@@ -12,7 +12,7 @@ import javax.inject.Inject;
 import dagger.hilt.android.lifecycle.HiltViewModel;
 import pl.edu.uwr.pum.dagger_hilt_room_basicsjava.data.Student;
 import pl.edu.uwr.pum.dagger_hilt_room_basicsjava.data.db.AppDatabase;
-import pl.edu.uwr.pum.dagger_hilt_room_basicsjava.domain.repository.AppRepository;
+import pl.edu.uwr.pum.dagger_hilt_room_basicsjava.data.repository.AppRepository;
 
 @HiltViewModel
 public class AppViewModel extends AndroidViewModel {
