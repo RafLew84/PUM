@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+
+
+
+\title{Programowanie Urządzeń Mobilnych \\ Laboratorium \\ \textbf{LISTA 5}}
+\author{Rafał Lewandków}
+\date{termin oddania: 07.02.2023}
+\begin{document}
+\maketitle
+    
+
+\section*{BankApp - 10 pkt}
+
+Przygotuj aplikację wykorzystując \url{https://random-data-api.com/api/v2/banks} api. Aplikacja wyświetla listę 20 banków w \textbf{RecyclerView}. Aplikacja zawiera jeden fragment.
+
+\begin{itemize}
+\item \textbf{1 pkt} -- Wykorzystaj \textbf{Retrofit} oraz \textbf{LoggingInterceptor} do połączenia z api
+
+\item \textbf{1 pkt} -- Wyświetl listę banków w \textbf{RecyclerView}
+
+\item \textbf{2 pkt} -- Aplikację wykonaj w architekturze \textbf{MVVM}
+
+\item \textbf{2 pkt} -- Wykorzystaj w aplikacji bibliotekę \textbf{Dagger-Hilt} do wykonania \textit{dependency injection} \textbf{OkHttp, Retrofit, Repository}
+
+\item \textbf{3 pkt} -- Dodaj do aplikacji \textit{Offline Caching} z wykorzystaniem biblioteki \textbf{ROOM} - przy wykonaniu zapisu, do bazy powinny zostać dodane tylko elementy wcześniej nieobecne w wersji lokalnej.
+
+\item \textbf{1 pkt} -- Wykorzystaj w aplikacji bibliotekę \textbf{Dagger-Hilt} do wykonania \textit{dependency injection} \textbf{Database}
+\end{itemize}
+
+\section*{OCENY}
+Maxymalna liczba punktów: 10\\\
+Oceny:\\
+5.0 - 10 pkt\\
+4.5 - 9 pkt\\
+4,0 - 8 pkt\\
+3,5 - 7 pkt\\
+3,0 - 6 pkt
+\end{document}
+
