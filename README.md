@@ -4,7 +4,7 @@
 |Moduł|Lista|Termin|
 |:-------|:--------|:--------|
 |[Moduł 0](#moduł-0)|  |  |
-|[Moduł 1](#moduł-1)| [lista 1](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/lista1.pdf)  |  28.10.2022 |
+|[Moduł 1](#moduł-1)| [lista 1](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/lista1.pdf)  |  4.11.2022 |
 |[Moduł 2](#moduł-2)|  |  |
 |[Moduł 3](#moduł-3)| [lista 2](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/lista2.pdf)  | 18.11.2022 |
 |[Moduł 4](#moduł-4)|  |  |
