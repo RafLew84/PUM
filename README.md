@@ -38,7 +38,7 @@
 ---
 
 ## Moduł 2
-|Wykład 2|Lab 2|
+|[Wykład 2](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad2.pdf)|Lab 2|
 |:-------|:-------|
 |<ul><li> Stan instancji </li><li> `Bundle` </li><li> `Intent` </li></ul>| <ul><li>Mechanizm intentów - jawne - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.1.1%20-%20Java%20-%20Mechanizm%20Intent%C3%B3w%20-%20Jawne.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.1.2%20-%20Kotlin%20-%20Mechanizm%20Intent%C3%B3w%20-%20Jawne.ipynb) </li><li>Interfejsy `Parcelable`, `Serializable` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.2.1%20-%20Java%20-%20Interfejs%20Parcelable.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.2.2%20-%20Kotlin%20-%20Interfejs%20Parcelable.ipynb)</li><li>Mechanizm intentów - domniemane - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.3.1%20-%20Java%20-%20Mechanizm%20intent%C3%B3w%20-%20Domniemane.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.3.2%20-%20Kotlin%20-%20Mechanizm%20intent%C3%B3w%20-%20Domniemane.ipynb)</li></ul>|
 |Aplikacje|  |
