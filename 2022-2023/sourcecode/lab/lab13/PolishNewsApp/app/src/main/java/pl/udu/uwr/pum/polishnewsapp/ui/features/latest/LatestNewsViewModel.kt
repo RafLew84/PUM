@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.polishnewsapp.ui.latest
+package pl.udu.uwr.pum.polishnewsapp.ui.features.latest
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel

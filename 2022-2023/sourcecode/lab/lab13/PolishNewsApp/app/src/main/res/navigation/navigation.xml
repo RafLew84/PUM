@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/latestNewsFragment"
-        android:name="pl.udu.uwr.pum.polishnewsapp.ui.latest.LatestNewsFragment"
+        android:name="pl.udu.uwr.pum.polishnewsapp.ui.features.latest.LatestNewsFragment"
         android:label="@string/wiadomo_ci"
         tools:layout="@layout/fragment_latest_news" />
     <fragment
         android:id="@+id/searchNewsFragment"
-        android:name="pl.udu.uwr.pum.polishnewsapp.ui.search.SearchNewsFragment"
+        android:name="pl.udu.uwr.pum.polishnewsapp.ui.features.search.SearchNewsFragment"
         android:label="@string/szukaj"
         tools:layout="@layout/fragment_search_news" />
     <fragment
         android:id="@+id/favoriteNewsFragment"
-        android:name="pl.udu.uwr.pum.polishnewsapp.ui.favorite.FavoriteNewsFragment"
+        android:name="pl.udu.uwr.pum.polishnewsapp.ui.features.favorite.FavoriteNewsFragment"
         android:label="@string/ulubione"
         tools:layout="@layout/fragment_favorite_news" />
 </navigation>

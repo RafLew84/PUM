@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.polishnewsapp.ui.latest
+package pl.udu.uwr.pum.polishnewsapp.ui.features.latest
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
