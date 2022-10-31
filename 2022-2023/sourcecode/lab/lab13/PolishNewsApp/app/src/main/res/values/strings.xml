@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PolishNewsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wiadomo_ci">Wiadomości</string>
+    <string name="szukaj">Szukaj</string>
+    <string name="ulubione">Ulubione</string>
 </resources>

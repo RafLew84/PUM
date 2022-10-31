@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/latestNewsFragment">
+
+    <fragment
+        android:id="@+id/latestNewsFragment"
+        android:name="pl.udu.uwr.pum.polishnewsapp.ui.latest.LatestNewsFragment"
+        android:label="@string/wiadomo_ci"
+        tools:layout="@layout/fragment_latest_news" />
+    <fragment
+        android:id="@+id/searchNewsFragment"
+        android:name="pl.udu.uwr.pum.polishnewsapp.ui.search.SearchNewsFragment"
+        android:label="@string/szukaj"
+        tools:layout="@layout/fragment_search_news" />
+    <fragment
+        android:id="@+id/favoriteNewsFragment"
+        android:name="pl.udu.uwr.pum.polishnewsapp.ui.favorite.FavoriteNewsFragment"
+        android:label="@string/ulubione"
+        tools:layout="@layout/fragment_favorite_news" />
+</navigation>
