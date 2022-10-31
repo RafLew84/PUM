@@ -5,9 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
+import dagger.hilt.android.AndroidEntryPoint
 import pl.udu.uwr.pum.polishnewsapp.R
 
+
+@AndroidEntryPoint
 class LatestNewsFragment : Fragment() {
+
+    private val viewModel: LatestNewsViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
