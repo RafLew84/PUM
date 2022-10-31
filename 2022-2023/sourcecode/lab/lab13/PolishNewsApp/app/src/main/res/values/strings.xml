@@ -7,4 +7,7 @@
     <string name="ulubione">Ulubione</string>
     <string name="po_cz">Połącz</string>
     <string name="brak_wynik_w">Brak wyników</string>
+    <string name="image">image</string>
+    <string name="gradient">gradient</string>
+    <string name="bookmark">bookmark</string>
 </resources>
