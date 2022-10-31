@@ -15,7 +15,7 @@ import pl.udu.uwr.pum.polishnewsapp.shared.ArticleAdapter
 @AndroidEntryPoint
 class LatestNewsFragment : Fragment() {
 
-    //private val viewModel: LatestNewsViewModel by viewModels()
+    private val viewModel: LatestNewsViewModel by viewModels()
 
     lateinit var binding: FragmentLatestNewsBinding
 
@@ -24,21 +24,20 @@ class LatestNewsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentLatestNewsBinding.inflate(layoutInflater, container, false)
-        //viewModel.getLatestNews()
+        viewModel.getLatestNews()
         return binding.root
     }
 
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//
-//        val articleAdapter = ArticleAdapter()
-//        viewModel.latestNews.observe(viewLifecycleOwner){
-//            println(it.size)
-//            articleAdapter.submitList(it)
-//        }
-//        binding.latestRecyclerView.apply {
-//                adapter = articleAdapter
-//                layoutManager = LinearLayoutManager(requireContext())
-//            }
-//    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val articleAdapter = ArticleAdapter()
+        viewModel.latestNews.observe(viewLifecycleOwner){
+            articleAdapter.submitList(it)
+        }
+        binding.latestRecyclerView.apply {
+                adapter = articleAdapter
+                layoutManager = LinearLayoutManager(requireContext())
+            }
+    }
 }
