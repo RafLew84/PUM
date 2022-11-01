@@ -19,13 +19,14 @@ class LatestNewsViewModel @Inject constructor(repository: NewsRepository) : View
     private val eventChannel = Channel<Event>()
     val events = eventChannel.receiveAsFlow()
 
-    private val refreshChannelTrigger = Channel<Unit>()
+    private val refreshChannelTrigger = Channel<Refresh>()
     private val refreshTrigger = refreshChannelTrigger.receiveAsFlow()
 
     var pendingScrollToTop = false
 
-    val latestNews = refreshTrigger.flatMapLatest {
+    val latestNews = refreshTrigger.flatMapLatest { refresh ->
         repository.getLatestNews(
+            refresh == Refresh.REQUEST,
             fetchFail = { t ->
                 viewModelScope.launch { eventChannel.send(Event.ShowErrorMessage(t)) }
             },
@@ -36,12 +37,16 @@ class LatestNewsViewModel @Inject constructor(repository: NewsRepository) : View
 
     fun refreshOnDemand() {
         if (latestNews.value !is Resource.Loading)
-            viewModelScope.launch { refreshChannelTrigger.send(Unit) }
+            viewModelScope.launch { refreshChannelTrigger.send(Refresh.REQUEST) }
     }
 
     fun refreshOnStart() {
         if (latestNews.value !is Resource.Loading)
-            viewModelScope.launch { refreshChannelTrigger.send(Unit) }
+            viewModelScope.launch { refreshChannelTrigger.send(Refresh.NORMAL) }
+    }
+
+    enum class Refresh {
+        REQUEST, NORMAL
     }
 
     sealed class Event {

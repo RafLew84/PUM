@@ -9,5 +9,6 @@ data class NewsArticle (
     val imageUrl: String?,
     @PrimaryKey val url: String,
     val title: String?,
-    val isFavorite: Boolean
+    val isFavorite: Boolean,
+    val lastUpdate: Long = System.currentTimeMillis()
 )
