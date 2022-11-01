@@ -10,4 +10,6 @@
     <string name="image">image</string>
     <string name="gradient">gradient</string>
     <string name="bookmark">bookmark</string>
+    <string name="blad">Nie można odświeżyć: %s</string>
+    <string name="nieznany_blad">Nieznany błąd</string>
 </resources>

@@ -5,6 +5,6 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "latest_news")
 data class LatestNews (
-    @PrimaryKey(autoGenerate = true) val id: Int = 0,
-    val articleUrl: String
+    val articleUrl: String,
+    @PrimaryKey(autoGenerate = true) val id: Int = 0
 )
