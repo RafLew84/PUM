@@ -16,6 +16,10 @@ class ArticleViewHolder(private val binding: ItemArticleRvBinding)
                     Glide.with(itemView)
                         .load(item.imageUrl)
                         .into(articleImageView)
+                else {
+                    Glide.with(itemView).clear(articleImageView)
+                    articleImageView.setImageResource(R.drawable.no_image)
+                }
 
                 favoriteImageView.setImageResource(
                     when{
