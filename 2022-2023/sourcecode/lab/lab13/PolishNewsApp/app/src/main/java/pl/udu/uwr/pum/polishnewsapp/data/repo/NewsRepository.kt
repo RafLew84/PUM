@@ -65,4 +65,8 @@ class NewsRepository @Inject constructor (
             }
         }
     )
+
+    suspend fun deleteNonFavoriteArticlesOlderThan(timeStampInMillis: Long){
+        dao.deleteNotFavoriteOlderThan(timeStampInMillis)
+    }
 }

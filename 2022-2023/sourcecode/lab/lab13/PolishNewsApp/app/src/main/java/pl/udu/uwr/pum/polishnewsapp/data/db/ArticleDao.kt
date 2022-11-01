@@ -22,4 +22,7 @@ interface ArticleDao {
 
     @Query("DELETE FROM latest_news")
     suspend fun delete()
+
+    @Query("DELETE FROM articles WHERE lastUpdate < :timeStampInMillis AND isFavorite = 0")
+    suspend fun deleteNotFavoriteOlderThan(timeStampInMillis: Long)
 }

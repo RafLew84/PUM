@@ -10,13 +10,11 @@ class ArticleViewHolder(private val binding: ItemArticleRvBinding)
     : RecyclerView.ViewHolder(binding.root){
         fun bind(item: NewsArticle){
             binding.apply {
-                println(item.title)
                 titleTextView.text = item.title?:""
                 descriptionTextView.text = item.description?:""
                 if (item.imageUrl != null)
                     Glide.with(itemView)
                         .load(item.imageUrl)
-                        .error(R.drawable.no_image)
                         .into(articleImageView)
 
                 favoriteImageView.setImageResource(

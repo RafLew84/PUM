@@ -11,6 +11,8 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import pl.udu.uwr.pum.polishnewsapp.data.repo.NewsRepository
 import pl.udu.uwr.pum.polishnewsapp.util.Resource
+import pl.udu.uwr.pum.polishnewsapp.util.TIME_TO_DELETE_NOT_FAVORITE_ARTICLES
+import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
 @HiltViewModel
@@ -33,6 +35,14 @@ class LatestNewsViewModel @Inject constructor(repository: NewsRepository) : View
             fetchSuccess = { pendingScrollToTop = true }
         )
     }.stateIn(viewModelScope, SharingStarted.Lazily, null)
+
+    init {
+        viewModelScope.launch {
+            repository.deleteNonFavoriteArticlesOlderThan(
+                System.currentTimeMillis() - TIME_TO_DELETE_NOT_FAVORITE_ARTICLES
+            )
+        }
+    }
 
 
     fun refreshOnDemand() {
