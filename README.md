@@ -47,7 +47,7 @@
 ---
 
 ## Moduł 3
-|Wykład 3|Lab 3|
+|[Wykład 3](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad3.pdf)|Lab 3|
 |:-------|:-------|
 |<ul><li>`RecyclerView`</li><li> `Adapter` </li><li> `ViewHolder` </li><li> `Selector` </li></ul>| <ul><li>`RecyclerView` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.1.1%20-%20Java%20-%20RecyclerView%20-%20Podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.1.2%20-%20Kotlin%20-%20RecyclerView%20-%20Podstawy.ipynb) </li><li>`Selector` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.2.1%20-%20Java%20-%20RecyclerView%20-%20Selector.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.2.2%20-%20Kotlin%20-%20RecyclerView%20-%20Selector.ipynb) </li></ul></ul>|
 |Aplikacje|  |
