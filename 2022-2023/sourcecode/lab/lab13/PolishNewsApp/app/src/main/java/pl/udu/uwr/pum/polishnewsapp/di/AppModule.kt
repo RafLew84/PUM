@@ -30,17 +30,23 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideOkHttpClient(interceptor: HttpLoggingInterceptor): OkHttpClient = OkHttpClient.Builder()
+    fun provideOkHttpClient(interceptor: HttpLoggingInterceptor): OkHttpClient =
+        OkHttpClient.Builder()
             .addInterceptor(interceptor)
             .build()
 
     @Provides
     @Singleton
-    fun provideRandomApi(client: OkHttpClient): NewsApi = Retrofit.Builder()
+    fun provideRetrofit(client: OkHttpClient): Retrofit =
+        Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
-            .build().create(NewsApi::class.java)
+            .build()
+
+    @Provides
+    @Singleton
+    fun provideRandomApi(retrofit: Retrofit): NewsApi = retrofit.create(NewsApi::class.java)
 
     @Provides
     @Singleton
