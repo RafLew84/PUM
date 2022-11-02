@@ -2,6 +2,8 @@ package pl.udu.uwr.pum.polishnewsapp.data.repo
 
 import androidx.room.withTransaction
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.filter
+import kotlinx.coroutines.flow.first
 import okio.IOException
 import pl.udu.uwr.pum.polishnewsapp.data.api.NewsApi
 import pl.udu.uwr.pum.polishnewsapp.data.db.ArticlesDatabase
@@ -30,12 +32,14 @@ class NewsRepository @Inject constructor (
             response.results
         },
         saveFetchResult = { articles ->
+            val favoriteArticles = dao.getAllFavorite().first()
             val news = articles.map { article ->
+                val isFavorite = favoriteArticles.any { it.url == article.link }
                 NewsArticle(
                     title = article.title,
                     url = article.link,
                     imageUrl = article.image_url,
-                    isFavorite = false,
+                    isFavorite = isFavorite,
                     description = article.description
                 )
             }
@@ -69,4 +73,10 @@ class NewsRepository @Inject constructor (
     suspend fun deleteNonFavoriteArticlesOlderThan(timeStampInMillis: Long){
         dao.deleteNotFavoriteOlderThan(timeStampInMillis)
     }
+
+    suspend fun updateArticle(newsArticle: NewsArticle){
+        dao.updateArticle(newsArticle)
+    }
+
+    fun getAllFavoriteArticles(): Flow<List<NewsArticle>> = dao.getAllFavorite()
 }

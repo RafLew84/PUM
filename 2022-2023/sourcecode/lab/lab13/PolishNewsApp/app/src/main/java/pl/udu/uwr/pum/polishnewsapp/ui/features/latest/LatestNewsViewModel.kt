@@ -9,6 +9,7 @@ import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import pl.udu.uwr.pum.polishnewsapp.data.db.entities.NewsArticle
 import pl.udu.uwr.pum.polishnewsapp.data.repo.NewsRepository
 import pl.udu.uwr.pum.polishnewsapp.util.Resource
 import pl.udu.uwr.pum.polishnewsapp.util.TIME_TO_DELETE_NOT_FAVORITE_ARTICLES
@@ -16,7 +17,7 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
 @HiltViewModel
-class LatestNewsViewModel @Inject constructor(repository: NewsRepository) : ViewModel() {
+class LatestNewsViewModel @Inject constructor(private val repository: NewsRepository) : ViewModel() {
 
     private val eventChannel = Channel<Event>()
     val events = eventChannel.receiveAsFlow()
@@ -53,6 +54,12 @@ class LatestNewsViewModel @Inject constructor(repository: NewsRepository) : View
     fun refreshOnStart() {
         if (latestNews.value !is Resource.Loading)
             viewModelScope.launch { refreshChannelTrigger.send(Refresh.NORMAL) }
+    }
+
+    fun addFavorite(newsArticle: NewsArticle){
+        val favorite = newsArticle.isFavorite
+        val updatedArticle = newsArticle.copy(isFavorite = !favorite)
+        viewModelScope.launch { repository.updateArticle(updatedArticle) }
     }
 
     enum class Refresh {

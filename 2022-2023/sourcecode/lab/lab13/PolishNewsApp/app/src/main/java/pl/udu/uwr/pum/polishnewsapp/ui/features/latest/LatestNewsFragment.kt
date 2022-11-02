@@ -1,5 +1,7 @@
 package pl.udu.uwr.pum.polishnewsapp.ui.features.latest
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.*
 import androidx.core.view.MenuHost
@@ -41,11 +43,19 @@ class LatestNewsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val articleAdapter = ArticleAdapter()
+        val articleAdapter = ArticleAdapter(
+            onItemClick = {
+                val uri = Uri.parse(it.url)
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                requireActivity().startActivity(intent)
+            },
+            onFavoriteClick = { viewModel.addFavorite(it) }
+        )
         binding.apply {
             latestRecyclerView.apply {
                 adapter = articleAdapter
                 layoutManager = LinearLayoutManager(requireContext())
+                itemAnimator?.changeDuration = 0
             }
 
             viewLifecycleOwner.lifecycleScope.launchWhenStarted {

@@ -6,7 +6,11 @@ import pl.udu.uwr.pum.polishnewsapp.R
 import pl.udu.uwr.pum.polishnewsapp.data.db.entities.NewsArticle
 import pl.udu.uwr.pum.polishnewsapp.databinding.ItemArticleRvBinding
 
-class ArticleViewHolder(private val binding: ItemArticleRvBinding)
+class ArticleViewHolder(
+    private val binding: ItemArticleRvBinding,
+    private val onItemClick: (Int) -> Unit,
+    private val onFavoriteClick: (Int) -> Unit
+    )
     : RecyclerView.ViewHolder(binding.root){
         fun bind(item: NewsArticle){
             binding.apply {
@@ -29,4 +33,16 @@ class ArticleViewHolder(private val binding: ItemArticleRvBinding)
                 )
             }
         }
+
+    init {
+        binding.apply {
+            root.setOnClickListener { click(onItemClick) }
+            favoriteImageView.setOnClickListener { click(onFavoriteClick) }
+        }
+    }
+
+    private fun click(click: (Int) -> Unit) {
+        val position = bindingAdapterPosition
+        if (position != RecyclerView.NO_POSITION) click(position)
+    }
 }
