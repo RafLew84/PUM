@@ -5,10 +5,6 @@
         android:icon="@drawable/ic_latest"
         android:title="@string/wiadomo_ci" />
     <item
-        android:id="@id/searchNewsFragment"
-        android:icon="@drawable/ic_search"
-        android:title="@string/szukaj" />
-    <item
         android:id="@id/favoriteNewsFragment"
         android:icon="@drawable/ic_favorite"
         android:title="@string/ulubione" />

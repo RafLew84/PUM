@@ -3,6 +3,7 @@ package pl.udu.uwr.pum.polishnewsapp.ui.features.latest
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.flatMapLatest
@@ -27,6 +28,7 @@ class LatestNewsViewModel @Inject constructor(private val repository: NewsReposi
 
     var pendingScrollToTop = false
 
+    @OptIn(ExperimentalCoroutinesApi::class)
     val latestNews = refreshTrigger.flatMapLatest { refresh ->
         repository.getLatestNews(
             refresh == Refresh.REQUEST,
