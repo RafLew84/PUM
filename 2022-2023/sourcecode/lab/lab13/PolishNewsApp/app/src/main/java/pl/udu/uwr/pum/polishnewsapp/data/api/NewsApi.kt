@@ -10,12 +10,7 @@ interface NewsApi {
 
     @Headers("X-ACCESS-KEY: $API_KEY")
     @GET("news?country=pl&language=pl")
-    suspend fun getLatestNews(): ArticleResponse
-
-    @Headers("X-ACCESS-KEY: $API_KEY")
-    @GET("news?country=pl&language=pl")
-    suspend fun searchNews(
-        @Query("q") query: String,
+    suspend fun getLatestNews(
         @Query("page") pageNumber: Int
     ): ArticleResponse
 }

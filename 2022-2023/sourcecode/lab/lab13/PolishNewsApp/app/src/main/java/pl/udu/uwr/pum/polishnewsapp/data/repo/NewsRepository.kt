@@ -15,6 +15,7 @@ import pl.udu.uwr.pum.polishnewsapp.util.networkBoundResource
 import retrofit2.HttpException
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
+import kotlin.random.Random
 
 class NewsRepository @Inject constructor (
     private val api: NewsApi,
@@ -28,7 +29,7 @@ class NewsRepository @Inject constructor (
         fetchSuccess: () -> Unit): Flow<Resource<List<NewsArticle>>> = networkBoundResource(
         query = {dao.getAllLatestNewsArticles()},
         fetch = {
-            val response = api.getLatestNews()
+            val response = api.getLatestNews(Random.nextInt(1, 40))
             response.results
         },
         saveFetchResult = { articles ->
