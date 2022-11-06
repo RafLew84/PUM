@@ -1,4 +1,4 @@
-package pl.udu.uwr.pum.polishnewsapp.data.api
+package pl.udu.uwr.pum.polishnewsapp.api
 
 import pl.udu.uwr.pum.polishnewsapp.data.dto.ArticleResponse
 import pl.udu.uwr.pum.polishnewsapp.util.API_KEY

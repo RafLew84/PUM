@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.first
 import okio.IOException
-import pl.udu.uwr.pum.polishnewsapp.data.api.NewsApi
+import pl.udu.uwr.pum.polishnewsapp.api.NewsApi
 import pl.udu.uwr.pum.polishnewsapp.data.db.ArticlesDatabase
 import pl.udu.uwr.pum.polishnewsapp.data.db.entities.LatestNews
 import pl.udu.uwr.pum.polishnewsapp.data.db.entities.NewsArticle

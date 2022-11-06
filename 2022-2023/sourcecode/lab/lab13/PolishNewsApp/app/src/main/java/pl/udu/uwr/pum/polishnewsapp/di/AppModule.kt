@@ -8,7 +8,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import pl.udu.uwr.pum.polishnewsapp.data.api.NewsApi
+import pl.udu.uwr.pum.polishnewsapp.api.NewsApi
 import pl.udu.uwr.pum.polishnewsapp.data.db.ArticlesDatabase
 import pl.udu.uwr.pum.polishnewsapp.util.BASE_URL
 import pl.udu.uwr.pum.polishnewsapp.util.DATABASE_NAME
