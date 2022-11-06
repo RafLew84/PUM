@@ -46,7 +46,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideRandomApi(retrofit: Retrofit): NewsApi = retrofit.create(NewsApi::class.java)
+    fun provideNewsApi(retrofit: Retrofit): NewsApi = retrofit.create(NewsApi::class.java)
 
     @Provides
     @Singleton
