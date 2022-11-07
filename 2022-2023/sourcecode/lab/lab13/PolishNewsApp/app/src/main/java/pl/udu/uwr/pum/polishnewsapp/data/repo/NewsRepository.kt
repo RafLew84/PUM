@@ -2,7 +2,6 @@ package pl.udu.uwr.pum.polishnewsapp.data.repo
 
 import androidx.room.withTransaction
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.first
 import okio.IOException
 import pl.udu.uwr.pum.polishnewsapp.api.NewsApi
@@ -13,7 +12,6 @@ import pl.udu.uwr.pum.polishnewsapp.util.Resource
 import pl.udu.uwr.pum.polishnewsapp.util.TIME_TO_REFRESH_DATA
 import pl.udu.uwr.pum.polishnewsapp.util.networkBoundResource
 import retrofit2.HttpException
-import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 import kotlin.random.Random
 
@@ -53,7 +51,7 @@ class NewsRepository @Inject constructor (
                 dao.apply {
                     delete()
                     insertArticles(news)
-                    insertLatestArticles(latest)
+                    insertLatestNews(latest)
                 }
             }
         },
