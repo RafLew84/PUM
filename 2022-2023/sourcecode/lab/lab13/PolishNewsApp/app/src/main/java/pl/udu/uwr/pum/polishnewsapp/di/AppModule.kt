@@ -50,7 +50,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideUserDatabase(app: Application): ArticlesDatabase =
+    fun provideArticlesDatabase(app: Application): ArticlesDatabase =
         Room.databaseBuilder(app, ArticlesDatabase::class.java, DATABASE_NAME)
             .build()
 }
