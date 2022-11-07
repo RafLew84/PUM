@@ -69,13 +69,7 @@ class NewsRepository @Inject constructor (
         }
     )
 
-    suspend fun deleteNonFavoriteArticlesOlderThan(timeStampInMillis: Long){
-        dao.deleteNotFavoriteOlderThan(timeStampInMillis)
-    }
-
-    suspend fun updateArticle(newsArticle: NewsArticle){
-        dao.updateArticle(newsArticle)
-    }
-
+    suspend fun deleteNonFavoriteArticlesOlderThan(timeStampInMillis: Long) = dao.deleteNotFavoriteOlderThan(timeStampInMillis)
+    suspend fun updateArticle(newsArticle: NewsArticle) = dao.updateArticle(newsArticle)
     fun getAllFavoriteArticles(): Flow<List<NewsArticle>> = dao.getAllFavorite()
 }
