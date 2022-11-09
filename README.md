@@ -57,7 +57,7 @@
 ---
 
 ## Moduł 4
-|Wykład 4|Lab 4|
+|[Wykład 4](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad4.pdf)|Lab 4|
 |:-------|:-------|
 |<ul><li>`Fragmenty`</li><li> `Jetpack Navigation` </li></ul>| <ul><li>`Static Fragment` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.1.1%20-%20Java%20-%20Static%20Fragment.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.1.2%20-%20Kotlin%20-%20Static%20Fragment.ipynb)  </li><li>`Dynamic Fragment` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.2.1%20-%20Java%20-%20Dynamic%20Fragment.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.2.2%20-%20Kotlin%20-%20Dynamic%20Fragment.ipynb) </li><li>`Jetpack Navigation` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.3.1%20-%20Java%20-%20Jetpack%20Navigation.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.3.2%20-%20Kotlin%20-%20Jetpack%20Navigation.ipynb) </li></ul></ul>|
 |Aplikacje|  |
