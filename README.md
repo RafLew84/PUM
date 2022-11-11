@@ -144,7 +144,7 @@
 |:-------|:-------|
 |<ul><li>`Dagger-Hilt`</li></ul>| <ul><li>`Dagger-Hilt` - `Retrofit` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.1.1%20-%20Java%20-%20Hilt-dagger%20Retrofit.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.1.2%20-%20Kotlin%20-%20Hilt-dagger%20Retrofit.ipynb)  </li><li>`Dagger-Hilt` - `ROOM` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.2.1%20-%20Java%20-%20Hilt-dagger%20-%20ROOM.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.2.2%20-%20Kotlin%20-%20Hilt-dagger%20-%20ROOM.ipynb) </li><li>`Dagger-Hilt` - Offline Caching - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.3.1%20-%20Java%20-%20Offline%20Caching.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.3.2%20-%20Kotlin%20-%20Offline%20Caching.ipynb) </li></ul></ul>|
 |Aplikacje|  |
-|<ul>app1</ul>| 
+|<ul><li>PolishNewsApp - [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.4%20-%20PolishNewsApp.ipynb)<ul><li>`MVVM`</li><li>`Retrofit`</li><li>`ROOM`</li><li>`RecyclerView`</li><li>`Dagger-Hilt`</li><li>`Navigation`</li><li>`BottomNavigation`</li><li>`SwipeRefreshLayout`</li><li>`Flow`</li><li>`StateFlow`</li><li>`Channel`</li></ul></ul>| <table><tr><td><img src="https://media3.giphy.com/media/uER0JwmDholYnLXChH/giphy.gif" width="150" /></td><td><img src="https://media2.giphy.com/media/GprR3qLfjPdna6GY4m/giphy.gif" width="150" /></td><td><img src="https://media2.giphy.com/media/GmKwtKs1YnfnrQxEPG/giphy.gif" width="150" /></td></tr></table>
 |<ul>app2</ul>| 
 
 
