@@ -67,7 +67,7 @@
 ---
 
 ## Moduł 5
-|Wykład 5|Lab 5|
+|[Wykład 5](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad5.pdf)|Lab 5|
 |:-------|:-------|
 |<ul><li>`BottomNavigation`</li><li> `ViewPager2` </li><li> `Jetpack Navigation` </li><li> `TabLayout` </li></ul>| <ul><li>`BottomNavigation` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.1.1%20-%20Java%20-%20Bottom%20Navigation.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.1.2%20-%20Kotlin%20-%20Bottom%20Navigation.ipynb)  </li><li>`ViewPager2` + `FragmentStateAdapter` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.2.1%20-%20Java%20-%20ViewPager2%2BFragmentStateAdapter%20-%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.2.2%20-%20Kotlin%20-%20ViewPager2%2BFragmentStateAdapter%20-%20podstawy.ipynb) </li><li>`ViewPager2` + `RecyclerView.Adapter` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.3.1%20-%20Java%20-%20ViewPager2%2BRecyclerView.Adapter%20-%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.3.2%20-%20Kotlin%20-%20ViewPager2%2BRecyclerView.Adapter%20-%20podstawy.ipynb) </li><li>`ViewPager2` + `TabLayout` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.4.1%20-%20Java%20-%20TabLayout%2BViewPager2%20-%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.4.2%20-%20Kotlin%20-%20TabLayout%2BViewPager2%20-%20podstawy.ipynb) </li></ul></ul>|
 |Aplikacje|  |
