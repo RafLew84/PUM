@@ -77,7 +77,7 @@
 ---
 
 ## Moduł 6
-|Wykład 6|Lab 6|
+|[Wykład 6](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad6.pdf)|Lab 6|
 |:-------|:-------|
 |<ul><li>`Shared Preferences`</li><li> `SQLite` </li><li> `ViewBinding` </li></ul>| <ul><li>`ViewBinding` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.1.1%20-%20Java%20-%20ViewBinding.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.1.2%20-%20Kotlin%20-%20ViewBinding.ipynb)  </li><li>`Shared Preferences` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.2.1%20-%20Java%20-%20SharedPreferences.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.2.2.%20-%20Kotlin%20-%20SharedPreferences.ipynb) </li><li>`SQLite` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.3.1%20-%20Java%20-%20SQLite.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.3.2%20-%20Kotlin%20-%20SQLite.ipynb) </li></ul></ul>|
 |Aplikacje|  |
