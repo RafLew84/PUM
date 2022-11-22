@@ -1,5 +1,8 @@
-# PUM
- Programowanie Urządzeń Mobilnych
+# Programowania Urządzeń Mobilnych - PUM
+|Szablon opisu projektu| [pdf](https://github.com/RafLew84/PUM/blob/main/2022-2023/szablon%20opisu%20projektu.pdf)|[word](https://github.com/RafLew84/PUM/blob/main/2022-2023/szablon%20opisu%20projektu.docx)|
+|:-------|:--------|:--------|
+ 
+ 
  
 |Moduł|Lista|Termin|
 |:-------|:--------|:--------|
