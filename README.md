@@ -90,7 +90,7 @@
 ---
 
 ## Moduł 7
-|Wykład 7|Lab 7|
+|[Wykład 7](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad7.pdf)|Lab 7|
 |:-------|:-------|
 |<ul><li>`Permissions`</li><li> `Notifications` </li><li> `Widgets` </li></ul>| <ul><li>`Permissions` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.1.1%20-%20Java%20-%20Upowa%C5%BCnienia.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.1.2%20-%20Kotlin%20-%20Upowa%C5%BCnienia.ipynb)  </li><li>`Notifications` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.2.1%20-%20Java%20-%20Powiadomienia.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.2.2%20-%20Kotlin%20-%20Powiadomienia.ipynb) </li><li>`Widget` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.3.1%20-%20Java%20-%20Widgety.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.3.2%20-%20Kotlin%20-%20Widgety.ipynb) </li></ul></ul>|
 |Aplikacje|  |
