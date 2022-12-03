@@ -100,7 +100,7 @@
 ---
 
 ## Moduł 8
-|Wykład 8|Lab 8|
+|[Wykład 8](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad8.pdf)|Lab 8|
 |:-------|:-------|
 |<ul><li>`ViewModel`</li><li> `LiveData` </li><li> `DataBinding` </li></ul>| <ul><li>`ViewModel` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.1.1%20-%20Java%20-%20ViewModel%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.1.2%20-%20Kotlin%20-%20ViewModel%20podstawy.ipynb)  </li><li>`LiveData` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.2.1%20-%20Java%20-%20LivaData%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.2.2%20-%20Kotlin%20-%20LiveData%20podstawy.ipynb) </li><li>`DataBinding` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.3.1%20-%20Java%20-%20DataBinding%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.3.2%20-%20Kotlin%20-%20DataBinding%20podstawy.ipynb) </li></ul></ul>|
 
