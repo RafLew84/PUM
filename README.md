@@ -108,7 +108,7 @@
 ---
 
 ## Moduł 9
-|Wykład 9|Lab 9|
+|[Wykład 9](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad9.pdf)|Lab 9|
 |:-------|:-------|
 |<ul><li>`ROOM`</li><li> relacja 1-1 </li><li> relacja 1-N </li><li> relacja M-N </li></ul>| <ul><li>`ROOM` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.1.1%20-%20Java%20-%20ROOM%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.1.2%20-%20Kotlin%20-%20ROOM%20podstawy.ipynb)  </li><li>`ROOM` - relacje - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.2.1%20-%20Java%20-%20ROOM%20relacje.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.2.2%20-%20Kotlin%20-%20ROOM%20relacje.ipynb) </li></ul></ul>|
 
