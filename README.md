@@ -12,14 +12,14 @@
 |[Moduł 2](#moduł-2)|  |  |
 |[Moduł 3](#moduł-3)| [lista 2](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/lista2.pdf)  | 27.11.2022 |
 |[Moduł 4](#moduł-4)|  |  |
-|[Moduł 5](#moduł-5)| [lista 3](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/lista3.pdf) | 16.12.2022 |
+|[Moduł 5](#moduł-5)| [lista 3](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/lista3.pdf) | 20.12.2022 |
 |[Moduł 6](#moduł-6)|  |  |
 |[Moduł 7](#moduł-7)|  |  |
-|[Moduł 8](#moduł-8)| [lista 4](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/lista4.pdf) | 13.01.2023 |
+|[Moduł 8](#moduł-8)| [lista 4](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/lista4.pdf) | 27.01.2023 |
 |[Moduł 9](#moduł-9)|  |  |
 |[Moduł 10](#moduł-10)|  |  |
 |[Moduł 11](#moduł-11)|  |  |
-|[Moduł 12](#moduł-12)| [lista 5](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/lista5.pdf) | 07.02.2023 |
+|[Moduł 12](#moduł-12)| ~~[lista 5](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/lista5.pdf)~~ | ~~07.02.2023~~ |
 |[Moduł 13](#moduł-13)|  |  |
 |[Moduł 14](#moduł-14)|  |  |
 
