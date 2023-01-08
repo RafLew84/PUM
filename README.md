@@ -115,7 +115,7 @@
 ---
 
 ## Moduł 10
-|Wykład 10|Lab 10|
+|[Wykład 10](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad10.pdf)|Lab 10|
 |:-------|:-------|
 |<ul><li>`MVC`</li><li> `MVP` </li><li> `MVVM` </li></ul>| <ul><li>`MVC` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.1.1%20-%20Java%20-%20MVC%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.1.2%20-%20Kotlin%20-%20MVC%20podstawy.ipynb)  </li><li>`MVP` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.2.1%20-%20Java%20-%20MVP%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.2.2%20-%20Kotlin%20-%20MVP%20podstawy.ipynb) </li><li>`MVVM` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.1%20-%20Java%20-%20MVVM%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.2%20-%20Kotlin%20-%20MVVM%20podstawy.ipynb) </li></ul></ul>|
 |Aplikacje|  |
