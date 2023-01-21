@@ -136,7 +136,7 @@
 ---
 
 ## Moduł 12
-|Wykład 12|Lab 12|
+|[Wykład 12](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad12.pdf)|Lab 12|
 |:-------|:-------|
 |<ul><li>`Dagger`</li></ul>| <ul><li>`Dagger` - `@Inject` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.1.1%20-%20Java%20-%20Dagger2%20podstawy%2C%20constructor%20injection.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.1.2%20-%20Kotlin%20-%20Dagger2%20podstawy%2C%20constructor%20injection.ipynb)  </li><li>`Dagger` - wstrzyknięcia przez pole i przez metodę - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.2.1%20-%20Java%20-%20Dagger2%20Field%20Inject%2C%20Method%20Inject.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.2.2%20-%20Kotlin%20-%20Dagger2%20Field%20Inject%2C%20Method%20Inject.ipynb) </li><li>`Dagger` - Moduły - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.3.1%20-%20Java%20-%20Dagger2%20Modules.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.3.2%20-%20Kotlin%20-%20Dagger2%20Modules.ipynb) </li><li>`Dagger` - Wstrzykiwanie interfejsu - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.4.1%20-%20Java%20-%20Dagger2%20Interface%20Inject.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.4.2%20-%20Kotlin%20-%20Dagger2%20Interface%20Inject.ipynb) </li><li>`Dagger` - Wstrzykiwanie z wartością - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.5.1%20-%20Java%20-%20Dagger2%20Value%20Inject.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.5.2%20-%20Kotlin%20-%20Dagger2%20Value%20Inject.ipynb) </li></ul></ul>|
 
