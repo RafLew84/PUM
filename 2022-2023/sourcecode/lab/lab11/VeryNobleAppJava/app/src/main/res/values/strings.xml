@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">VeryNobleAppJava</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="nagrody">Nagrody</string>
-    <string name="wyszukaj">Wyszukaj</string>
-    <string name="ulubione">Ulubione</string>
-</resources>
