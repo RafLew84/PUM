@@ -2,6 +2,36 @@
 
 | Projekt | Termin |
 |:-------|:--------|
+|Opis projektu (szablon)| ---- |
+|Projekt| ---- |
+
+|Moduł|Lista|Termin|
+|:-------|:--------|:--------|
+|[Moduł 0](#moduł-2023-0)|  |  |
+|[Moduł 1](#moduł-2023-1)|  | lista 1 |
+
+---
+
+## Moduł 0
+|Wykład 0|Lab 0|
+|:-------|:-------|
+|<ul><li> podstawowe informacje </li><li> treści programowe </li><li> warunki zaliczenia - wykład, lab </li></ul>| <ul><li>Podstawowe informacje</li><li>Android Studio</li><li>Struktura projektu</li></ul> |
+
+## Moduł 1
+|Wykład 1|Lab 1|
+|:-------|:-------|
+|<ul><li> `Activity` </li><li> Cykl życia </li><li> Tworzenie interfejsu użytkownika - `XML` </li><li> Mechanizm `Intent` - jawne i domniemane </li><li> Zachowanie stanu - `Bundle` </li></ul>|<ul><li> Interfejs użytkownika - `XML` - [notatnik](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%821/Lab1/1.1%20UI%20-%20XML.ipynb) </li><li> Pierwsza aplikacja - obsługa `onCLick`, `Bundle` - [Java](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%821/Lab1/1.2.2%20Pierwsza%20Aplikacja%20-%20Java.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%821/Lab1/1.2.1%20Pierwsza%20Aplikacja%20-%20Kotlin.ipynb) </li><li> Explicit `Intent` - [Java](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%821/Lab1/1.3.2%20Explicit%20Intent%20-%20Java.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%821/Lab1/1.3.1%20Explicit%20Intent%20-%20Kotlin.ipynb)</li><li> Serializacja - `Serializable`, `Parcelable`, `@Parcel` - [Java](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%821/Lab1/1.4.2%20InterfejsyParcelable%20i%20Serializable%20-%20Java.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%821/Lab1/1.4.1%20Interfejs%20Parcelable%20i%20Serializable%20-%20Kotlin.ipynb)</li><li> Implicit `Intent` - [Java](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%821/Lab1/1.5.2%20IImplicitIntentBasics%20-%20Java.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%821/Lab1/1.5.1%20ImplicitIntentBasics%20-%20Kotlin.ipynb)</li></ul>|
+|Aplikacje|  |
+| | |
+
+# Archiwum:
+
+## 2022/2023
+
+
+
+| Projekt | Termin |
+|:-------|:--------|
 |Opis projektu (szablon - [pdf](https://github.com/RafLew84/PUM/blob/main/2022-2023/szablon%20opisu%20projektu.pdf), [word](https://github.com/RafLew84/PUM/blob/main/2022-2023/szablon%20opisu%20projektu.docx))| 6.01.2023 |
 |Projekt| 7.02.2023 |
  
