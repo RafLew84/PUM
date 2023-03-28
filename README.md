@@ -7,8 +7,8 @@
 
 |Moduł|Lista|Termin|
 |:-------|:--------|:--------|
-|[Moduł 0](#moduł-2023-0)|  |  |
-|[Moduł 1](#moduł-2023-1)|  | lista 1 |
+|[Moduł 0](#moduł-0)|  |  |
+|[Moduł 1](#moduł-1)|  | lista 1 |
 
 ---
 
@@ -34,35 +34,17 @@
 |:-------|:--------|
 |Opis projektu (szablon - [pdf](https://github.com/RafLew84/PUM/blob/main/2022-2023/szablon%20opisu%20projektu.pdf), [word](https://github.com/RafLew84/PUM/blob/main/2022-2023/szablon%20opisu%20projektu.docx))| 6.01.2023 |
 |Projekt| 7.02.2023 |
- 
-|Moduł|Lista|Termin|
-|:-------|:--------|:--------|
-|[Moduł 0](#moduł-0)|  |  |
-|[Moduł 1](#moduł-1)| [lista 1](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/lista1.pdf)  |  8.11.2022 |
-|[Moduł 2](#moduł-2)|  |  |
-|[Moduł 3](#moduł-3)| [lista 2](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/lista2.pdf)  | 27.11.2022 |
-|[Moduł 4](#moduł-4)|  |  |
-|[Moduł 5](#moduł-5)| [lista 3](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/lista3.pdf) | 20.12.2022 |
-|[Moduł 6](#moduł-6)|  |  |
-|[Moduł 7](#moduł-7)|  |  |
-|[Moduł 8](#moduł-8)| [lista 4](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/lista4.pdf) | 27.01.2023 |
-|[Moduł 9](#moduł-9)|  |  |
-|[Moduł 10](#moduł-10)|  |  |
-|[Moduł 11](#moduł-11)|  |  |
-|[Moduł 12](#moduł-12)| ~~[lista 5](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/lista5.pdf)~~ | ~~07.02.2023~~ **anulowana**|
-|[Moduł 13](#moduł-13)|  |  |
-|[Moduł 14](#moduł-14)|  |  |
 
 ---
 
-## Moduł 0
+## archiwum Moduł 0
 |[Wykład 0](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad0.pdf)|Lab 0|
 |:-------|:-------|
 |<ul><li> podstawowe informacje </li><li> treści programowe </li><li> warunki zaliczenia - [wykład](https://github.com/RafLew84/PUM/blob/main/2022-2023/zasady_zaliczenia/Zasady%20Zaliczenia%20-%20Wyk%C5%82ad.pdf), [lab](https://github.com/RafLew84/PUM/blob/main/2022-2023/zasady_zaliczenia/Zasady%20Zaliczenia%20-%20Laboratorium.pdf) </li></ul>| <ul><li>Podstawowe informacje</li><li>Android Studio</li><li>Struktura projektu</li></ul> |
 
 ---
 
-## Moduł 1
+## archiwum Moduł 1
 |[Wykład 1](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad1.pdf)|Lab 1|
 |:-------|:-------|
 |<ul><li> `Activity` </li><li> Cykl życia aktywności </li></ul>|<ul><li> LinearLayout - [notatnik](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.1%20-%20Interfejs%20-%20LinearLayout.ipynb) </li><li> ConstraintLayout - [notatnik](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.2%20-%20Interfejs%20-%20ConstraintLayout.ipynb) </li><li> Obsługa `onClick` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.4.1%20-%20Java%20-%20Obs%C5%82uga%20OnClick.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab1/1.4.2%20-%20Kotlin%20-%20Obs%C5%82uga%20OnClick.ipynb)</li></ul>|
@@ -71,7 +53,7 @@
 
 ---
 
-## Moduł 2
+## archiwum Moduł 2
 |[Wykład 2](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad2.pdf)|Lab 2|
 |:-------|:-------|
 |<ul><li> Stan instancji </li><li> `Bundle` </li><li> `Intent` </li></ul>| <ul><li>Mechanizm intentów - jawne - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.1.1%20-%20Java%20-%20Mechanizm%20Intent%C3%B3w%20-%20Jawne.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.1.2%20-%20Kotlin%20-%20Mechanizm%20Intent%C3%B3w%20-%20Jawne.ipynb) </li><li>Interfejsy `Parcelable`, `Serializable` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.2.1%20-%20Java%20-%20Interfejs%20Parcelable.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.2.2%20-%20Kotlin%20-%20Interfejs%20Parcelable.ipynb)</li><li>Mechanizm intentów - domniemane - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.3.1%20-%20Java%20-%20Mechanizm%20intent%C3%B3w%20-%20Domniemane.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab2/2.3.2%20-%20Kotlin%20-%20Mechanizm%20intent%C3%B3w%20-%20Domniemane.ipynb)</li></ul>|
@@ -80,7 +62,7 @@
 
 ---
 
-## Moduł 3
+## archiwum Moduł 3
 |[Wykład 3](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad3.pdf)|Lab 3|
 |:-------|:-------|
 |<ul><li>`RecyclerView`</li><li> `Adapter` </li><li> `ViewHolder` </li><li> `Selector` </li></ul>| <ul><li>`RecyclerView` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.1.1%20-%20Java%20-%20RecyclerView%20-%20Podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.1.2%20-%20Kotlin%20-%20RecyclerView%20-%20Podstawy.ipynb) </li><li>`Selector` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.2.1%20-%20Java%20-%20RecyclerView%20-%20Selector.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab3/3.2.2%20-%20Kotlin%20-%20RecyclerView%20-%20Selector.ipynb) </li></ul></ul>|
@@ -90,7 +72,7 @@
 
 ---
 
-## Moduł 4
+## archiwum Moduł 4
 |[Wykład 4](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad4.pdf)|Lab 4|
 |:-------|:-------|
 |<ul><li>`Fragmenty`</li><li> `Jetpack Navigation` </li></ul>| <ul><li>`Static Fragment` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.1.1%20-%20Java%20-%20Static%20Fragment.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.1.2%20-%20Kotlin%20-%20Static%20Fragment.ipynb)  </li><li>`Dynamic Fragment` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.2.1%20-%20Java%20-%20Dynamic%20Fragment.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.2.2%20-%20Kotlin%20-%20Dynamic%20Fragment.ipynb) </li><li>`Jetpack Navigation` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.3.1%20-%20Java%20-%20Jetpack%20Navigation.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab4/4.3.2%20-%20Kotlin%20-%20Jetpack%20Navigation.ipynb) </li></ul></ul>|
@@ -100,7 +82,7 @@
 
 ---
 
-## Moduł 5
+## archiwum Moduł 5
 |[Wykład 5](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad5.pdf)|Lab 5|
 |:-------|:-------|
 |<ul><li>`BottomNavigation`</li><li> `ViewPager2` </li><li> `Jetpack Navigation` </li><li> `TabLayout` </li></ul>| <ul><li>`BottomNavigation` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.1.1%20-%20Java%20-%20Bottom%20Navigation.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.1.2%20-%20Kotlin%20-%20Bottom%20Navigation.ipynb)  </li><li>`ViewPager2` + `FragmentStateAdapter` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.2.1%20-%20Java%20-%20ViewPager2%2BFragmentStateAdapter%20-%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.2.2%20-%20Kotlin%20-%20ViewPager2%2BFragmentStateAdapter%20-%20podstawy.ipynb) </li><li>`ViewPager2` + `RecyclerView.Adapter` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.3.1%20-%20Java%20-%20ViewPager2%2BRecyclerView.Adapter%20-%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.3.2%20-%20Kotlin%20-%20ViewPager2%2BRecyclerView.Adapter%20-%20podstawy.ipynb) </li><li>`ViewPager2` + `TabLayout` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.4.1%20-%20Java%20-%20TabLayout%2BViewPager2%20-%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab5/5.4.2%20-%20Kotlin%20-%20TabLayout%2BViewPager2%20-%20podstawy.ipynb) </li></ul></ul>|
@@ -110,7 +92,7 @@
 
 ---
 
-## Moduł 6
+## archiwum Moduł 6
 |[Wykład 6](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad6.pdf)|Lab 6|
 |:-------|:-------|
 |<ul><li>`Shared Preferences`</li><li> `SQLite` </li><li> `ViewBinding` </li></ul>| <ul><li>`ViewBinding` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.1.1%20-%20Java%20-%20ViewBinding.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.1.2%20-%20Kotlin%20-%20ViewBinding.ipynb)  </li><li>`Shared Preferences` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.2.1%20-%20Java%20-%20SharedPreferences.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.2.2.%20-%20Kotlin%20-%20SharedPreferences.ipynb) </li><li>`SQLite` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.3.1%20-%20Java%20-%20SQLite.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab6/6.3.2%20-%20Kotlin%20-%20SQLite.ipynb) </li></ul></ul>|
@@ -119,7 +101,7 @@
 
 ---
 
-## Moduł 7
+## archiwum Moduł 7
 |[Wykład 7](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad7.pdf)|Lab 7|
 |:-------|:-------|
 |<ul><li>`Permissions`</li><li> `Notifications` </li><li> `Widgets` </li></ul>| <ul><li>`Permissions` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.1.1%20-%20Java%20-%20Upowa%C5%BCnienia.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.1.2%20-%20Kotlin%20-%20Upowa%C5%BCnienia.ipynb)  </li><li>`Notifications` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.2.1%20-%20Java%20-%20Powiadomienia.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.2.2%20-%20Kotlin%20-%20Powiadomienia.ipynb) </li><li>`Widget` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.3.1%20-%20Java%20-%20Widgety.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab7/7.3.2%20-%20Kotlin%20-%20Widgety.ipynb) </li></ul></ul>|
@@ -129,7 +111,7 @@
 
 ---
 
-## Moduł 8
+## archiwum Moduł 8
 |[Wykład 8](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad8.pdf)|Lab 8|
 |:-------|:-------|
 |<ul><li>`ViewModel`</li><li> `LiveData` </li><li> `DataBinding` </li></ul>| <ul><li>`ViewModel` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.1.1%20-%20Java%20-%20ViewModel%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.1.2%20-%20Kotlin%20-%20ViewModel%20podstawy.ipynb)  </li><li>`LiveData` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.2.1%20-%20Java%20-%20LivaData%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.2.2%20-%20Kotlin%20-%20LiveData%20podstawy.ipynb) </li><li>`DataBinding` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.3.1%20-%20Java%20-%20DataBinding%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab8/8.3.2%20-%20Kotlin%20-%20DataBinding%20podstawy.ipynb) </li></ul></ul>|
@@ -137,14 +119,14 @@
 
 ---
 
-## Moduł 9
+## archiwum Moduł 9
 |[Wykład 9](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad9.pdf)|Lab 9|
 |:-------|:-------|
 |<ul><li>`ROOM`</li><li> relacja 1-1 </li><li> relacja 1-N </li><li> relacja M-N </li></ul>| <ul><li>`ROOM` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.1.1%20-%20Java%20-%20ROOM%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.1.2%20-%20Kotlin%20-%20ROOM%20podstawy.ipynb)  </li><li>`ROOM` - relacje - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.2.1%20-%20Java%20-%20ROOM%20relacje.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab9/9.2.2%20-%20Kotlin%20-%20ROOM%20relacje.ipynb) </li></ul></ul>|
 
 ---
 
-## Moduł 10
+## archiwum Moduł 10
 |[Wykład 10](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad10.pdf)|Lab 10|
 |:-------|:-------|
 |<ul><li>`MVC`</li><li> `MVP` </li><li> `MVVM` </li></ul>| <ul><li>`MVC` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.1.1%20-%20Java%20-%20MVC%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.1.2%20-%20Kotlin%20-%20MVC%20podstawy.ipynb)  </li><li>`MVP` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.2.1%20-%20Java%20-%20MVP%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.2.2%20-%20Kotlin%20-%20MVP%20podstawy.ipynb) </li><li>`MVVM` - podstawy - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.1%20-%20Java%20-%20MVVM%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab10/10.3.2%20-%20Kotlin%20-%20MVVM%20podstawy.ipynb) </li></ul></ul>|
@@ -154,7 +136,7 @@
 
 ---
 
-## Moduł 11
+## archiwum Moduł 11
 |[Wykład 11](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad11.pdf)|Lab 11|
 |:-------|:-------|
 |<ul><li>`Retrofit`</li><li> `OkHttp` </li></ul>| <ul><li>`Retrofit` - `@GET` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab11/11.1.1%20-%20Java%20-%20Retrofit%20podstawy.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab11/11.1.2%20-%20Kotlin%20-%20Retrofit%20podstawy.ipynb)  </li><li>`Retrofit` - `URL` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab11/11.2.1%20-%20Java%20-%20Retrofit%20praca%20z%20URL%20.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab11/11.2.2%20-%20Kotlin%20-%20Retrofit%20praca%20z%20URL.ipynb) </li><li>`Retrofit` - `@POST` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab11/11.3.1%20-%20Java%20-%20Retrofit%20wysy%C5%82anie.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab11/11.3.2%20-%20Kotlin%20-%20Retrofit%20wysy%C5%82anie.ipynb) </li><li>`Retrofit` - `@PATCH`, `@PUT` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab11/11.4.1%20-%20Java%20-%20Retrofit%20aktualizacja.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab11/11.4.2%20-%20Kotlin%20-%20Retrofit%20aktualizacja.ipynb) </li><li>`OkHttp` - `LoggingInterceptor` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab11/11.5.1%20-%20Java%20-%20OkHttp%20Logging%20Interceptor.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab11/11.5.2%20-%20Kotlin%20-%20OkHttp%20Logging%20Interceptor.ipynb) </li></ul></ul>|
@@ -165,7 +147,7 @@
 
 ---
 
-## Moduł 12
+## archiwum Moduł 12
 |[Wykład 12](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad12.pdf)|Lab 12|
 |:-------|:-------|
 |<ul><li>`Dagger`</li></ul>| <ul><li>`Dagger` - `@Inject` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.1.1%20-%20Java%20-%20Dagger2%20podstawy%2C%20constructor%20injection.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.1.2%20-%20Kotlin%20-%20Dagger2%20podstawy%2C%20constructor%20injection.ipynb)  </li><li>`Dagger` - wstrzyknięcia przez pole i przez metodę - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.2.1%20-%20Java%20-%20Dagger2%20Field%20Inject%2C%20Method%20Inject.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.2.2%20-%20Kotlin%20-%20Dagger2%20Field%20Inject%2C%20Method%20Inject.ipynb) </li><li>`Dagger` - Moduły - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.3.1%20-%20Java%20-%20Dagger2%20Modules.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.3.2%20-%20Kotlin%20-%20Dagger2%20Modules.ipynb) </li><li>`Dagger` - Wstrzykiwanie interfejsu - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.4.1%20-%20Java%20-%20Dagger2%20Interface%20Inject.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.4.2%20-%20Kotlin%20-%20Dagger2%20Interface%20Inject.ipynb) </li><li>`Dagger` - Wstrzykiwanie z wartością - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.5.1%20-%20Java%20-%20Dagger2%20Value%20Inject.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab12/12.5.2%20-%20Kotlin%20-%20Dagger2%20Value%20Inject.ipynb) </li></ul></ul>|
@@ -173,7 +155,7 @@
 
 ---
 
-## Moduł 13
+## archiwum Moduł 13
 |[Wykład 13](https://github.com/RafLew84/PUM/blob/main/2022-2023/Wyk/Wyklad13.pdf)|Lab 13|
 |:-------|:-------|
 |<ul><li>`Dagger-Hilt`</li></ul>| <ul><li>`Dagger-Hilt` - `Retrofit` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.1.1%20-%20Java%20-%20Hilt-dagger%20Retrofit.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.1.2%20-%20Kotlin%20-%20Hilt-dagger%20Retrofit.ipynb)  </li><li>`Dagger-Hilt` - `ROOM` - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.2.1%20-%20Java%20-%20Hilt-dagger%20-%20ROOM.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.2.2%20-%20Kotlin%20-%20Hilt-dagger%20-%20ROOM.ipynb) </li><li>`Dagger-Hilt` - Offline Caching - [Java](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.3.1%20-%20Java%20-%20Offline%20Caching.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/main/2022-2023/Lab/Lab13/13.3.2%20-%20Kotlin%20-%20Offline%20Caching.ipynb) </li></ul></ul>|
@@ -183,7 +165,7 @@
 
 ---
 
-## Moduł 14
+## archiwum Moduł 14
 |Wykład 14|Lab 14|
 |:-------|:-------|
 |<ul><li>Podsumowanie</li><li> Zaliczenie </li></ul>| <ul><li>Podsumowanie</li><li> Zaliczenie </li></ul></ul>|
