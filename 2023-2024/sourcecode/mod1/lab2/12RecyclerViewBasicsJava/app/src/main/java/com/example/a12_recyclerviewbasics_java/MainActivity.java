@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < 100; i++)
             wordList.add("Word" + i);
 
         binding.recyclerView.setAdapter(new WordListAdapter(wordList));
