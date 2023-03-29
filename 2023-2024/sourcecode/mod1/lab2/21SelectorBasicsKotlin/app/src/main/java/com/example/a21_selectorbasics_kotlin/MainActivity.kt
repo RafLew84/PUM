@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-
         val numberListAdapter = NumberListAdapter(numberList)
         binding.recyclerView.adapter = numberListAdapter
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
