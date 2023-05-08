@@ -16,7 +16,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -50,18 +50,23 @@ fun CounterExample() {
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.fillMaxSize()
     ) {
-        val count: MutableState<Int> = rememberSaveable{
+//        val count: MutableState<Int> = rememberSaveable{
+//            mutableStateOf(0)
+//        }
+
+        var count by rememberSaveable{
             mutableStateOf(0)
         }
+
         Spacer(modifier = Modifier.weight(0.3f))
         Text(
-            text = "${count.value}",
+            text = "$count",
             fontSize = 250.sp,
             textAlign = TextAlign.Center,
             modifier = Modifier.weight(1f),
         )
         Button(
-            onClick = { count.value++ },
+            onClick = { count++ },
             modifier = Modifier.fillMaxWidth(),
             shape = RectangleShape
         ) {
