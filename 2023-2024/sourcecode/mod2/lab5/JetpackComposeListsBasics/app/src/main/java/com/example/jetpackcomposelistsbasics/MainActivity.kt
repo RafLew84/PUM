@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    ListOfWords()
+                    ListOfWords(generateWordList())
                 }
             }
         }
@@ -37,11 +37,11 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun ListOfWords(){
+fun ListOfWords(words: MutableList<String>){
     LazyColumn{
-        items(50){
+        items(words.size){
             var word by remember {
-                mutableStateOf("word $it")
+                mutableStateOf(words[it])
             }
             Text(
                 text = word,
@@ -50,7 +50,10 @@ fun ListOfWords(){
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(2.dp)
-                    .clickable { word += "Clicked!!!" }
+                    .clickable {
+                        word += "Clicked!!!"
+                        words[it] = word
+                    }
             )
         }
     }
@@ -60,6 +63,10 @@ fun ListOfWords(){
 @Composable
 fun ListPreview() {
     JetpackComposeListsBasicsTheme {
-        ListOfWords()
+        ListOfWords(generateWordList())
     }
+}
+
+private fun generateWordList(): MutableList<String> {
+    return (1..50).map { "word $it" }.toMutableList()
 }
