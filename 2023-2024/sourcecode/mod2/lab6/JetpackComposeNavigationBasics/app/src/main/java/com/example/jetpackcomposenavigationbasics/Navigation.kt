@@ -25,11 +25,13 @@ fun Navigation() {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = Screens.MainScreen.route) {
         composable(route = Screens.MainScreen.route){
-            MainScreen{navController.navigate(Screens.SecondScreen.route)}
+            val arg = 5
+            MainScreen{navController.navigate(Screens.SecondScreen.route + "/$arg")}
         }
 
-        composable(route = Screens.SecondScreen.route){
-            SecondScreen {navController.popBackStack()}
+        composable(route = Screens.SecondScreen.route + "/{arg}"){
+            val arg = it.arguments?.getString("arg")
+            SecondScreen(arg) {navController.popBackStack()}
         }
     }
 }
@@ -50,13 +52,13 @@ fun MainScreen(onSecondScreen: () -> Unit) {
 }
 
 @Composable
-fun SecondScreen(onHome: () -> Unit) {
+fun SecondScreen(arg: String?, onHome: () -> Unit) {
     Column(
         Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text("Second Screen")
+        Text("Second Screen. Argument: $arg")
         Spacer(modifier = Modifier.height(8.dp))
         Button(onClick = onHome) { Text("Go back to Main Screen") }
     }
