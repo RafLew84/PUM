@@ -33,6 +33,9 @@
 ## Moduł 2
 |Wykład 4|Lab 4|
 |:-------|:-------|
+|<ul><li> `Jetpack Compose` </li><li> `Composable` </li><li> Tworzenie interfejsu użytkownika - `@Composable` </li><li> Zachowanie stanu - `MutableState` </li></ul>|<ul><ol type="1"><li> Interfejs użytkownika - `@Composable` - [notatnik](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%822/Lab4/4.1%20Jetpack%20Compose%20-%20Podstawy.ipynb) </li><li> Pierwsza aplikacja - obsługa `onCLick`, `MutableState`, `remember` - [notatnik](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%822/Lab4/4.2%20Jetpack%20Compose%20-%20Stan.ipynb)</li><li> Implicit `Intent` - [notatnik](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%822/Lab4/4.3%20Jetpack%20Compose%20-%20Implicit%20Intent.ipynb)</li></ol></ul>|
+|Wykład 5|Lab 5|
+|<ul><li> Tworzenie list - `LazyColumn` </li><li> `Pager` </li><li> Cykl życia `composable`>/li></ul>|<ul><ol type="1"><li> Podstawy tworzenia list - `LazyColumn` - [notatnik](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%822/Lab5/5.1%20Jetpack%20Compose%20-%20Lists%20Basics.ipynb) </li><li> Lista z wielokrotnym zaznaczeniem - [notatnik](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%822/Lab5/5.2%20Jetpack%20Compose%20-%20Multi%20Select%20List%20Basics.ipynb)</li><li> `Pager` - [notatnik](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%822/Lab5/5.3%20Jetpack%20Compose%20-%20Pager%20Basics.ipynb)</li></ol></ul>|
 |Aplikacje|  |
 
 
