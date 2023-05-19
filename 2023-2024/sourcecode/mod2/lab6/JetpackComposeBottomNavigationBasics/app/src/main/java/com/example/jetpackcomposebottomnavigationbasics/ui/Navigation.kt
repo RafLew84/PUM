@@ -1,14 +1,24 @@
 package com.example.jetpackcomposebottomnavigationbasics.ui
 
 import android.annotation.SuppressLint
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.MoreVert
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -20,6 +30,7 @@ import com.example.jetpackcomposebottomnavigationbasics.ui.screens.FirstScreen
 import com.example.jetpackcomposebottomnavigationbasics.ui.screens.HomeScreen
 import com.example.jetpackcomposebottomnavigationbasics.ui.screens.Screens
 import com.example.jetpackcomposebottomnavigationbasics.ui.screens.SecondScreen
+import com.example.jetpackcomposebottomnavigationbasics.ui.screens.SettingsScreen
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -28,6 +39,7 @@ fun Navigation(){
     val navController = rememberNavController()
     Scaffold(
         bottomBar = { BottomMenu(navController = navController)},
+        topBar = {ActionBarMenu(navController = navController)},
         content = { BottomNavGraph(navController = navController) }
     )
 }
@@ -41,6 +53,7 @@ fun BottomNavGraph(navController: NavHostController){
         composable(route = Screens.HomeScreen.route){ HomeScreen() }
         composable(route = Screens.FirstScreen.route){ FirstScreen() }
         composable(route = Screens.SecondScreen.route){ SecondScreen() }
+        composable(route = Screens.SettingsScreen.route){ SettingsScreen()}
     }
 }
 
@@ -63,6 +76,28 @@ fun BottomMenu(navController: NavHostController){
             )
         }
     }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun ActionBarMenu(navController: NavHostController){
+
+    var displayMenu by remember { mutableStateOf(false) }
+
+    TopAppBar(
+        title = {Text("Navigation App", color = Color.Black) },
+        actions = {
+            IconButton(onClick = { displayMenu = !displayMenu }) {
+                Icon(Icons.Default.MoreVert, "")
+            }
+            DropdownMenu(
+                expanded = displayMenu,
+                onDismissRequest = { displayMenu = false }
+            ){
+                DropdownMenuItem(text = { Text(text = "Settings") }, onClick = { navController.navigate(Screens.SettingsScreen.route) })
+            }
+        }
+    )
 }
 
 
