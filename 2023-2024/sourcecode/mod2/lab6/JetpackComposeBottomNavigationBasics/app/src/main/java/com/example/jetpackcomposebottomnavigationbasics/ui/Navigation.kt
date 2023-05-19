@@ -28,9 +28,8 @@ fun Navigation(){
     val navController = rememberNavController()
     Scaffold(
         bottomBar = { BottomMenu(navController = navController)},
-    ) {
-        BottomNavGraph(navController = navController)
-    }
+        content = { BottomNavGraph(navController = navController) }
+    )
 }
 
 @Composable
