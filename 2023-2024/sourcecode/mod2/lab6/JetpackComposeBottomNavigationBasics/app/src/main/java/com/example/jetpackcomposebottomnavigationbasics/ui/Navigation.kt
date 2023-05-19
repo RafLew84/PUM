@@ -40,12 +40,12 @@ fun Navigation(){
     Scaffold(
         bottomBar = { BottomMenu(navController = navController)},
         topBar = {ActionBarMenu(navController = navController)},
-        content = { BottomNavGraph(navController = navController) }
+        content = { NavGraph(navController = navController) }
     )
 }
 
 @Composable
-fun BottomNavGraph(navController: NavHostController){
+fun NavGraph(navController: NavHostController){
     NavHost(
         navController = navController,
         startDestination = Screens.HomeScreen.route
@@ -88,7 +88,7 @@ fun ActionBarMenu(navController: NavHostController){
         title = {Text("Navigation App", color = Color.Black) },
         actions = {
             IconButton(onClick = { displayMenu = !displayMenu }) {
-                Icon(Icons.Default.MoreVert, "")
+                Icon(Icons.Default.MoreVert, "more")
             }
             DropdownMenu(
                 expanded = displayMenu,
