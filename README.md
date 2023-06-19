@@ -8,8 +8,7 @@
 |Moduł|Lista|Termin|
 |:-------|:--------|:--------|
 |[Moduł 0](#moduł-0)|  |  |
-|[Moduł 1a](#moduł-1a)|  | lista 1 - Java, Kotlin |
-|[Moduł 1b](#moduł-1b)|  | lista 1 - Kotlin (Compose) |
+|[Moduł 1a](#moduł-1a), [Moduł 1b](#moduł-1b)|  | lista 1 |
 
 ---
 
