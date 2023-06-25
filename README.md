@@ -44,6 +44,16 @@
 |<ul><h3 style="text-align: center;">**Carsy**</h3> <table><tr><td> [notatniki](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%822/App/Carsy.ipynb) </td></tr><tr><td> [repo](https://github.com/RafLew84/CarsyCompose) </td></tr> </table> <br /> <br /></ul> | Carsy to mobilna aplikacja zaprojektowana, aby pomóc użytkownikom śledzić zużycie paliwa i koszty związane z użytkowaniem samochodu. Aplikacja pokazuje dane dotyczące każdego tankowania, w tym ilość kupionego paliwa i cenę. Carsy może obliczyć średnie zużycie paliwa i dostarczyć szczegółowych statystyk dotyczących użytkowania samochodu i kosztów związanych z jego eksploatacją w ciągu czasu. Oprócz śledzenia zużycia paliwa, aplikacja może także monitorować inne związane z samochodem wydatki, takie jak koszty utrzymania i napraw, ubezpieczenia i myjni samochodowych. <br /><br /> Wykorzystane elementy: <ul><li>Nawigacja wykonana przy pomocy `Compose Navigation`</li><li>Aplikacja wykorzystuje trzy ekrany z `NavigationBar`</li><li>Aplikacja wykorzystuje `Jetpack Compose`</li><li>Wykorzystuje `DropDownMenu` umożliwiając użytkownikowi wybór</li><li>Aplikacja wykorzystuje *dummy data*</li></ul> <table><tr><td><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2MzYmNiN2NmOTE4NDVmZGU4ZTQzNjQ3ZjVkZDlhNzE3MTc0Y2FmOCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/UT1CIBlbL1FftHf9Hk/giphy.gif" width="150" /></td><td><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWRlZGExYmI4OTZlNjY4MzZiM2NkZmE4ZWMzN2VlMGVjZjk4YWRhOSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/lx96i0NeTGeYV35NFl/giphy.gif" width="150" /></td><td><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDFmZTkxZjIxNzQ0NTJmNDFlM2NhN2NiNTlmYzU2N2ZkZTVhODM3MyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/WyCanQMjlfmYguKc3l/giphy.gif" width="150" /></td></tr></table> |
 
 
+## Moduł 2
+|Wykład 7|Lab 7|
+|:-------|:-------|
+|<ul><li> Architektura aplikacji </li><li> `ViewModel` </li><li> `LiveData` </li><li> Wzorzec `MVVM` </li></ul>|<ul></ul>|
+|**Wykład 8**|**Lab 8**|
+|<ul><li> Lokalne bazy danych </li><li> `ROOM` </li><li> `Realm` </li><li> `SharedPreferences`</li><li> `JSON`</li></ul>|<ul></ul>|
+|**Wykład 9**|**Lab 9**|
+|<ul><li> Strumienie danych </li><li> `Flow` </li><li> `StateFlow` </li><li> `SharedFlow` </li><li>`Scaffold`</li></ul>|<ul></ul>|
+|**Aplikacje**|  |
+
 # Archiwum:
 
 ## 2022/2023
