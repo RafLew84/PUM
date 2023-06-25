@@ -9,6 +9,7 @@
 |:-------|:--------|:--------|
 |[Moduł 0](#moduł-0)|  |  |
 |[Moduł 1a](#moduł-1a), [Moduł 1b](#moduł-1b)| lista 1 |  |
+|[Moduł 2](#moduł-2)| lista 2 |  |
 
 ---
 
