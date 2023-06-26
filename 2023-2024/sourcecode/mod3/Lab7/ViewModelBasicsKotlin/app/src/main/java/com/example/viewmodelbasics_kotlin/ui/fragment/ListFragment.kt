@@ -1,4 +1,4 @@
-package com.example.viewmodelbasics_kotlin.ui
+package com.example.viewmodelbasics_kotlin.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
