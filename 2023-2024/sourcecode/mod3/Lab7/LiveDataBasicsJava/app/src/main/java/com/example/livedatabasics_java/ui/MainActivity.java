@@ -1,8 +1,10 @@
-package com.example.livedatabasics_java;
+package com.example.livedatabasics_java.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.livedatabasics_java.R;
 
 public class MainActivity extends AppCompatActivity {
 
