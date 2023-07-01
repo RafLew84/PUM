@@ -10,11 +10,11 @@ class CounterViewModel : ViewModel() {
         get() = _counter
 
     fun increase(){
-        _counter.value?.inc()
+        _counter.value = _counter.value?.inc()
     }
 
     fun decrease(){
-        _counter.value?.dec()
+        _counter.value = _counter.value?.dec()
     }
 
     fun clear(){ _counter.value = 0 }
