@@ -52,7 +52,7 @@
 |**Wykład 8**|**Lab 8**|
 |<ul><li> Lokalne bazy danych </li><li> `ROOM` </li><li> `Realm` </li><li> `SharedPreferences`</li><li> `JSON`</li></ul>|<ul></ul>|
 |**Wykład 9**|**Lab 9**|
-|<ul><li> Strumienie danych </li><li> `Flow` </li><li> `StateFlow` </li><li> `SharedFlow` </li><li>`Scaffold`</li></ul>|<ul></ul>|
+|<ul><li> Strumienie danych </li><li> `Flow` </li><li> `StateFlow` </li><li> `SharedFlow` </li></ul>|<ul></ul>|
 |**Aplikacje**|  |
 
 # Archiwum:
