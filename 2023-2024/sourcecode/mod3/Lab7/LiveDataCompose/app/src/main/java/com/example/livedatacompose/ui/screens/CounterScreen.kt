@@ -24,7 +24,6 @@ import com.example.livedatacompose.viewmodel.CounterViewModel
 @Composable
 fun CounterScreen() {
 
-    //val count by remember { mutableStateOf(0) }
     val viewModel: CounterViewModel = viewModel()
     val counterState = viewModel.counter.observeAsState()
 
