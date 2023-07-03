@@ -34,6 +34,7 @@ public class UserViewModel extends ViewModel {
     public void reinitialize() {
         List<User> sortedUsers = new ArrayList<>(DataProvider.getUsers());
         sortedUsers.sort((user1, user2) -> {
+            if (user1.equals(user2)) { return 0; }
             int result = user1.getLastName().compareTo(user2.getLastName());
             if (result == 0) {
                 return user1.getFirstName().compareTo(user2.getFirstName());
