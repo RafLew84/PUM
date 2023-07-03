@@ -16,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.mvvmbasicscompose.dummydata.DataProvider
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -53,9 +54,9 @@ fun MainScreen(){
         }
 
         LazyColumn(modifier = Modifier.weight(1f)){
-            items(10){
+            items(DataProvider.users.size){
                 Text(
-                    text = "Text",
+                    text = DataProvider.users[it].firstName + " " + DataProvider.users[it].lastName,
                     fontSize = 32.sp,
                     textAlign = TextAlign.Center,
                     modifier = Modifier
