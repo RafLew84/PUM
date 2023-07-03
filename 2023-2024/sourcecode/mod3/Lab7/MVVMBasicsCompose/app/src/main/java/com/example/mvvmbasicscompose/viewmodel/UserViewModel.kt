@@ -16,13 +16,13 @@ class UserViewModel : ViewModel() {
 
     fun addUser(user: User){
         _usersList.add(user)
-        _usersList.sortedWith(compareBy(User::lastName, User::firstName))
+        _usersList.sortBy { it.lastName }
     }
 
     fun reinitialize(){
         _usersList.clear()
         _usersList.addAll(DataProvider.users)
-        _usersList.sortedWith(compareBy(User::lastName, User::firstName))
+        _usersList.sortBy { it.lastName }
     }
 
     fun clear(){
