@@ -54,9 +54,9 @@ fun MainScreen(){
         }
 
         LazyColumn(modifier = Modifier.weight(1f)){
-            items(DataProvider.users.size){
+            items(10){
                 Text(
-                    text = DataProvider.users[it].firstName + " " + DataProvider.users[it].lastName,
+                    text = it.toString(),
                     fontSize = 32.sp,
                     textAlign = TextAlign.Center,
                     modifier = Modifier
