@@ -10,6 +10,8 @@
 |[Moduł 0](#moduł-0)|  |  |
 |[Moduł 1a](#moduł-1a), [Moduł 1b](#moduł-1b)| lista 1 |  |
 |[Moduł 2](#moduł-2)| lista 2 |  |
+|[Moduł 3](#moduł-3))| lista 3 |  |
+|[Moduł 4](#moduł-4)|  |  |
 
 ---
 
@@ -55,6 +57,23 @@
 |<ul><li> Architektura aplikacji 2 </li><li> Wzorzec `Repository` </li><li> Viewmodel z parametrem - `AndroidViewModel` </li><li> Współdzielenie - `ActivityViewModel`, `SharedViewModel` </li></ul>|<ul></ul>|
 |**Wykład 10**|**Lab 10**|
 |<ul><li> Lokalne bazy danych </li><li> Asynchroniczne przetwaranie danych </li><li> `ROOM` </li><li> `Realm` </li><li> `SharedPreferences`</li><li> `JSON`</li></ul>|<ul></ul>|
+|**Aplikacje**|  |
+
+
+## Moduł 3
+|Wykład 11|Lab 11|
+|:-------|:-------|
+|<ul><li> Praca z zewnętrznymi źródłami danych </li><li> `Retrofit` </li><li> `OkHttp` </li><li> `Paging` </li></ul>|<ul></ul>|
+|**Wykład 12**|**Lab 12**|
+|<ul><li> Architektura aplikacji 2 </li><li> Wzorzec `Repository` </li><li> Viewmodel z parametrem - `AndroidViewModel` </li><li> Współdzielenie - `ActivityViewModel`, `SharedViewModel` </li></ul>|<ul></ul>|
+|**Aplikacje**|  |
+
+## Moduł 4
+|Wykład 13|Lab 13|
+|:-------|:-------|
+|<ul><li> Wstrzykiwanie zależności 1 </li><li> `Dagger` </li></ul>|<ul></ul>|
+|**Wykład 14**|**Lab 14**|
+|<ul><li> Wstrzykiwanie zależności 2 </li><li> `Dagger-Hilt` </li></ul>|<ul></ul>|
 |**Aplikacje**|  |
 
 # Archiwum:
