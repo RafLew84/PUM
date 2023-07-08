@@ -1,11 +1,11 @@
-package com.example.flowbasicscompose.viewmodel
+package com.example.flowbasicskotlin.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.example.flowbasicscompose.data.DataProvider
+import com.example.flowbasicskotlin.data.DataProvider
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.flow
 
-class WordsViewModel : ViewModel() {
+class WordViewModel : ViewModel() {
     val wordsFlow = flow{
         var index = 0
         while (index < DataProvider.data.size){
