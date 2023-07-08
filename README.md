@@ -65,7 +65,7 @@
 |:-------|:-------|
 |<ul><li> Praca z zewnętrznymi źródłami danych </li><li> `Retrofit` </li><li> `OkHttp` </li><li> `Paging` </li></ul>|<ul></ul>|
 |**Wykład 12**|**Lab 12**|
-|<ul><li> Architektura aplikacji 2 </li><li> Wzorzec `Repository` </li><li> Viewmodel z parametrem - `AndroidViewModel` </li><li> Współdzielenie - `ActivityViewModel`, `SharedViewModel` </li></ul>|<ul></ul>|
+|<ul><li> Zarządzanie danymi w aplikacji </li><li> Wzorzec `SSOT` (*Single Source of Truth*) </li><li> Implementacja *Offline Caching* </li></ul>|<ul></ul>|
 |**Aplikacje**|  |
 
 ## Moduł 4
