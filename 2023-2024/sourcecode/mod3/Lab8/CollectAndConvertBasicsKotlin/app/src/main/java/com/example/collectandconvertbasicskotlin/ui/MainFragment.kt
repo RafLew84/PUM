@@ -6,14 +6,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import com.example.collectandconvertbasicskotlin.R
 import com.example.collectandconvertbasicskotlin.databinding.FragmentMainBinding
+import com.example.collectandconvertbasicskotlin.viewmodel.CounterViewModel
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 
 
 class MainFragment : Fragment() {
 
     private lateinit var binding: FragmentMainBinding
 
+    private val viewModel: CounterViewModel by viewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,6 +31,14 @@ class MainFragment : Fragment() {
         binding.navButton.setOnClickListener {
             val action = MainFragmentDirections.actionMainFragmentToSecondFragment()
             Navigation.findNavController(requireView()).navigate(action)
+        }
+
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED){
+                viewModel.counter.collectLatest{ counter ->
+                    binding.counterText.text = counter.toString()
+                }
+            }
         }
 
         return binding.root
