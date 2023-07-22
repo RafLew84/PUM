@@ -56,7 +56,7 @@
 |**Wykład 9**|**Lab 9**|
 |<ul><li> Architektura aplikacji 2 </li><li> Wzorzec `Repository` </li><li> Współdzielenie - `ActivityViewModel`, `SharedViewModel` </li></ul>|<ul></ul>|
 |**Wykład 10**|**Lab 10**|
-|<ul><li> Lokalne bazy danych </li><li> Asynchroniczne przetwarzanie danych </li><li> Viewmodel z parametrem - `AndroidViewModel` </li><li> `ROOM` </li><li> `Realm` </li><li> `SharedPreferences`</li><li> `JSON`</li></ul>|<ul></ul>|
+|<ul><li> Lokalne bazy danych </li><li> Asynchroniczne przetwarzanie danych </li><li> Viewmodel z kontekstem - `AndroidViewModel` </li><li> `ROOM` </li><li> `Realm` </li><li> `SharedPreferences`</li><li> `JSON`</li></ul>|<ul></ul>|
 |**Aplikacje**|  |
 
 
