@@ -54,9 +54,9 @@
 |**Wykład 8**|**Lab 8**|
 |<ul><li> Strumienie danych </li><li> Wielowątkowość </li><li> `Flow` </li><li> `StateFlow` </li><li> `SharedFlow` </li><li> `ComposeState` </li></ul>|<ul><ol type="1"><li> Podstawy zastosowania `Flow` - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.1.1%20Flow%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.1.2%20Flow%20Basics%20-%20Kotlin.ipynb) </li><li> Podstawy zastosowania `StateFlow` - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.2.1%20StateFlow%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.2.2%20StateFlow%20Basics%20-%20Kotlin.ipynb)</li><li> Podstawy zastosowania `SharedFlow` - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.3.1%20SharedFlow%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.3.2%20SharedFlow%20Basics%20-%20Kotlin.ipynb)</li><li> Podstawy konwersji strumieni - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.4.1%20Collect%20and%20Convert%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.4.2%20Collect%20and%20Convert%20Basics%20-%20Kotlin.ipynb)</li></ol></ul>|
 |**Wykład 9**|**Lab 9**|
-|<ul><li> Architektura aplikacji 2 </li><li> Wzorzec `Repository` </li><li> Współdzielenie - `ActivityViewModel`, `SharedViewModel` </li></ul>|<ul></ul>|
+|<ul><li> Architektura aplikacji 2 </li><li> Wzorzec `Repository` </li><li> Asynchroniczne przetwarzanie danych </li><li> Współdzielenie - `ActivityViewModel`, `SharedViewModel` </li></ul>|<ul></ul>|
 |**Wykład 10**|**Lab 10**|
-|<ul><li> Lokalne bazy danych </li><li> Asynchroniczne przetwarzanie danych </li><li> Viewmodel z kontekstem - `AndroidViewModel` </li><li> `ROOM` </li><li> `Realm` </li><li> `SharedPreferences`</li><li> `JSON`</li></ul>|<ul></ul>|
+|<ul><li> Lokalne bazy danych </li><li> Viewmodel z kontekstem - `AndroidViewModel` </li><li> `ROOM` </li><li> `Realm` </li><li> `SharedPreferences`</li><li> `JSON`</li></ul>|<ul></ul>|
 |**Aplikacje**|  |
 
 
