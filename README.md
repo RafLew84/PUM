@@ -52,27 +52,25 @@
 |:-------|:-------|
 |<ul><li> Architektura aplikacji 1 </li><li> `ViewModel` </li><li> `LiveData` </li><li> Wzorzec `MVVM` </li></ul>|<ul><ol type="1"><li> Podstawy zastosowania `ViewModel` - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab7/7.1.1%20ViewModel%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab7/7.1.2%20ViewModel%20Basics%20-%20Kotlin.ipynb), [Java](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab7/7.1.3%20ViewModel%20Basics%20-%20Java.ipynb) </li><li> Podstawy zastosowania kontenera danych `LiveData` - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab7/7.2.1%20LiveData%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab7/7.2.2%20LiveData%20Basics%20-%20Kotlin.ipynb), [Java](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab7/7.2.3%20LiveData%20Basics%20-%20Java.ipynb)</li><li> Podstawy wzorca Model-View-Viewmodel (`MVVM`) - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab7/7.3.1%20MVVM%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab7/7.3.2%20MVVM%20Basics%20-%20Kotlin.ipynb), [Java](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab7/7.3.3%20MVVM%20Basics%20-%20Java.ipynb)</li></ol></ul>|
 |**Wykład 8**|**Lab 8**|
-|<ul><li> Strumienie danych </li><li> Wielowątkowość </li><li> `Flow` </li><li> `StateFlow` </li><li> `SharedFlow` </li><li> `ComposeState` </li></ul>|<ul><ol type="1"><li> Podstawy zastosowania `Flow` - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.1.1%20Flow%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.1.2%20Flow%20Basics%20-%20Kotlin.ipynb) </li><li> Podstawy zastosowania `StateFlow` - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.2.1%20StateFlow%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.2.2%20StateFlow%20Basics%20-%20Kotlin.ipynb)</li><li> Podstawy zastosowania `SharedFlow` - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.3.1%20SharedFlow%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.3.2%20SharedFlow%20Basics%20-%20Kotlin.ipynb)</li><li> Podstawy konwersji strumieni - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.4.1%20Collect%20and%20Convert%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.4.2%20Collect%20and%20Convert%20Basics%20-%20Kotlin.ipynb)</li></ol></ul>|
+|<ul><li> Strumienie danych </li><li> Asynchroniczne przetwarzanie danych </li><li> `Flow` </li><li> `StateFlow` </li><li> `SharedFlow` </li><li> `ComposeState` </li></ul>|<ul><ol type="1"><li> Podstawy zastosowania `Flow` - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.1.1%20Flow%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.1.2%20Flow%20Basics%20-%20Kotlin.ipynb) </li><li> Podstawy zastosowania `StateFlow` - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.2.1%20StateFlow%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.2.2%20StateFlow%20Basics%20-%20Kotlin.ipynb)</li><li> Podstawy zastosowania `SharedFlow` - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.3.1%20SharedFlow%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.3.2%20SharedFlow%20Basics%20-%20Kotlin.ipynb)</li><li> Podstawy konwersji strumieni - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.4.1%20Collect%20and%20Convert%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%823/Lab8/8.4.2%20Collect%20and%20Convert%20Basics%20-%20Kotlin.ipynb)</li></ol></ul>|
 |**Wykład 9**|**Lab 9**|
-|<ul><li> Architektura aplikacji 2 </li><li> Wzorzec `Repository` </li><li> Asynchroniczne przetwarzanie danych </li><li> Współdzielenie - `ActivityViewModel`, `SharedViewModel` </li></ul>|<ul></ul>|
-|**Wykład 10**|**Lab 10**|
-|<ul><li> Lokalne bazy danych </li><li> Viewmodel z kontekstem - `AndroidViewModel` </li><li> `ROOM` </li><li> `Realm` </li><li> `SharedPreferences`</li><li> `JSON`</li></ul>|<ul></ul>|
+|<ul><li> Wzorzec `Repository` </li><li> Lokalne bazy danych </li><li> `ROOM` </li><li> `SharedPreferences`</li><li> `JSON`</li></ul>|<ul></ul>|
 |**Aplikacje**|  |
 
 
 ## Moduł 3
-|Wykład 11|Lab 11|
+|Wykład 10|Lab 10|
 |:-------|:-------|
 |<ul><li> Praca z zewnętrznymi źródłami danych </li><li> `Retrofit` </li><li> `OkHttp` </li><li> `Paging` </li></ul>|<ul></ul>|
-|**Wykład 12**|**Lab 12**|
+|**Wykład 11**|**Lab 11**|
 |<ul><li> Zarządzanie danymi w aplikacji </li><li> Wzorzec `SSOT` (*Single Source of Truth*) </li><li> Implementacja *Offline Caching* </li></ul>|<ul></ul>|
 |**Aplikacje**|  |
 
 ## Moduł 4
-|Wykład 13|Lab 13|
+|Wykład 12|Lab 12|
 |:-------|:-------|
 |<ul><li> Wstrzykiwanie zależności 1 </li><li> `Dagger` </li></ul>|<ul></ul>|
-|**Wykład 14**|**Lab 14**|
+|**Wykład 13**|**Lab 13**|
 |<ul><li> Wstrzykiwanie zależności 2 </li><li> `Dagger-Hilt` </li></ul>|<ul></ul>|
 |**Aplikacje**|  |
 
