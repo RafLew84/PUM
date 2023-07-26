@@ -14,7 +14,6 @@ object DataProvider {
         "Nowakowski", "Pawłowski"
     )
 
-    val users = (0..40).map { User(0,firstNames.random(), lastNames.random()) }
     val user: User
         get() = User(0,firstNames.random(), lastNames.random())
 }
