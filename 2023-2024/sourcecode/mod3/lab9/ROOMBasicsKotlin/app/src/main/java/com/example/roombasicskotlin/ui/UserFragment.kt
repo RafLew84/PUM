@@ -36,6 +36,7 @@ class UserFragment : Fragment() {
         binding.rvList.apply{
             adapter = userAdapter
             layoutManager = LinearLayoutManager(requireContext())
+            itemAnimator = null
         }
 
         binding.addButton.setOnClickListener { viewModel.addUser(DataProvider.user) }
