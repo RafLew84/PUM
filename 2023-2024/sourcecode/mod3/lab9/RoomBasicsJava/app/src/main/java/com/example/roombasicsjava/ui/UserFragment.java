@@ -29,6 +29,7 @@ public class UserFragment extends Fragment {
         final UserAdapter userAdapter = new UserAdapter(new UserComparator());
         binding.rvList.setAdapter(userAdapter);
         binding.rvList.setLayoutManager(new LinearLayoutManager(requireActivity()));
+        binding.rvList.setItemAnimator(null);
         userViewModel.getUsers().observe(requireActivity(), userAdapter::submitList);
 
         binding.addButton.setOnClickListener(v -> {userViewModel.addUser(DataProvider.getUser());});
