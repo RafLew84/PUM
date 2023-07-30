@@ -6,10 +6,10 @@ import java.util.concurrent.Executors;
 public class AppExecutors {
     private static final Object LOCK = new Object();
     private static AppExecutors instance;
-    private final Executor diskIO;
+    private final Executor dbIO;
 
-    private AppExecutors(Executor diskIO) {
-        this.diskIO = diskIO;
+    private AppExecutors(Executor dbIO) {
+        this.dbIO = dbIO;
     }
 
     public static AppExecutors getInstance() {
@@ -22,6 +22,6 @@ public class AppExecutors {
     }
 
     public Executor diskIO() {
-        return diskIO;
+        return dbIO;
     }
 }
