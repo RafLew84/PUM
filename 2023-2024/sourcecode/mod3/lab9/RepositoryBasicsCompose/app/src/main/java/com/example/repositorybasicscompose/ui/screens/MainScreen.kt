@@ -21,9 +21,6 @@ import com.example.repositorybasicscompose.viewmodel.UserViewModel
 @Composable
 fun MainScreen() {
 
-    var firstName by remember { mutableStateOf("") }
-    var lastName by remember { mutableStateOf("") }
-
     val viewModel: UserViewModel = viewModel()
     val users by viewModel.usersList.collectAsStateWithLifecycle()
 
