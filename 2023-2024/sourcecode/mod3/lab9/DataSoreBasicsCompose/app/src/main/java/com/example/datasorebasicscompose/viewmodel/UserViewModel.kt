@@ -17,7 +17,7 @@ class UserViewModel(application: Application) : ViewModel() {
         get() = _username
 
     init {
-        repository = UserRepository(SaveUsernameDataStore(application))
+        repository = UserRepository(application)
         fetchUser()
     }
 
