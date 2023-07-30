@@ -15,9 +15,6 @@ public abstract class UserDatabase extends RoomDatabase {
     public abstract UserDao userDao();
 
     private static volatile UserDatabase INSTANCE;
-    private static final int NUMBER_OF_THREADS = 4;
-    public static final ExecutorService databaseWriteExecutor =
-            Executors.newFixedThreadPool(NUMBER_OF_THREADS);
 
     public static UserDatabase getDatabase(final Context context) {
         if (INSTANCE == null) {
