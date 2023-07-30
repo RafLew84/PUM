@@ -37,10 +37,10 @@ public class UserViewModel extends AndroidViewModel {
     }
 
     public void clearUsers() {
-        AppExecutors.getInstance().diskIO().execute(repository::clear);
+        AppExecutors.getInstance().dbIO().execute(repository::clear);
     }
 
     public void addUser(User user) {
-        AppExecutors.getInstance().diskIO().execute(() -> repository.add(user));
+        AppExecutors.getInstance().dbIO().execute(() -> repository.add(user));
     }
 }

@@ -21,7 +21,7 @@ public class AppExecutors {
         return instance;
     }
 
-    public Executor diskIO() {
+    public Executor dbIO() {
         return dbIO;
     }
 }
