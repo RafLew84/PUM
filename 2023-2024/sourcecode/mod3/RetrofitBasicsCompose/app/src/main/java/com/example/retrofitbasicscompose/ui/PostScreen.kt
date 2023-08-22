@@ -23,8 +23,6 @@ fun PostScreen(){
 
     val posts by viewModel.posts.collectAsStateWithLifecycle()
 
-    Log.d("data", posts.toString())
-
     LazyColumn {
         items(posts) { post ->
             Column {
