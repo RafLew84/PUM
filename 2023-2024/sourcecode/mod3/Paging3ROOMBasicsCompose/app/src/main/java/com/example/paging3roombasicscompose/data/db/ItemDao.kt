@@ -12,6 +12,6 @@ interface ItemDao {
     @Query("SELECT * FROM items")
     fun getItems(): PagingSource<Int, Item>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertItems(items: List<Item>)
 }
