@@ -45,21 +45,6 @@ public class CommentsFragment extends Fragment {
                 }
         });
 
-//        getViewLifecycleOwner().getLifecycleScope().launch(() -> {
-//            viewModel.getComments().collectLatest(response -> {
-//                if (response instanceof Resource.Success) {
-//                    List<CommentResponseItem> data = ((Resource.Success<List<CommentResponseItem>>) response).getData();
-//                    if (data != null) {
-//                        commentAdapter.submitList(data);
-//                    }
-//                } else if (response instanceof Resource.Error) {
-//                    // Obsługa błędu
-//                } else if (response instanceof Resource.Loading) {
-//                    // Obsługa stanu ładowania
-//                }
-//            });
-//        });
-
         binding.recycler.setLayoutManager(new LinearLayoutManager(requireContext()));
         binding.recycler.setAdapter(commentAdapter);
 
