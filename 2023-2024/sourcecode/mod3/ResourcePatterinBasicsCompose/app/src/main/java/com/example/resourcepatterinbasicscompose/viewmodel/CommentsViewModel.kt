@@ -18,12 +18,6 @@ class CommentsViewModel : ViewModel() {
     init {
         getCommentsList()
     }
-//
-//    private fun getPosts() {
-//        viewModelScope.launch {
-//            _posts.value = repository.getPosts()
-//        }
-//    }
 
     private fun getCommentsList() = viewModelScope.launch {
         _comments.value = Resource.Loading()
