@@ -1,18 +1,16 @@
-package com.example.paging3basicscompose.ui.screens.list
+package com.example.paging3basicscompose.data.repository
 
 import android.util.Log
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.example.paging3basicscompose.data.api.SwapiApiService
 import com.example.paging3basicscompose.data.model.Result
-import com.example.paging3basicscompose.data.repository.SwapiRepository
 import java.util.regex.Pattern
 
 class CharactersPagingSource(
     private val repository: SwapiRepository
 ) : PagingSource<Int, Result>() {
     override fun getRefreshKey(state: PagingState<Int, Result>): Int? {
-        return state.anchorPosition?.let { anchorPosition ->
+        return state.anchorPosition ?.let { anchorPosition ->
             val anchorPage = state.closestPageToPosition(anchorPosition)
             anchorPage?.prevKey?.plus(1) ?: anchorPage?.nextKey?.minus(1)
         }
