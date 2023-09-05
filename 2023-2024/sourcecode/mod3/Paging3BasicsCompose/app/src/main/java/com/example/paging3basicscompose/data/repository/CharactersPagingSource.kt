@@ -21,8 +21,6 @@ class CharactersPagingSource(
             val page = params.key ?: 1
             val response = repository.getCharacters(page)
 
-            Log.d("data", "page: ${response.results}")
-
             LoadResult.Page(
                 data = response.results,
                 prevKey = getPageNumberFromUrl(response.previous),
