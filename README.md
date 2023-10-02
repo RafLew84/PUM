@@ -2,13 +2,13 @@
 
 | Projekt | Termin |
 |:-------|:--------|
-|Opis projektu (szablon)| ---- |
-|Projekt| ---- |
+|Opis projektu (szablon)| 05.01.2024 |
+|Projekt| 30.01.2024 |
 
-|Moduł|Lista|Termin|
+|Moduł|Lista|
 |:-------|:--------|:--------|
 |[Moduł 0](#moduł-0)|  |  |
-|[Moduł 1](#moduł-1)| lista 1 |  |
+|[Moduł 1](#moduł-1)| [lista 1](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Listy/Lista%201.ipynb), lista 2 |
 |[Moduł 2](#moduł-2)| lista 1 |  |
 |[Moduł 3](#moduł-3)| lista 2 |  |
 |[Moduł 4](#moduł-4)| lista 3 |  |
