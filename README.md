@@ -6,7 +6,7 @@
 |Projekt| 30.01.2024 |
 
 |Moduł|Lista|
-|:-------|:--------|:--------|
+|:-------|:--------|
 |[Moduł 0](#moduł-0)|  |  |
 |[Moduł 1](#moduł-1)| [lista 1](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Listy/Lista%201.ipynb), lista 2 |
 |[Moduł 2](#moduł-2)| lista 1 |  |
