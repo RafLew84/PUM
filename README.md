@@ -2,22 +2,21 @@
 
 | Projekt | Termin |
 |:-------|:--------|
-|Opis projektu (szablon)| ---- |
-|Projekt| ---- |
+|Opis projektu ( szablon - [word](https://github.com/RafLew84/PUM/blob/main/2023-2024/szablon%20opisu%20projektu.docx), [pdf](https://github.com/RafLew84/PUM/blob/main/2023-2024/szablon%20opisu%20projektu.pdf) ) | 05.01.2024 |
+|Projekt| 30.01.2024 |
 
-|Moduł|Lista|Termin|
-|:-------|:--------|:--------|
+|Moduł|Lista|
+|:-------|:--------|
 |[Moduł 0](#moduł-0)|  |  |
-|[Moduł 1](#moduł-1)| lista 1 |  |
-|[Moduł 2](#moduł-2)| lista 1 |  |
-|[Moduł 3](#moduł-3)| lista 2 |  |
-|[Moduł 4](#moduł-4)| lista 3 |  |
-|[Moduł 5](#moduł-5)|  |  |
+|[Moduł 1](#moduł-1)| [lista 1](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Listy/Lista%201.ipynb), lista 2 |
+|[Moduł 2](#moduł-2)| lista 3, lista 4 |  |
+|[Moduł 3](#moduł-3)| lista 5 |  |
+|[Moduł 4](#moduł-4)| lista 6 |  |
 
 ---
 
 ## Moduł 0
-|**Wykład 0**|**Lab 0**|
+|**[Wykład 0]()**|**Lab 0**|
 |:-------|:-------|
 |<ul><li> podstawowe informacje </li><li> treści programowe </li><li> warunki zaliczenia - wykład, lab </li></ul>| <ul><li>Podstawowe informacje</li><li>Android Studio</li><li>Struktura projektu</li></ul> |
 
@@ -71,11 +70,6 @@
 |<ul><li> Paginacja danych </li><li> `Retrofit` </li><li> `Paging` </li></ul>|<ul><ol type="1"><li> Podstawy paginacji z biblioteką `Paging3` - [Compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%824/Lab13/13.1.1%20Paging%20Basics%20-%20Compose.ipynb), [Kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%824/Lab13/13.1.2%20Paging%20Basics%20-%20Kotlin.ipynb)</li></ol></ul>|
 |**Aplikacje**|  |
 |<ul><h3 style="text-align: center;">**FlavorFinder**</h3> <table><tr><td>notatniki - [compose](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%824/App/FlavorFinder%20-%20Compose.ipynb), [kotlin](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%824/App/FlavorFinder%20-%20Kotlin.ipynb), [java](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Lab/Modu%C5%824/App/FlavorFinder%20-%20Java.ipynb) </td></tr><tr><td> repo - [compose](https://github.com/RafLew84/FlavorFinderCompose), [kotlin](https://github.com/RafLew84/FlavorFinderKotlin), [java](https://github.com/RafLew84/FlavorFinderJava) </td></tr> </table> <br /> <br /></ul> | Aplikacja została zaimplementowana zgodnie z wzorcem **MVVM (Model-View-ViewModel)** z wykorzystaniem repozytorium. Do zarządzania stanem aplikacji i reaktywności został użyty `StateFlow`(compose/kotlin) `LiveData`(java), umożliwiając łatwą aktualizację widoków w czasie rzeczywistym w odpowiedzi na zmiany w stanie aplikacji. Aplikacja korzysta z zewnętrznego api [mealApi](https://www.themealdb.com/api.php)<br /><br /> Wykorzystane elementy: <ul><li>Aplikacja zaimplementowana zgodnie ze wzorcem **MVVM**</li><li>Aplikacja wykonana w językach Kotlin, Java</li><li>Interfejs użytkownika wykonano przy pomocy `Jetpack Compose` (Kotlin) i oparty na języku XML z Fragmentami (Kotlin, Java)</li><li> `ROOM` wykorzystano w celu zapisu danych</li><li> `Retrofit` wykorzystano w celu pobrania danych z zewnętrznego api</li><li>Aplikacja wykorzystuje `StateFlow` (Compose, Kotlin) `LiveData` (Java)</li><li>Kotlin `Coroutines` wykorzystano do asynchronicznego przetwarzania danych (Compose, Kotlin)</li></ul> <table><tr><td><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzlweXR6dzI1b3ZpNnk4MXo3cTJ6Yjd1NWx3ZG85ZGNzNGkyOHZobCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NqBQ91k7zOVh5d39NK/giphy.gif" width="150" /></td><td><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExY29iNXd2Z2hiYnhldWtpeHVpeTR5YmYwM3ltZWh3bHlyYmkwcTNneCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WiFtop3Zg3tdTUGFnh/giphy.gif" width="150" /></td><td><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGs3ZTZmMnpsb21pdTAwbWphbGo1MmxoZGFtNmUwaGlzdmttcndwcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Van1cMPDSfS9haqhIL/giphy.gif" width="150" /></td></tr></table> |
-## Moduł 5
-|**Wykład 14**|**Lab 14**|
-|:-------|:-------|
-|<ul><li> Wstrzykiwanie zależności </li><li> `Dagger-Hilt` </li></ul>|<ul></ul>|
-|**Aplikacje**|  |
 
 ---
 
