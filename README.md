@@ -18,7 +18,7 @@
 ## Moduł 0
 |**[Wykład 0](https://github.com/RafLew84/PUM/blob/main/2023-2024/Wyk/Wyklad0.pdf)**|**Lab 0**|
 |:-------|:-------|
-|<ul><li> podstawowe informacje </li><li> treści programowe </li><li> warunki zaliczenia - wykład, lab </li></ul>| <ul><li>Podstawowe informacje</li><li>Android Studio</li><li>Struktura projektu</li></ul> |
+|<ul><li> podstawowe informacje </li><li> treści programowe </li><li> warunki zaliczenia - wykład, [lab](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/zasady/zasady%20zaliczenia.ipynb) </li></ul>| <ul><li>Podstawowe informacje</li><li>Android Studio</li><li>Struktura projektu</li></ul> |
 
 ## Moduł 1
 |**Wykład 1**|**Lab 1**|
