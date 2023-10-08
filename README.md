@@ -1,10 +1,5 @@
 # Programowania Urządzeń Mobilnych - PUM
 
-# Archiwum:
-
-## 2022/2023
-
-
 | Projekt | Termin |
 |:-------|:--------|
 |Opis projektu ( szablon - [word](https://github.com/RafLew84/PUM/blob/main/2023-2024/szablon%20opisu%20projektu.docx), [pdf](https://github.com/RafLew84/PUM/blob/main/2023-2024/szablon%20opisu%20projektu.pdf) ) | 05.01.2024 |
