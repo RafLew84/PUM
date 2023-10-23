@@ -8,8 +8,8 @@
 |Moduł|Lista|
 |:-------|:--------|
 |[Moduł 0](#moduł-0)|  |  |
-|[Moduł 1](#moduł-1)| [lista 1](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Listy/Lista%201.ipynb), [lista 2](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Listy/Lista%202.ipynb) |
-|[Moduł 2](#moduł-2)| [lista 3](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Listy/Lista%203.ipynb), [lista 4](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Listy/Lista%204.ipynb) |  |
+|[Moduł 1](#moduł-1)| [lista 1](https://github.com/RafLew84/PUM/blob/main/2023-2024/Listy/Lista%201.ipynb), [lista 2](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Listy/Lista%202.ipynb) |
+|[Moduł 2](#moduł-2)| [lista 3](https://github.com/RafLew84/PUM/blob/main/2023-2024/Listy/Lista%203.ipynb), [lista 4](https://github.com/RafLew84/PUM/blob/2023-2024/2023-2024/Listy/Lista%204.ipynb) |  |
 |[Moduł 3](#moduł-3)| lista 5 |  |
 |[Moduł 4](#moduł-4)| lista 6 |  |
 
