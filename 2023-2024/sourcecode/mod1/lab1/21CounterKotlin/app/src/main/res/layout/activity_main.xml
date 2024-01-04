@@ -9,12 +9,27 @@
     <TextView
         android:id="@+id/show_count"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:text="0"
         android:textSize="250sp"
         android:gravity="center"
         android:textStyle="bold"/>
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="25"
+        android:layout_marginBottom="24dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OPCJA 1"/>
+    </RadioGroup>
 
     <Button
         android:id="@+id/increase_button"
