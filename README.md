@@ -9,7 +9,7 @@
 |:-------|:--------|
 |[Moduł 0](#moduł-0)|  |  |
 |[Moduł 1](#moduł-1)| [lista 1](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%201.ipynb), [lista 2](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%202.ipynb), [lista 3](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%203.ipynb) |
-|[Moduł 2](#moduł-2)| [lista 4](), [lista 5](), [lista 6]()  |  |
+|[Moduł 2](#moduł-2)| [lista 4](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%204.ipynb), [lista 5](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%205.ipynb), [lista 6](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%206.ipynb)  |  |
 |[Moduł 3](#moduł-3)| [lista 7]() |  |
 |[Moduł 4](#moduł-4)| [lista 8]() |  |
 
@@ -27,6 +27,15 @@
 |**[Wykład 2](https://github.com/RafLew84/PUM/blob/main/2024-2025/Wyk/Wyklad2.pdf)**|**Lab 2**|
 |<ul><li> Fundamenty aplikacji 2 </li><li> `Fragment` </li><li> `Fragment` - Cykl życia </li><li> Nawigacja w aplikacji </li><li> `Jetpack Navigation` </li><li> `BottomNavigation` </li></ul>|<ul><ol type="1"><li>Jetpack Navigation - [Kotlin](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod1/Lab2/2.1.1%20JetpackNavigationBasics%20-%20Kotlin.ipynb), [Java](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod1/Lab2/2.1.2%20JetpackNavigationBasics%20-%20Java.ipynb)</li><li>BottomNavigation - [Kotlin](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod1/Lab2/2.2.1%20BottomNavigationBasics%20-%20Kotlin.ipynb), [Java](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod1/Lab2/2.2.2%20BottomNavigationBasics%20-%20Java.ipynb)</li></ol></ul>|
 |**[Wykład 3](https://github.com/RafLew84/PUM/blob/main/2024-2025/Wyk/Wyklad3.pdf)**|**Lab 3**|
+|<ul><li> Fundamenty aplikacji 3 </li><li> `RecyclerView` </li><li> Wzorzec `Adapter` </li><li> Wzorzec `ViewHolder` </li></ul>|<ul><ol type="1"><li> `RecyclerView`, `RecyclerView.Adapter`, `RecyclerView.ViewHolder` - [Kotlin](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod1/Lab3/3.1.1%20RecyclerViewBasics%20-%20Kotlin.ipynb), [Java](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod1/Lab3/3.1.2%20RecyclerViewBasics%20-%20Java.ipynb) </li></ol></ul>|
+
+## Moduł 2
+|**[Wykład 4](https://github.com/RafLew84/PUM/blob/main/2024-2025/Wyk/Wyklad4.pdf)**|**Lab 4**|
+|:-------|:-------|
+|<ul><li> Fundamenty aplikacji 1 - `Compose` </li><li> `Jetpack Compose` </li><li> `Composable` </li><li> Tworzenie interfejsu użytkownika - `@Composable` </li><li> Zachowanie stanu - `MutableState` </li></ul>|<ul><ol type="1"><li> Interfejs użytkownika - `@Composable` - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod2/Lab4/4.1%20Jetpack%20Compose%20-%20Podstawy.ipynb) </li><li> Pierwsza aplikacja - obsługa `onCLick`, `MutableState`, `remember` - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod2/Lab4/4.2%20Jetpack%20Compose%20-%20Stan.ipynb)</li><li> Implicit `Intent` - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod2/Lab4/4.3%20Jetpack%20Compose%20-%20Implicit%20Intent.ipynb)</li></ol></ul>|
+|**[Wykład 5](https://github.com/RafLew84/PUM/blob/main/2024-2025/Wyk/Wyklad5.pdf)**|**Lab 5**|
+|<ul><li> Nawigacja w aplikacji - `Compose` </li><li> `Compose Navigation` </li><li> `NavigationBar` </li><li> `Pager`, `TabLayout` </li><li>`Scaffold`</li></ul>|<ul><ol type="1"><li> Podstawy nawigacji - `Compose Navigation` - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod2/Lab5/5.1%20Jetpack%20Compose%20-%20Navigation%20Basics.ipynb) </li><li> `Scaffold`, `NavigationBar`, `NavigationBarItem` - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod2/Lab5/5.2%20Jetpack%20Compose%20-%20NavigationBar%20Basics.ipynb)</li><li> `Scaffold`, `PaddingValues` - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod2/Lab5/5.3%20Jetpack%20Compose%20-%20Scaffold%20-%20PaddingValuesIssue.ipynb)</li></ol></ul>|
+|**[Wykład 6]()**|**Lab 3**|
 |<ul><li> Fundamenty aplikacji 3 </li><li> `RecyclerView` </li><li> Wzorzec `Adapter` </li><li> Wzorzec `ViewHolder` </li></ul>|<ul><ol type="1"><li> `RecyclerView`, `RecyclerView.Adapter`, `RecyclerView.ViewHolder` - [Kotlin](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod1/Lab3/3.1.1%20RecyclerViewBasics%20-%20Kotlin.ipynb), [Java](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod1/Lab3/3.1.2%20RecyclerViewBasics%20-%20Java.ipynb) </li></ol></ul>|
 
 ---
