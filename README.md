@@ -36,7 +36,7 @@
 |**[Wykład 5](https://github.com/RafLew84/PUM/blob/main/2024-2025/Wyk/Wyklad5.pdf)**|**Lab 5**|
 |<ul><li> Nawigacja w aplikacji - `Compose` </li><li> `Compose Navigation` </li><li> `NavigationBar` </li><li> `Pager`, `TabLayout` </li><li>`Scaffold`</li></ul>|<ul><ol type="1"><li> Podstawy nawigacji - `Compose Navigation` - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod2/Lab5/5.1%20Jetpack%20Compose%20-%20Navigation%20Basics.ipynb) </li><li> `Scaffold`, `NavigationBar`, `NavigationBarItem` - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod2/Lab5/5.2%20Jetpack%20Compose%20-%20NavigationBar%20Basics.ipynb)</li><li> `Scaffold`, `PaddingValues` - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod2/Lab5/5.3%20Jetpack%20Compose%20-%20Scaffold%20-%20PaddingValuesIssue.ipynb)</li></ol></ul>|
 |**[Wykład 6](https://github.com/RafLew84/PUM/blob/main/2024-2025/Wyk/Wyklad6.pdf)**|**Lab 6**|
-|<ul><li> Fundamenty aplikacji 2 - `Compose` </li><li> Tworzenie list - `LazyColumn` </li><li> `Pager` </li><li> Cykl życia `composable`</li></ul>|<ul><ol type="1"><li> Podstawy tworzenia list - `LazyColumn` - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod2/Lab6/6.1%20Jetpack%20Compose%20-%20Lists%20Basics.ipynb) </li></ol></ul>|
+|<ul><li> Fundamenty aplikacji 2 - `Compose` </li><li> Tworzenie list - `LazyColumn` </li></ul>|<ul><ol type="1"><li> Podstawy tworzenia list - `LazyColumn` - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod2/Lab6/6.1%20Jetpack%20Compose%20-%20Lists%20Basics.ipynb) </li></ol></ul>|
 
 ---
 
