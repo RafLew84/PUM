@@ -38,6 +38,19 @@
 |**[Wykład 6](https://github.com/RafLew84/PUM/blob/main/2024-2025/Wyk/Wyklad6.pdf)**|**Lab 6**|
 |<ul><li> Fundamenty aplikacji 2 - `Compose` </li><li> Tworzenie list - `LazyColumn` </li></ul>|<ul><ol type="1"><li> Podstawy tworzenia list - `LazyColumn` - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod2/Lab6/6.1%20Jetpack%20Compose%20-%20Lists%20Basics.ipynb) </li></ol></ul>|
 
+## Moduł 3
+|**[Wykład 7](https://github.com/RafLew84/PUM/blob/main/2024-2025/Wyk/Wyklad7.pdf)**|**Lab 7**|
+|:-------|:-------|
+|<ul><li> Architektura Aplikacji 1 - `ViewModel` </li><li> `LiveData` </li></ul>|<ul><ol type="1"><li> `ViewModel` - Podstawy - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod3/Lab7/7.1.1%20ViewModel%20Basics%20-%20Compose.ipynb), [kotlin](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod3/Lab7/7.1.2%20ViewModel%20Basics%20-%20Kotlin.ipynb), [java](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod3/Lab7/7.1.3%20ViewModel%20Basics%20-%20Java.ipynb) </li><li> `LiveData` - Podstawy - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod3/Lab7/7.2.1%20LiveData%20Basics%20-%20Compose.ipynb), [kotlin](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod3/Lab7/7.2.2%20LiveData%20Basics%20-%20Kotlin.ipynb), [java](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod3/Lab7/7.2.3%20LiveData%20Basics%20-%20Java.ipynb)</li></ol></ul>|
+|**[Wykład 8]()**|**Lab 8**|
+|<ul><li> Architektura Aplikacji 2 </li><li> Wzorzec `MVx` </li></ul>|<ul><ol type="1"></ol></ul>|
+|**[Wykład 9]()**|**Lab 9**|
+|<ul><li> Architektura aplikacji 3 </li><li> Strumienie danych i stan </li<li>`Flow`, `StateFlow`, `SharedFlow`, `ComposeState`</li></li></ul>|<ul><ol type="1"></ol></ul>|
+|**[Wykład 10]()**|**Lab 10**|
+|<ul><li> Architektura aplikacji 4 </li><li> Wzorzec `Repository` </li><li> Zapis danych - `SharedPreferences`, `DataStore` </li></ul>|<ul><ol type="1"></ol></ul>|
+|**[Wykład 11]()**|**Lab 11**|
+|<ul><li> Lokalne bazy danych </li><li> `ROOM` </li></ul>|<ul><ol type="1"></ol></ul>|
+
 ---
 
 # Archiwum:
