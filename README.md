@@ -46,10 +46,20 @@
 |<ul><li> Architektura Aplikacji 2 </li><li> Wzorzec `MVx` </li></ul>|<ul><ol type="1"></ol></ul>|
 |**[Wykład 9]()**|**Lab 9**|
 |<ul><li> Architektura aplikacji 3 </li><li> Strumienie danych i stan </li<li>`Flow`, `StateFlow`, `SharedFlow`, `ComposeState`</li></li></ul>|<ul><ol type="1"></ol></ul>|
+
+## Moduł 4
 |**[Wykład 10]()**|**Lab 10**|
 |<ul><li> Architektura aplikacji 4 </li><li> Wzorzec `Repository` </li><li> Zapis danych - `SharedPreferences`, `DataStore` </li></ul>|<ul><ol type="1"></ol></ul>|
 |**[Wykład 11]()**|**Lab 11**|
 |<ul><li> Lokalne bazy danych </li><li> `ROOM` </li></ul>|<ul><ol type="1"></ol></ul>|
+
+## Moduł 5
+|**[Wykład 12]()**|**Lab 12**|
+|<ul><li> Praca z zewnętrznymi źródłami danych 1 </li><li> `Retrofit` </li><li> `OkHttp` </li></ul>|<ul><ol type="1"></ol></ul>|
+|**[Wykład 13]()**|**Lab 13**|
+|<ul><li> Praca z zewnętrznymi źródłami danych 2 </li><li> `Paging3` </li><li> Problem `OfflineCaching` </li></ul>|<ul><ol type="1"></ol></ul>|
+|**[Wykład 14]()**|**Lab 14**|
+|<ul><li> Wstrzykiwanie zależności </li><li> `Dagger-Hilt` </li></ul>|<ul><ol type="1"></ol></ul>|
 
 ---
 
