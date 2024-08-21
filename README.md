@@ -46,7 +46,7 @@
 |**[Wykład 8](https://github.com/RafLew84/PUM/blob/main/2024-2025/Wyk/Wyklad8.pdf)**|**Lab 8**|
 |<ul><li> Architektura Aplikacji 2 </li><li> Wzorzec `MVx`</li></ul>|<ul><ol type="1"><li> `MVVM` - Podstawy - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod3/Lab8/8.1.1%20MVVM%20Basics%20-%20Compose.ipynb), [kotlin](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod3/Lab8/8.1.2%20MVVM%20Basics%20-%20Kotlin.ipynb), [java](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod3/Lab8/8.1.3%20MVVM%20Basics%20-%20Java.ipynb)</li></ol></ul>|
 |**[Wykład 9](https://github.com/RafLew84/PUM/blob/main/2024-2025/Wyk/Wyklad9.pdf)**|**Lab 9**|
-|<ul><li> Architektura aplikacji 3 </li><li> Strumienie danych i stan </li<li>`Flow`, `StateFlow`, `SharedFlow`, `ComposeState`</li></li></ul>|<ul><ol type="1"></ol></ul>|
+|<ul><li> Architektura aplikacji 3 </li><li> Strumienie danych i stan </li><li>`Flow`, `StateFlow`, `SharedFlow`</li></li></ul>|<ul><ol type="1"></ol></ul>|
 
 ## Moduł 4
 |**[Wykład 10]()**|**Lab 10**|
