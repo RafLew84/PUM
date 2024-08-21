@@ -49,7 +49,7 @@
 |<ul><li> Architektura aplikacji 3 </li><li> Strumienie danych i stan </li><li>`Flow`, `StateFlow`, `SharedFlow`</li></ul>|<ul><ol type="1"><li>`StateFlow` - Podstawy - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod3/Lab9/9.1.1%20StateFlow%20Basics%20-%20Compose.ipynb), [kotlin](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod3/Lab9/9.1.2%20StateFlow%20Basics%20-%20Kotlin.ipynb)</li></ol></ul>|
 
 ## Moduł 4
-|**[Wykład 10]()**|**Lab 10**|
+|**[Wykład 10](https://github.com/RafLew84/PUM/blob/main/2024-2025/Wyk/Wyklad10.pdf)**|**Lab 10**|
 |:-------|:-------|
 |<ul><li> Architektura aplikacji 4 </li><li> Wzorzec `Repository` </li><li> Zapis danych - `SharedPreferences`, `DataStore` </li></ul>|<ul><ol type="1"></ol></ul>|
 |**[Wykład 11]()**|**Lab 11**|
