@@ -56,7 +56,7 @@
 |<ul><li> Lokalne bazy danych </li><li> `ROOM` </li></ul>|<ul><ol type="1"><li>`ROOM` - Podstawy - [compose](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod4/Lab11/11.1.1%20Room%20Basics%20-%20Compose.ipynb), [kotlin](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod4/Lab11/11.1.2%20Room%20Basics%20-%20Kotlin.ipynb), [java](https://github.com/RafLew84/PUM/blob/main/2024-2025/Lab/Mod4/Lab11/11.1.3%20Room%20Basics%20-%20Java.ipynb)</li></ol></ul>|
 
 ## Moduł 5
-|**[Wykład 12]()**|**Lab 12**|
+|**[Wykład 12](https://github.com/RafLew84/PUM/blob/main/2024-2025/Wyk/Wyklad12.pdf)**|**Lab 12**|
 |:-------|:-------|
 |<ul><li> Praca z zewnętrznymi źródłami danych 1 </li><li> `Retrofit` </li><li> `OkHttp` </li></ul>|<ul><ol type="1"></ol></ul>|
 |**[Wykład 13]()**|**Lab 13**|
