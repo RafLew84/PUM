@@ -12,7 +12,7 @@
 |[Moduł 2](#moduł-2)| [lista 4](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%204.ipynb), [lista 5](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%205.ipynb), [lista 6](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%206.ipynb)  |  |
 |[Moduł 3](#moduł-3)| [lista 7](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%207.ipynb) |  |
 |[Moduł 4](#moduł-4)| [lista 8](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%208.ipynb) |  |
-|[Moduł 5](#moduł-5)| [lista 9]() |  |
+|[Moduł 5](#moduł-5)| [lista 9](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%209.ipynb) |  |
 
 ---
 
