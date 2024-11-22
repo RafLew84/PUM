@@ -9,7 +9,7 @@
 |:-------|:--------|
 |[Moduł 0](#moduł-0)|  |  |
 |[Moduł 1](#moduł-1)| [lista 1](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%201.ipynb), [lista 2](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%202.ipynb), [lista 3](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%203.ipynb) |
-|[Moduł 2](#moduł-2)| [lista 4](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%204.ipynb), [~~lista 5~~](anulowana), [lista 6](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%206.ipynb)  |  |
+|[Moduł 2](#moduł-2)| [lista 4](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%204.ipynb), [~~lista 5~~]**anulowana**, [lista 6](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%206.ipynb)  |  |
 |[Moduł 3](#moduł-3)| [lista 7](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%207.ipynb) |  |
 |[Moduł 4](#moduł-4)| [lista 8](https://github.com/RafLew84/PUM/blob/main/2024-2025/Listy/Lista%208.ipynb) |  |
 |[Moduł 5](#moduł-5)| |  |
